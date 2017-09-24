@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.swiftmodule","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build/bio_swiftTests.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.swiftmodule","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftPackageTests.xctest/Contents/MacOS/BioSwiftPackageTests"]
+  "main": ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.swiftmodule"]
+default: "main"
+commands: 
+  "<BioSwift.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "BioSwift"
+    module-output-path: "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.swiftmodule"
+    inputs: ["/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift","/Users/valdi/Developer/BioSwift/Sources/Utils.swift"]
+    outputs: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.swiftmodule"]
+    import-paths: ["/Users/valdi/Developer/BioSwift/.build/debug"]
+    temps-path: "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build"
+    objects: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/valdi/Developer/BioSwift/.build/debug/ModuleCache"]
+    sources: ["/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift","/Users/valdi/Developer/BioSwift/Sources/Utils.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<BioSwiftTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "BioSwiftTests"
+    module-output-path: "/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.swiftmodule"
+    inputs: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.swiftmodule","/Users/valdi/Developer/BioSwift/Tests/BioSwiftTests/bio_swiftTests.swift"]
+    outputs: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build/bio_swiftTests.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.swiftmodule"]
+    import-paths: ["/Users/valdi/Developer/BioSwift/.build/debug"]
+    temps-path: "/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build"
+    objects: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build/bio_swiftTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/valdi/Developer/BioSwift/.build/debug/ModuleCache"]
+    sources: ["/Users/valdi/Developer/BioSwift/Tests/BioSwiftTests/bio_swiftTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<BioSwiftPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/BioSwiftPackageTests.xctest/Contents/MacOS/BioSwiftPackageTests"
+    inputs: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build/bio_swiftTests.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o"]
+    outputs: ["/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftPackageTests.xctest/Contents/MacOS/BioSwiftPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L/Users/valdi/Developer/BioSwift/.build/debug","-o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftPackageTests.xctest/Contents/MacOS/BioSwiftPackageTests","-module-name","BioSwiftPackageTests","-Xlinker","-bundle","/Users/valdi/Developer/BioSwift/.build/debug/BioSwiftTests.build/bio_swiftTests.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o","/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o"]
+

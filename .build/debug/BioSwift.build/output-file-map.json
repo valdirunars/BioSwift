@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/master.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Nucleotide.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Utils.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/debug/BioSwift.build/Utils.swiftdeps"
+  }
+}
