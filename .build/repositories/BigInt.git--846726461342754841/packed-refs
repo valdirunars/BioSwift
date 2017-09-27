@@ -1,0 +1,18 @@
+# pack-refs with: peeled fully-peeled 
+edc08a7b7409dd84993d294a7d0a7a8e31a6951f refs/heads/gh-pages
+50208597616c8ab08729bbc33edf295bd06da27c refs/heads/master
+f2a3c28ce44a8e8ed9cc576d779861d4145bae0e refs/heads/swift4
+b6bfd468dc01fc21bc40bb632ebbdeda5f8674ba refs/tags/v1.0.0
+6d40d7319125a3a831887cfe0e7f59eadc78ce95 refs/tags/v1.1.0
+1c73e0756eda57282963feeecfa4b069401f95cc refs/tags/v1.2.0
+0ffb51540ef2067501e8d48f89a61738c250659c refs/tags/v1.2.1
+9bd0e5c1872e27ac019d1f67cf27fdef5166c813 refs/tags/v1.2.2
+a150521884c3586ab09e444b26724e04ed2ec557 refs/tags/v1.2.3
+69c0ae3fb52695c8940cff75451ab5f214adc5ec refs/tags/v1.3.0
+12b67ef6019aae79b8a59db3e4f9f0a761989b8f refs/tags/v2.0.0
+034e3c111a893de9259f9ce629f1d58a4295b918 refs/tags/v2.0.1
+4e5f2dd444c23b6c2827753d7a9946664e7bcbb7 refs/tags/v2.1.0
+209321a2c46e32d988dbe5c134b08fa2023fd4af refs/tags/v2.1.1
+972b37323eb85ab76e41d9ae38b90fa155760f16 refs/tags/v2.1.2
+65ed1ace6af0ab8bcd16037ccbeefeadb354b6a4 refs/tags/v2.2.0
+50208597616c8ab08729bbc33edf295bd06da27c refs/tags/v3.0.0

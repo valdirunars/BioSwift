@@ -1,0 +1,18 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "BigInt",
+      "reason": null,
+      "repositoryURL": "https://github.com/attaswift/BigInt.git",
+      "version": "2.2.0"
+    },
+    {
+      "package": "SipHash",
+      "reason": null,
+      "repositoryURL": "https://github.com/lorentey/SipHash",
+      "version": "1.1.2"
+    }
+  ],
+  "version": 1
+}

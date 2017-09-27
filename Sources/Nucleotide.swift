@@ -1,12 +1,74 @@
+//
+//  Nucleotide.swift
+//  BioSwift
+//
+//  Created by Þorvaldur Rúnarsson on 24/09/2017.
+//
+
 import Foundation
 
-enum Nucleotide: String, Equatable {
-    case a = "A"
-    case c = "C"
-    case g = "G"
-    case t = "T"
+public typealias Byte = UInt8
 
-    static prefix func !(nucleotide: Nucleotide) -> Nucleotide {
+public protocol CharConvertible {
+    init?(unit: CharConvertible)
+    var charValue: Character { get }
+}
+
+extension Character: CharConvertible {
+
+    public init?(unit: CharConvertible) {
+        self = unit.charValue
+    }
+
+    public var charValue: Character { return self }
+}
+
+public enum Nucleotide: Byte, CharConvertible, Equatable {
+    case a = 0
+    case c = 1
+    case g = 2
+    case t = 3
+    
+    public var charValue: Character {
+        switch self {
+        case .a:
+            return "A"
+        case .c:
+            return "C"
+        case .g:
+            return "G"
+        case .t:
+            return "T"
+        }
+    }
+
+    public init?(unit: CharConvertible) {
+        let val = unit.charValue
+        if val == "A" {
+            self = .a
+            return
+        } else if val == "C" {
+            self = .c
+            return
+        } else if val == "G" {
+            self = .g
+            return
+        } else if val == "T" {
+            self = .t
+            return
+        }
+        return nil
+    }
+
+    private static var all: [Nucleotide] {
+        return [ .a, .c, .g, .t ]
+    }
+
+    public static var random: Nucleotide {
+        return Nucleotide.all[Int(arc4random() % 4)]
+    }
+
+    public static prefix func !(nucleotide: Nucleotide) -> Nucleotide {
         switch nucleotide {
         case .a:
             return .t
@@ -19,7 +81,7 @@ enum Nucleotide: String, Equatable {
         }
     }
 
-    static func ==(left: Nucleotide, right: Nucleotide) -> Bool {
+    public static func == (left: Nucleotide, right: Nucleotide) -> Bool {
         return left.rawValue == right.rawValue
     }
 }

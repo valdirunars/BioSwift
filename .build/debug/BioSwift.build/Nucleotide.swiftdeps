@@ -1,60 +1,104 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "StringUnit"
 - "Nucleotide"
 - "!"
 - "=="
 provides-nominal:
+- "P8BioSwift10StringUnit"
+- "Vs9Character"
 - "O8BioSwift10Nucleotide"
 provides-member:
+- ["P8BioSwift10StringUnit", ""]
+- ["Vs9Character", ""]
 - ["O8BioSwift10Nucleotide", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "!"
+- !private "%"
 - "=="
+- "AssignmentPrecedence"
 - "Bool"
+- "Character"
 - "Equatable"
+- !private "ExtendedGraphemeClusterType"
+- "FloatLiteralType"
+- !private "Int"
+- "IntegerLiteralType"
 - "Nucleotide"
-- "String"
-- "StringLiteralType"
-- "UnicodeScalarType"
+- !private "StringLiteralType"
+- "StringUnit"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "arc4random"
 - !private "~="
 depends-member:
-- ["Ps9AnyObject", "init"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps7CVarArg", "hashValue"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Vs9Character", "Character"]
+- ["Vs9Character", "StringUnit"]
+- ["Vs9Character", "charValue"]
+- ["Vs9Character", "deinit"]
+- ["Vs9Character", "init"]
+- !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "charValue"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "charValue"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "charValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "charValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "charValue"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "Nucleotide"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "a"]
+- !private ["Ps9Equatable", "all"]
+- !private ["Ps9Equatable", "arc4random"]
 - ["Ps9Equatable", "c"]
+- ["Ps9Equatable", "charValue"]
 - ["Ps9Equatable", "g"]
 - ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", "t"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "charValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
-- ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "charValue"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "Nucleotide"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "a"]
+- !private ["Ps8Hashable", "all"]
+- !private ["Ps8Hashable", "arc4random"]
 - ["Ps8Hashable", "c"]
+- ["Ps8Hashable", "charValue"]
 - ["Ps8Hashable", "g"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
@@ -62,59 +106,98 @@ depends-member:
 - ["Ps8Hashable", "t"]
 - ["Ps8Hashable", ""]
 - !private ["Si", "hashValue"]
+- !private ["Si", "init"]
 - !private ["Ps7Integer", "hashValue"]
+- !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "charValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "hashValue"]
-- ["Ps10MirrorPath", "init"]
-- ["PSo8NSCoding", "init"]
-- ["PSo9NSCopying", "init"]
-- ["PSo16NSMutableCopying", "init"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo14NSSecureCoding", "init"]
-- ["CSo8NSString", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
 - ["O8BioSwift10Nucleotide", "!"]
 - ["O8BioSwift10Nucleotide", "=="]
 - ["O8BioSwift10Nucleotide", "Bool"]
+- ["O8BioSwift10Nucleotide", "Character"]
+- !private ["O8BioSwift10Nucleotide", "Int"]
 - ["O8BioSwift10Nucleotide", "Nucleotide"]
 - ["O8BioSwift10Nucleotide", "RawValue"]
+- ["O8BioSwift10Nucleotide", "StringUnit"]
 - ["O8BioSwift10Nucleotide", "_toAnyHashable"]
 - ["O8BioSwift10Nucleotide", "a"]
+- !private ["O8BioSwift10Nucleotide", "all"]
+- !private ["O8BioSwift10Nucleotide", "arc4random"]
 - ["O8BioSwift10Nucleotide", "c"]
+- ["O8BioSwift10Nucleotide", "charValue"]
 - ["O8BioSwift10Nucleotide", "deinit"]
 - ["O8BioSwift10Nucleotide", "g"]
 - ["O8BioSwift10Nucleotide", "hashValue"]
 - ["O8BioSwift10Nucleotide", "init"]
+- ["O8BioSwift10Nucleotide", "random"]
 - ["O8BioSwift10Nucleotide", "rawValue"]
 - ["O8BioSwift10Nucleotide", "t"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps16RawRepresentable", "Int"]
+- !private ["Ps16RawRepresentable", "Nucleotide"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
 - ["Ps16RawRepresentable", "a"]
+- !private ["Ps16RawRepresentable", "all"]
+- !private ["Ps16RawRepresentable", "arc4random"]
 - ["Ps16RawRepresentable", "c"]
+- ["Ps16RawRepresentable", "charValue"]
 - ["Ps16RawRepresentable", "g"]
 - ["Ps16RawRepresentable", "hashValue"]
 - ["Ps16RawRepresentable", "init"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", "t"]
 - ["Ps16RawRepresentable", ""]
+- !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps13SignedInteger", "init"]
 - !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "hashValue"]
-- ["SS", "init"]
-- ["Ps16TextOutputStream", "init"]
+- !private ["Ps10Strideable", "init"]
+- ["P8BioSwift10StringUnit", "Character"]
+- !private ["P8BioSwift10StringUnit", "Int"]
+- !private ["P8BioSwift10StringUnit", "Nucleotide"]
+- ["P8BioSwift10StringUnit", "StringUnit"]
+- ["P8BioSwift10StringUnit", "_toAnyHashable"]
+- ["P8BioSwift10StringUnit", "a"]
+- !private ["P8BioSwift10StringUnit", "all"]
+- !private ["P8BioSwift10StringUnit", "arc4random"]
+- ["P8BioSwift10StringUnit", "c"]
+- ["P8BioSwift10StringUnit", "charValue"]
+- ["P8BioSwift10StringUnit", "g"]
+- ["P8BioSwift10StringUnit", "hashValue"]
+- ["P8BioSwift10StringUnit", "init"]
+- ["P8BioSwift10StringUnit", "rawValue"]
+- ["P8BioSwift10StringUnit", "t"]
+- ["P8BioSwift10StringUnit", ""]
+- ["Ps20TextOutputStreamable", "charValue"]
 - ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "charValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
-- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "charValue"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- ["Ps33_ExpressibleByStringInterpolation", "init"]
-- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
+- !private ["Ps9_Hashable", "Nucleotide"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "a"]
+- !private ["Ps9_Hashable", "all"]
+- !private ["Ps9_Hashable", "arc4random"]
 - ["Ps9_Hashable", "c"]
+- ["Ps9_Hashable", "charValue"]
 - ["Ps9_Hashable", "g"]
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
@@ -122,62 +205,77 @@ depends-member:
 - ["Ps9_Hashable", "t"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps8_Integer", "init"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps14_SignedInteger", "init"]
 - !private ["Ps11_Strideable", "hashValue"]
+- !private ["Ps11_Strideable", "init"]
 depends-nominal:
-- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
 - !private "Ps17BitwiseOperations"
 - !private "Sb"
-- "Ps7CVarArg"
+- !private "Ps7CVarArg"
+- "Vs9Character"
+- !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "Ps25LosslessStringConvertible"
-- "Ps10MirrorPath"
-- "PSo8NSCoding"
-- "PSo9NSCopying"
-- "PSo16NSMutableCopying"
-- "PSo16NSObjectProtocol"
-- "PSo14NSSecureCoding"
-- "CSo8NSString"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - "O8BioSwift10Nucleotide"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - "Ps16RawRepresentable"
+- !private "Ps8Sequence"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- "SS"
-- "Ps16TextOutputStream"
+- "P8BioSwift10StringUnit"
 - "Ps20TextOutputStreamable"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- "Ps34_ExpressibleByBuiltinStringLiteral"
-- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- "Ps33_ExpressibleByStringInterpolation"
-- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- "Ps21_ObjectiveCBridgeable"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
@@ -195,4 +293,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "37ad7fac3be9e5f3f055381b5c1f6613"
+interface-hash: "403b33a989a55628e8f70197a3303a43"

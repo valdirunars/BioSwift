@@ -1,1 +1,1 @@
-{"dependencies": [], "version": 1}
+{"dependencies": [{"basedOn": null, "currentRevision": "65ed1ace6af0ab8bcd16037ccbeefeadb354b6a4", "currentVersion": "2.2.0", "repositoryURL": "https://github.com/attaswift/BigInt.git", "subpath": "BigInt.git--846726461342754841"}, {"basedOn": null, "currentRevision": "c046b2aa5f8edc3e861bfefde5f1c58ef8c653b4", "currentVersion": "1.1.2", "repositoryURL": "https://github.com/lorentey/SipHash", "subpath": "SipHash-2773658076000280943"}], "version": 1}
