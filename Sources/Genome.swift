@@ -19,7 +19,7 @@ public extension Slice where Base == Genome {
         var distance = 0
         self.iterate(with: collection) { (nuc1, nuc2) in
             if nuc1 != nuc2 {
-                distance = distance + 1
+                distance += 1
             }
         }
         return distance
@@ -53,5 +53,9 @@ public struct Genome {
             guard let nuc = Nucleotide(unit: element) else { continue }
             self.nucleotides.append(nuc)
         }
+    }
+    
+    public func hammingDistance<C: Collection>(_ collection: C) -> Int where C.Element == Nucleotide, C.Index == Index {
+        return self[0..<self.count].hammingDistance(collection)
     }
 }

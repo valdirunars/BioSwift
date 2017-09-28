@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import BigInt
 @testable import BioSwift
 
 class bio_swiftTests: XCTestCase {
@@ -77,6 +78,57 @@ class bio_swiftTests: XCTestCase {
             79
         ]
         XCTAssert(minimal == exp)
+    }
+    
+    func testFrequentPatternsWithDistance() {
+        let genome = Genome(sequence: "ACGTTGCATGTCGCATGATGCATGAGAGCT")
+        let frequent = genome.mostFrequentPatterns(length: 4, maxDistance: 1)
+            .sorted { (left, right) -> Bool in
+                left.asInteger() < right.asInteger()
+            }
+        
+        let expected = [ "GATG", "ATGC", "ATGT" ]
+            .map(Genome.init(sequence:))
+            .sorted { (left, right) -> Bool in
+                left.asInteger() < right.asInteger()
+            }
+        XCTAssert(frequent == expected)
+    }
+    
+    func testNeighbors() {
+        let genome = Genome(sequence: "AGT")
+        let neighbors = genome.neighbors(maxDistance: 1)
+            .sorted { (left, right) -> Bool in
+                left.asInteger() < right.asInteger()
+            }
+        
+        let expected = [
+            "AGT",
+            "CGT",
+            "TGT",
+            "GGT",
+            "ACT",
+            "AAT",
+            "ATT",
+            "AGA",
+            "AGC",
+            "AGG"
+        ]
+        .map(Genome.init(sequence:))
+        .sorted { (left, right) -> Bool in
+            left.asInteger() < right.asInteger()
+        }
+        
+        XCTAssert(neighbors == expected)
+    }
+    
+    func testIntConversion() {
+        let genome = Genome(sequence: "AGT")
+        let expInt = BigInt(integerLiteral: 11)
+        let expected = Genome(bigInt: expInt, length: 3)
+        XCTAssert(genome == expected)
+        XCTAssert(genome.asInteger() == expInt)
+        
     }
 
     static var allTests = [

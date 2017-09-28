@@ -6,3 +6,5 @@
 	precomposeunicode = true
 [remote "origin"]
 	url = https://github.com/attaswift/BigInt.git
+	fetch = +refs/*:refs/*
+	mirror = true

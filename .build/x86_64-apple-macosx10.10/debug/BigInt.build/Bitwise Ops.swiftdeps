@@ -1,0 +1,445 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "~"
+- "|="
+- "&="
+- "^="
+- "~"
+- "&"
+- "|"
+- "^"
+- "&="
+- "|="
+- "^="
+provides-nominal:
+provides-member:
+- ["6BigInt0A4UIntV", ""]
+- ["6BigIntAAV", ""]
+- ["6BigInt0A4UIntV", "~"]
+- ["6BigInt0A4UIntV", "|="]
+- ["6BigInt0A4UIntV", "&="]
+- ["6BigInt0A4UIntV", "^="]
+- ["6BigIntAAV", "~"]
+- ["6BigIntAAV", "&"]
+- ["6BigIntAAV", "|"]
+- ["6BigIntAAV", "^"]
+- ["6BigIntAAV", "&="]
+- ["6BigIntAAV", "|="]
+- ["6BigIntAAV", "^="]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- "&"
+- !private "&&"
+- "&="
+- !private "+"
+- !private "-"
+- !private "..<"
+- !private "=="
+- "AssignmentPrecedence"
+- "BigInt"
+- "BigUInt"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "Swift"
+- !private "UInt"
+- "^"
+- "^="
+- "|"
+- "|="
+- !private "||"
+- "~"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "reserveCapacity"]
+- !private ["Sa", "twosComplement"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "reserveCapacity"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s23BidirectionalCollectionP", "twosComplement"]
+- ["6BigIntAAV", "&"]
+- ["6BigIntAAV", "&="]
+- ["6BigIntAAV", "BigInt"]
+- !private ["6BigIntAAV", "BigUInt"]
+- !private ["6BigIntAAV", "Swift"]
+- !private ["6BigIntAAV", "UInt"]
+- ["6BigIntAAV", "^"]
+- ["6BigIntAAV", "^="]
+- !private ["6BigIntAAV", "deinit"]
+- !private ["6BigIntAAV", "init"]
+- !private ["6BigIntAAV", "magnitude"]
+- !private ["6BigIntAAV", "sign"]
+- !private ["6BigIntAAV", "words"]
+- ["6BigIntAAV", "|"]
+- ["6BigIntAAV", "|="]
+- ["6BigIntAAV", "~"]
+- ["6BigInt0A4UIntV", "&="]
+- ["6BigInt0A4UIntV", "BigUInt"]
+- !private ["6BigInt0A4UIntV", "Swift"]
+- ["6BigInt0A4UIntV", "^="]
+- !private ["6BigInt0A4UIntV", "count"]
+- !private ["6BigInt0A4UIntV", "deinit"]
+- !private ["6BigInt0A4UIntV", "init"]
+- !private ["6BigInt0A4UIntV", "reserveCapacity"]
+- !private ["6BigInt0A4UIntV", "subscript"]
+- !private ["6BigInt0A4UIntV", "words"]
+- ["6BigInt0A4UIntV", "|="]
+- ["6BigInt0A4UIntV", "~"]
+- !private ["s13BinaryIntegerP", "BigInt"]
+- !private ["s13BinaryIntegerP", "BigUInt"]
+- !private ["s13BinaryIntegerP", "Swift"]
+- !private ["s13BinaryIntegerP", "count"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "magnitude"]
+- !private ["s13BinaryIntegerP", "reserveCapacity"]
+- !private ["s13BinaryIntegerP", "sign"]
+- !private ["s13BinaryIntegerP", "subscript"]
+- !private ["s13BinaryIntegerP", "words"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- !private ["s7CVarArgP", "twosComplement"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "reserveCapacity"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "twosComplement"]
+- !private ["s10ComparableP", "BigInt"]
+- !private ["s10ComparableP", "BigUInt"]
+- !private ["s10ComparableP", "Swift"]
+- !private ["s10ComparableP", "count"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "magnitude"]
+- !private ["s10ComparableP", "reserveCapacity"]
+- !private ["s10ComparableP", "sign"]
+- !private ["s10ComparableP", "subscript"]
+- !private ["s10ComparableP", "words"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "minus"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "twosComplement"]
+- !private ["s29CustomPlaygroundQuickLookableP", "BigInt"]
+- !private ["s29CustomPlaygroundQuickLookableP", "BigUInt"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Swift"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "count"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "magnitude"]
+- !private ["s29CustomPlaygroundQuickLookableP", "reserveCapacity"]
+- !private ["s29CustomPlaygroundQuickLookableP", "sign"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "words"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "minus"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- !private ["s17CustomReflectableP", "twosComplement"]
+- !private ["s23CustomStringConvertibleP", "BigInt"]
+- !private ["s23CustomStringConvertibleP", "BigUInt"]
+- !private ["s23CustomStringConvertibleP", "Swift"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "magnitude"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- !private ["s23CustomStringConvertibleP", "sign"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "twosComplement"]
+- !private ["s23CustomStringConvertibleP", "words"]
+- !private ["s9DecodableP", "BigInt"]
+- !private ["s9DecodableP", "BigUInt"]
+- !private ["s9DecodableP", "Swift"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "magnitude"]
+- !private ["s9DecodableP", "minus"]
+- !private ["s9DecodableP", "reserveCapacity"]
+- !private ["s9DecodableP", "sign"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "twosComplement"]
+- !private ["s9DecodableP", "words"]
+- !private ["s9EncodableP", "BigInt"]
+- !private ["s9EncodableP", "BigUInt"]
+- !private ["s9EncodableP", "Swift"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "magnitude"]
+- !private ["s9EncodableP", "minus"]
+- !private ["s9EncodableP", "reserveCapacity"]
+- !private ["s9EncodableP", "sign"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "twosComplement"]
+- !private ["s9EncodableP", "words"]
+- !private ["s9EquatableP", "BigInt"]
+- !private ["s9EquatableP", "BigUInt"]
+- !private ["s9EquatableP", "Swift"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "magnitude"]
+- ["s9EquatableP", "minus"]
+- ["s9EquatableP", "plus"]
+- !private ["s9EquatableP", "reserveCapacity"]
+- !private ["s9EquatableP", "sign"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "words"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s25ExpressibleByArrayLiteralP", "twosComplement"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "BigInt"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "BigUInt"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Swift"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "magnitude"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "reserveCapacity"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sign"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "words"]
+- !private ["s27ExpressibleByIntegerLiteralP", "BigInt"]
+- !private ["s27ExpressibleByIntegerLiteralP", "BigUInt"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Swift"]
+- !private ["s27ExpressibleByIntegerLiteralP", "count"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "magnitude"]
+- !private ["s27ExpressibleByIntegerLiteralP", "reserveCapacity"]
+- !private ["s27ExpressibleByIntegerLiteralP", "sign"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "words"]
+- !private ["s23ExpressibleByNilLiteralP", "minus"]
+- !private ["s26ExpressibleByStringLiteralP", "BigInt"]
+- !private ["s26ExpressibleByStringLiteralP", "BigUInt"]
+- !private ["s26ExpressibleByStringLiteralP", "Swift"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "magnitude"]
+- !private ["s26ExpressibleByStringLiteralP", "reserveCapacity"]
+- !private ["s26ExpressibleByStringLiteralP", "sign"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
+- !private ["s26ExpressibleByStringLiteralP", "words"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "BigInt"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "BigUInt"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Swift"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "magnitude"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "reserveCapacity"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sign"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "words"]
+- !private ["s8HashableP", "BigInt"]
+- !private ["s8HashableP", "BigUInt"]
+- !private ["s8HashableP", "Swift"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "magnitude"]
+- ["s8HashableP", "minus"]
+- ["s8HashableP", "plus"]
+- !private ["s8HashableP", "reserveCapacity"]
+- !private ["s8HashableP", "sign"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "words"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "reserveCapacity"]
+- !private ["s17MutableCollectionP", "twosComplement"]
+- !private ["s7NumericP", "BigInt"]
+- !private ["s7NumericP", "BigUInt"]
+- !private ["s7NumericP", "Swift"]
+- !private ["s7NumericP", "count"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "magnitude"]
+- !private ["s7NumericP", "reserveCapacity"]
+- !private ["s7NumericP", "sign"]
+- !private ["s7NumericP", "subscript"]
+- !private ["s7NumericP", "words"]
+- !private ["Sq", "minus"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "reserveCapacity"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "twosComplement"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "reserveCapacity"]
+- !private ["s26RangeReplaceableCollectionP", "twosComplement"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "reserveCapacity"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "twosComplement"]
+- !private ["6BigIntAAV4SignO", "deinit"]
+- ["6BigIntAAV4SignO", "minus"]
+- ["6BigIntAAV4SignO", "plus"]
+- !private ["s13SignedIntegerP", "BigInt"]
+- !private ["s13SignedIntegerP", "BigUInt"]
+- !private ["s13SignedIntegerP", "Swift"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedIntegerP", "magnitude"]
+- !private ["s13SignedIntegerP", "sign"]
+- !private ["s13SignedIntegerP", "words"]
+- !private ["s13SignedNumericP", "BigInt"]
+- !private ["s13SignedNumericP", "BigUInt"]
+- !private ["s13SignedNumericP", "Swift"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "magnitude"]
+- !private ["s13SignedNumericP", "sign"]
+- !private ["s13SignedNumericP", "words"]
+- !private ["7SipHash0A8HashableP", "BigInt"]
+- !private ["7SipHash0A8HashableP", "BigUInt"]
+- !private ["7SipHash0A8HashableP", "Swift"]
+- !private ["7SipHash0A8HashableP", "count"]
+- !private ["7SipHash0A8HashableP", "init"]
+- !private ["7SipHash0A8HashableP", "magnitude"]
+- !private ["7SipHash0A8HashableP", "reserveCapacity"]
+- !private ["7SipHash0A8HashableP", "sign"]
+- !private ["7SipHash0A8HashableP", "subscript"]
+- !private ["7SipHash0A8HashableP", "words"]
+- !private ["s10StrideableP", "BigInt"]
+- !private ["s10StrideableP", "BigUInt"]
+- !private ["s10StrideableP", "Swift"]
+- !private ["s10StrideableP", "count"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "magnitude"]
+- !private ["s10StrideableP", "reserveCapacity"]
+- !private ["s10StrideableP", "sign"]
+- !private ["s10StrideableP", "subscript"]
+- !private ["s10StrideableP", "words"]
+- !private ["s15UnsignedIntegerP", "BigUInt"]
+- !private ["s15UnsignedIntegerP", "Swift"]
+- !private ["s15UnsignedIntegerP", "count"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s15UnsignedIntegerP", "reserveCapacity"]
+- !private ["s15UnsignedIntegerP", "subscript"]
+- !private ["s15UnsignedIntegerP", "words"]
+- !private ["6BigInt0A4UIntV5WordsV", "deinit"]
+- !private ["6BigInt0A4UIntV5WordsV", "map"]
+- !private ["6BigIntAAV5WordsV", "deinit"]
+- !private ["6BigIntAAV5WordsV", "subscript"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "reserveCapacity"]
+- !private ["s14_ArrayProtocolP", "twosComplement"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "map"]
+- !private ["s23_BidirectionalIndexableP", "reserveCapacity"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "twosComplement"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "twosComplement"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "map"]
+- !private ["s10_IndexableP", "reserveCapacity"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "twosComplement"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "map"]
+- !private ["s14_IndexableBaseP", "reserveCapacity"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "twosComplement"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "reserveCapacity"]
+- !private ["s17_MutableIndexableP", "twosComplement"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "minus"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+- !private ["s21_ObjectiveCBridgeableP", "twosComplement"]
+- !private ["s26_OptionalNilComparisonTypeV", "minus"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "map"]
+- !private ["s22_RandomAccessIndexableP", "reserveCapacity"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "twosComplement"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "reserveCapacity"]
+- !private ["s26_RangeReplaceableIndexableP", "twosComplement"]
+- !private ["s11_StrideableP", "BigInt"]
+- !private ["s11_StrideableP", "BigUInt"]
+- !private ["s11_StrideableP", "Swift"]
+- !private ["s11_StrideableP", "count"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "magnitude"]
+- !private ["s11_StrideableP", "reserveCapacity"]
+- !private ["s11_StrideableP", "sign"]
+- !private ["s11_StrideableP", "subscript"]
+- !private ["s11_StrideableP", "words"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- "6BigIntAAV"
+- "6BigInt0A4UIntV"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s17MutableCollectionP"
+- !private "s7NumericP"
+- !private "Sq"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- "6BigIntAAV4SignO"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "7SipHash0A8HashableP"
+- !private "s10StrideableP"
+- !private "s15UnsignedIntegerP"
+- !private "6BigInt0A4UIntV5WordsV"
+- !private "6BigIntAAV5WordsV"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_OptionalNilComparisonTypeV"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/SipHash.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "1cf631062dfe41bb67d91cb3038d7a94"

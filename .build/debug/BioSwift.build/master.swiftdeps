@@ -1,8 +1,0 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "d802ba4acae810eaf3d6c448c6fe495c"
-build_time: [559757675, 358429000]
-inputs:
-  "/Users/valdi/Developer/BioSwift/Sources/Extensions.swift": !dirty [9223372036854775807, 0]
-  "/Users/valdi/Developer/BioSwift/Sources/Genome.swift": !dirty [9223372036854775807, 0]
-  "/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift": [559757597, 0]
-  "/Users/valdi/Developer/BioSwift/Sources/Utils.swift": [559603563, 0]

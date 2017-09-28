@@ -1,0 +1,518 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "*"
+- "*="
+- "*"
+- "*="
+provides-nominal:
+provides-member:
+- ["6BigInt0A4UIntV", ""]
+- ["6BigIntAAV", ""]
+- ["6BigInt0A4UIntV", "multiply"]
+- ["6BigInt0A4UIntV", "multiplied"]
+- ["6BigInt0A4UIntV", "multiplyAndAdd"]
+- ["6BigInt0A4UIntV", "multiplied"]
+- ["6BigInt0A4UIntV", "directMultiplicationLimit"]
+- ["6BigInt0A4UIntV", "*"]
+- ["6BigInt0A4UIntV", "*="]
+- ["6BigIntAAV", "*"]
+- ["6BigIntAAV", "*="]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&&"
+- "*"
+- "*="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "<"
+- !private "<="
+- !private "=="
+- !private ">"
+- !private ">="
+- "AssignmentPrecedence"
+- "BigInt"
+- "BigUInt"
+- !private "BooleanLiteralType"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "StringLiteralType"
+- !private "Swift"
+- "TernaryPrecedence"
+- !private "precondition"
+- !private "||"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "reversed"]
+- ["6BigIntAAV", "*"]
+- ["6BigIntAAV", "*="]
+- ["6BigIntAAV", "BigInt"]
+- !private ["6BigIntAAV", "deinit"]
+- !private ["6BigIntAAV", "init"]
+- !private ["6BigIntAAV", "magnitude"]
+- !private ["6BigIntAAV", "sign"]
+- ["6BigInt0A4UIntV", "*"]
+- ["6BigInt0A4UIntV", "*="]
+- ["6BigInt0A4UIntV", "BigUInt"]
+- ["6BigInt0A4UIntV", "Int"]
+- !private ["6BigInt0A4UIntV", "Swift"]
+- ["6BigInt0A4UIntV", "Word"]
+- !private ["6BigInt0A4UIntV", "add"]
+- !private ["6BigInt0A4UIntV", "count"]
+- !private ["6BigInt0A4UIntV", "deinit"]
+- ["6BigInt0A4UIntV", "directMultiplicationLimit"]
+- !private ["6BigInt0A4UIntV", "init"]
+- !private ["6BigInt0A4UIntV", "middleIndex"]
+- ["6BigInt0A4UIntV", "multiplied"]
+- ["6BigInt0A4UIntV", "multiply"]
+- ["6BigInt0A4UIntV", "multiplyAndAdd"]
+- !private ["6BigInt0A4UIntV", "precondition"]
+- !private ["6BigInt0A4UIntV", "split"]
+- !private ["6BigInt0A4UIntV", "subscript"]
+- !private ["6BigInt0A4UIntV", "subtract"]
+- !private ["s13BinaryIntegerP", "BigInt"]
+- !private ["s13BinaryIntegerP", "BigUInt"]
+- !private ["s13BinaryIntegerP", "Swift"]
+- !private ["s13BinaryIntegerP", "add"]
+- !private ["s13BinaryIntegerP", "addingReportingOverflow"]
+- !private ["s13BinaryIntegerP", "count"]
+- !private ["s13BinaryIntegerP", "directMultiplicationLimit"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "magnitude"]
+- !private ["s13BinaryIntegerP", "middleIndex"]
+- !private ["s13BinaryIntegerP", "multiplied"]
+- !private ["s13BinaryIntegerP", "multipliedFullWidth"]
+- !private ["s13BinaryIntegerP", "multiply"]
+- !private ["s13BinaryIntegerP", "multiplyAndAdd"]
+- !private ["s13BinaryIntegerP", "precondition"]
+- !private ["s13BinaryIntegerP", "sign"]
+- !private ["s13BinaryIntegerP", "split"]
+- !private ["s13BinaryIntegerP", "subscript"]
+- !private ["s13BinaryIntegerP", "subtract"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addingReportingOverflow"]
+- !private ["s7CVarArgP", "multipliedFullWidth"]
+- !private ["s10CollectionP", "reversed"]
+- !private ["s10ComparableP", "BigInt"]
+- !private ["s10ComparableP", "BigUInt"]
+- !private ["s10ComparableP", "Swift"]
+- !private ["s10ComparableP", "add"]
+- !private ["s10ComparableP", "addingReportingOverflow"]
+- !private ["s10ComparableP", "count"]
+- !private ["s10ComparableP", "directMultiplicationLimit"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "magnitude"]
+- !private ["s10ComparableP", "middleIndex"]
+- !private ["s10ComparableP", "multiplied"]
+- !private ["s10ComparableP", "multipliedFullWidth"]
+- !private ["s10ComparableP", "multiply"]
+- !private ["s10ComparableP", "multiplyAndAdd"]
+- !private ["s10ComparableP", "precondition"]
+- !private ["s10ComparableP", "sign"]
+- !private ["s10ComparableP", "split"]
+- !private ["s10ComparableP", "subscript"]
+- !private ["s10ComparableP", "subtract"]
+- !private ["s14CountableRangeV", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s29CustomPlaygroundQuickLookableP", "BigInt"]
+- !private ["s29CustomPlaygroundQuickLookableP", "BigUInt"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Swift"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "add"]
+- !private ["s29CustomPlaygroundQuickLookableP", "addingReportingOverflow"]
+- !private ["s29CustomPlaygroundQuickLookableP", "count"]
+- !private ["s29CustomPlaygroundQuickLookableP", "directMultiplicationLimit"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "magnitude"]
+- !private ["s29CustomPlaygroundQuickLookableP", "middleIndex"]
+- !private ["s29CustomPlaygroundQuickLookableP", "multiplied"]
+- !private ["s29CustomPlaygroundQuickLookableP", "multipliedFullWidth"]
+- !private ["s29CustomPlaygroundQuickLookableP", "multiply"]
+- !private ["s29CustomPlaygroundQuickLookableP", "multiplyAndAdd"]
+- !private ["s29CustomPlaygroundQuickLookableP", "precondition"]
+- !private ["s29CustomPlaygroundQuickLookableP", "sign"]
+- !private ["s29CustomPlaygroundQuickLookableP", "split"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtract"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "addingReportingOverflow"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "multipliedFullWidth"]
+- !private ["s17CustomReflectableP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "BigInt"]
+- !private ["s23CustomStringConvertibleP", "BigUInt"]
+- !private ["s23CustomStringConvertibleP", "Swift"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "addingReportingOverflow"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "directMultiplicationLimit"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "magnitude"]
+- !private ["s23CustomStringConvertibleP", "middleIndex"]
+- !private ["s23CustomStringConvertibleP", "multiplied"]
+- !private ["s23CustomStringConvertibleP", "multipliedFullWidth"]
+- !private ["s23CustomStringConvertibleP", "multiply"]
+- !private ["s23CustomStringConvertibleP", "multiplyAndAdd"]
+- !private ["s23CustomStringConvertibleP", "precondition"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "sign"]
+- !private ["s23CustomStringConvertibleP", "split"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subtract"]
+- !private ["s9DecodableP", "BigInt"]
+- !private ["s9DecodableP", "BigUInt"]
+- !private ["s9DecodableP", "Swift"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "add"]
+- !private ["s9DecodableP", "addingReportingOverflow"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "directMultiplicationLimit"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "magnitude"]
+- !private ["s9DecodableP", "middleIndex"]
+- !private ["s9DecodableP", "multiplied"]
+- !private ["s9DecodableP", "multipliedFullWidth"]
+- !private ["s9DecodableP", "multiply"]
+- !private ["s9DecodableP", "multiplyAndAdd"]
+- !private ["s9DecodableP", "precondition"]
+- !private ["s9DecodableP", "sign"]
+- !private ["s9DecodableP", "split"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "subtract"]
+- !private ["s9EncodableP", "BigInt"]
+- !private ["s9EncodableP", "BigUInt"]
+- !private ["s9EncodableP", "Swift"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "add"]
+- !private ["s9EncodableP", "addingReportingOverflow"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "directMultiplicationLimit"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "magnitude"]
+- !private ["s9EncodableP", "middleIndex"]
+- !private ["s9EncodableP", "multiplied"]
+- !private ["s9EncodableP", "multipliedFullWidth"]
+- !private ["s9EncodableP", "multiply"]
+- !private ["s9EncodableP", "multiplyAndAdd"]
+- !private ["s9EncodableP", "precondition"]
+- !private ["s9EncodableP", "sign"]
+- !private ["s9EncodableP", "split"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "subtract"]
+- !private ["s9EquatableP", "BigInt"]
+- !private ["s9EquatableP", "BigUInt"]
+- !private ["s9EquatableP", "Swift"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "add"]
+- !private ["s9EquatableP", "addingReportingOverflow"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "directMultiplicationLimit"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "magnitude"]
+- !private ["s9EquatableP", "middleIndex"]
+- !private ["s9EquatableP", "minus"]
+- !private ["s9EquatableP", "multiplied"]
+- !private ["s9EquatableP", "multipliedFullWidth"]
+- !private ["s9EquatableP", "multiply"]
+- !private ["s9EquatableP", "multiplyAndAdd"]
+- !private ["s9EquatableP", "plus"]
+- !private ["s9EquatableP", "precondition"]
+- !private ["s9EquatableP", "reversed"]
+- !private ["s9EquatableP", "sign"]
+- !private ["s9EquatableP", "split"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "subtract"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "BigInt"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "BigUInt"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Swift"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "add"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "directMultiplicationLimit"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "magnitude"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "middleIndex"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "multiplied"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "multiply"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "multiplyAndAdd"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "precondition"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sign"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtract"]
+- !private ["s27ExpressibleByIntegerLiteralP", "BigInt"]
+- !private ["s27ExpressibleByIntegerLiteralP", "BigUInt"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Swift"]
+- !private ["s27ExpressibleByIntegerLiteralP", "add"]
+- !private ["s27ExpressibleByIntegerLiteralP", "addingReportingOverflow"]
+- !private ["s27ExpressibleByIntegerLiteralP", "count"]
+- !private ["s27ExpressibleByIntegerLiteralP", "directMultiplicationLimit"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "magnitude"]
+- !private ["s27ExpressibleByIntegerLiteralP", "middleIndex"]
+- !private ["s27ExpressibleByIntegerLiteralP", "multiplied"]
+- !private ["s27ExpressibleByIntegerLiteralP", "multipliedFullWidth"]
+- !private ["s27ExpressibleByIntegerLiteralP", "multiply"]
+- !private ["s27ExpressibleByIntegerLiteralP", "multiplyAndAdd"]
+- !private ["s27ExpressibleByIntegerLiteralP", "precondition"]
+- !private ["s27ExpressibleByIntegerLiteralP", "sign"]
+- !private ["s27ExpressibleByIntegerLiteralP", "split"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtract"]
+- !private ["s26ExpressibleByStringLiteralP", "BigInt"]
+- !private ["s26ExpressibleByStringLiteralP", "BigUInt"]
+- !private ["s26ExpressibleByStringLiteralP", "Swift"]
+- !private ["s26ExpressibleByStringLiteralP", "add"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "directMultiplicationLimit"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "magnitude"]
+- !private ["s26ExpressibleByStringLiteralP", "middleIndex"]
+- !private ["s26ExpressibleByStringLiteralP", "multiplied"]
+- !private ["s26ExpressibleByStringLiteralP", "multiply"]
+- !private ["s26ExpressibleByStringLiteralP", "multiplyAndAdd"]
+- !private ["s26ExpressibleByStringLiteralP", "precondition"]
+- !private ["s26ExpressibleByStringLiteralP", "sign"]
+- !private ["s26ExpressibleByStringLiteralP", "split"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
+- !private ["s26ExpressibleByStringLiteralP", "subtract"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "BigInt"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "BigUInt"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Swift"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "add"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "directMultiplicationLimit"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "magnitude"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "middleIndex"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "multiplied"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "multiply"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "multiplyAndAdd"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "precondition"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sign"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "split"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtract"]
+- !private ["s17FixedWidthIntegerP", "addingReportingOverflow"]
+- !private ["s17FixedWidthIntegerP", "multipliedFullWidth"]
+- !private ["s8HashableP", "BigInt"]
+- !private ["s8HashableP", "BigUInt"]
+- !private ["s8HashableP", "Swift"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "add"]
+- !private ["s8HashableP", "addingReportingOverflow"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "directMultiplicationLimit"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "magnitude"]
+- !private ["s8HashableP", "middleIndex"]
+- !private ["s8HashableP", "minus"]
+- !private ["s8HashableP", "multiplied"]
+- !private ["s8HashableP", "multipliedFullWidth"]
+- !private ["s8HashableP", "multiply"]
+- !private ["s8HashableP", "multiplyAndAdd"]
+- !private ["s8HashableP", "plus"]
+- !private ["s8HashableP", "precondition"]
+- !private ["s8HashableP", "sign"]
+- !private ["s8HashableP", "split"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "subtract"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "addingReportingOverflow"]
+- !private ["s25LosslessStringConvertibleP", "multipliedFullWidth"]
+- !private ["s7NumericP", "BigInt"]
+- !private ["s7NumericP", "BigUInt"]
+- !private ["s7NumericP", "Swift"]
+- !private ["s7NumericP", "add"]
+- !private ["s7NumericP", "addingReportingOverflow"]
+- !private ["s7NumericP", "count"]
+- !private ["s7NumericP", "directMultiplicationLimit"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "magnitude"]
+- !private ["s7NumericP", "middleIndex"]
+- !private ["s7NumericP", "multiplied"]
+- !private ["s7NumericP", "multipliedFullWidth"]
+- !private ["s7NumericP", "multiply"]
+- !private ["s7NumericP", "multiplyAndAdd"]
+- !private ["s7NumericP", "precondition"]
+- !private ["s7NumericP", "sign"]
+- !private ["s7NumericP", "split"]
+- !private ["s7NumericP", "subscript"]
+- !private ["s7NumericP", "subtract"]
+- !private ["s22RandomAccessCollectionP", "reversed"]
+- !private ["s5RangeV", "reversed"]
+- !private ["s15RangeExpressionP", "reversed"]
+- !private ["s8SequenceP", "reversed"]
+- !private ["6BigIntAAV4SignO", "deinit"]
+- !private ["6BigIntAAV4SignO", "minus"]
+- !private ["6BigIntAAV4SignO", "plus"]
+- !private ["s13SignedIntegerP", "BigInt"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedIntegerP", "magnitude"]
+- !private ["s13SignedIntegerP", "sign"]
+- !private ["s13SignedNumericP", "BigInt"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "magnitude"]
+- !private ["s13SignedNumericP", "sign"]
+- !private ["7SipHash0A8HashableP", "BigInt"]
+- !private ["7SipHash0A8HashableP", "BigUInt"]
+- !private ["7SipHash0A8HashableP", "Swift"]
+- !private ["7SipHash0A8HashableP", "add"]
+- !private ["7SipHash0A8HashableP", "count"]
+- !private ["7SipHash0A8HashableP", "directMultiplicationLimit"]
+- !private ["7SipHash0A8HashableP", "init"]
+- !private ["7SipHash0A8HashableP", "magnitude"]
+- !private ["7SipHash0A8HashableP", "middleIndex"]
+- !private ["7SipHash0A8HashableP", "multiplied"]
+- !private ["7SipHash0A8HashableP", "multiply"]
+- !private ["7SipHash0A8HashableP", "multiplyAndAdd"]
+- !private ["7SipHash0A8HashableP", "precondition"]
+- !private ["7SipHash0A8HashableP", "sign"]
+- !private ["7SipHash0A8HashableP", "split"]
+- !private ["7SipHash0A8HashableP", "subscript"]
+- !private ["7SipHash0A8HashableP", "subtract"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "BigInt"]
+- !private ["s10StrideableP", "BigUInt"]
+- !private ["s10StrideableP", "Swift"]
+- !private ["s10StrideableP", "add"]
+- !private ["s10StrideableP", "addingReportingOverflow"]
+- !private ["s10StrideableP", "count"]
+- !private ["s10StrideableP", "directMultiplicationLimit"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "magnitude"]
+- !private ["s10StrideableP", "middleIndex"]
+- !private ["s10StrideableP", "multiplied"]
+- !private ["s10StrideableP", "multipliedFullWidth"]
+- !private ["s10StrideableP", "multiply"]
+- !private ["s10StrideableP", "multiplyAndAdd"]
+- !private ["s10StrideableP", "precondition"]
+- !private ["s10StrideableP", "sign"]
+- !private ["s10StrideableP", "split"]
+- !private ["s10StrideableP", "subscript"]
+- !private ["s10StrideableP", "subtract"]
+- !private ["Su", "addingReportingOverflow"]
+- !private ["Su", "multipliedFullWidth"]
+- !private ["s15UnsignedIntegerP", "BigUInt"]
+- !private ["s15UnsignedIntegerP", "Swift"]
+- !private ["s15UnsignedIntegerP", "add"]
+- !private ["s15UnsignedIntegerP", "addingReportingOverflow"]
+- !private ["s15UnsignedIntegerP", "count"]
+- !private ["s15UnsignedIntegerP", "directMultiplicationLimit"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s15UnsignedIntegerP", "middleIndex"]
+- !private ["s15UnsignedIntegerP", "multiplied"]
+- !private ["s15UnsignedIntegerP", "multipliedFullWidth"]
+- !private ["s15UnsignedIntegerP", "multiply"]
+- !private ["s15UnsignedIntegerP", "multiplyAndAdd"]
+- !private ["s15UnsignedIntegerP", "precondition"]
+- !private ["s15UnsignedIntegerP", "split"]
+- !private ["s15UnsignedIntegerP", "subscript"]
+- !private ["s15UnsignedIntegerP", "subtract"]
+- !private ["s23_BidirectionalIndexableP", "reversed"]
+- !private ["s18_BitwiseOperationsP", "addingReportingOverflow"]
+- !private ["s18_BitwiseOperationsP", "multipliedFullWidth"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "addingReportingOverflow"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "multipliedFullWidth"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s10_IndexableP", "reversed"]
+- !private ["s14_IndexableBaseP", "reversed"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addingReportingOverflow"]
+- !private ["s21_ObjectiveCBridgeableP", "multipliedFullWidth"]
+- !private ["s22_RandomAccessIndexableP", "reversed"]
+- !private ["s11_StrideableP", "BigInt"]
+- !private ["s11_StrideableP", "BigUInt"]
+- !private ["s11_StrideableP", "Swift"]
+- !private ["s11_StrideableP", "add"]
+- !private ["s11_StrideableP", "addingReportingOverflow"]
+- !private ["s11_StrideableP", "count"]
+- !private ["s11_StrideableP", "directMultiplicationLimit"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "magnitude"]
+- !private ["s11_StrideableP", "middleIndex"]
+- !private ["s11_StrideableP", "multiplied"]
+- !private ["s11_StrideableP", "multipliedFullWidth"]
+- !private ["s11_StrideableP", "multiply"]
+- !private ["s11_StrideableP", "multiplyAndAdd"]
+- !private ["s11_StrideableP", "precondition"]
+- !private ["s11_StrideableP", "sign"]
+- !private ["s11_StrideableP", "split"]
+- !private ["s11_StrideableP", "subscript"]
+- !private ["s11_StrideableP", "subtract"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "6BigIntAAV"
+- "6BigInt0A4UIntV"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s14CountableRangeV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s5RangeV"
+- !private "s15RangeExpressionP"
+- !private "s8SequenceP"
+- !private "6BigIntAAV4SignO"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "7SipHash0A8HashableP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "Su"
+- !private "s15UnsignedIntegerP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/SipHash.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d81f964b23d9cb0612809fd257f90b6d"

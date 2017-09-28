@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "e99f0cd216a0823b830714a23763ab81"
+build_time: [1506537096, 545535000]
+inputs:
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/SipHash/Primitive Types.swift": [1506536152, 0]
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/SipHash/RandomUInt64.swift": [1506536152, 0]
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/SipHash/SipHashable.swift": [1506536152, 0]
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/SipHash/SipHasher.swift": [1506536152, 0]

@@ -60,7 +60,7 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         return nil
     }
 
-    private static var all: [Nucleotide] {
+    internal static var all: [Nucleotide] {
         return [ .a, .c, .g, .t ]
     }
 

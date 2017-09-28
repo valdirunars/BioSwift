@@ -1,0 +1,485 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BigInt"
+provides-nominal:
+- "6BigIntAAV"
+- "6BigIntAAV4SignO"
+provides-member:
+- ["6BigIntAAV", ""]
+- ["6BigIntAAV4SignO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "%"
+- "%="
+- "&"
+- "&="
+- "*"
+- "*="
+- "+"
+- "+="
+- "-"
+- "-="
+- "/"
+- "/="
+- "<<"
+- "<<="
+- "=="
+- ">>"
+- ">>="
+- "AssignmentPrecedence"
+- "BigInt"
+- "BigUInt"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "SignedInteger"
+- "TernaryPrecedence"
+- "^"
+- "^="
+- "|"
+- "|="
+- "~"
+depends-member:
+- ["6BigIntAAV", "BigInt"]
+- ["6BigIntAAV", "BigUInt"]
+- ["6BigIntAAV", "Bool"]
+- ["6BigIntAAV", "Magnitude"]
+- ["6BigIntAAV", "Sign"]
+- ["6BigIntAAV", "Word"]
+- ["6BigIntAAV", "Words"]
+- ["6BigIntAAV", "_lowWord"]
+- ["6BigIntAAV", "_maskingAdd"]
+- ["6BigIntAAV", "_maskingSubtract"]
+- ["6BigIntAAV", "bitWidth"]
+- ["6BigIntAAV", "deinit"]
+- ["6BigIntAAV", "hashValue"]
+- ["6BigIntAAV", "init"]
+- ["6BigIntAAV", "isSigned"]
+- ["6BigIntAAV", "isZero"]
+- ["6BigIntAAV", "magnitude"]
+- ["6BigIntAAV", "negate"]
+- ["6BigIntAAV", "quotientAndRemainder"]
+- ["6BigIntAAV", "sign"]
+- ["6BigIntAAV", "signum"]
+- ["6BigIntAAV", "trailingZeroBitCount"]
+- ["6BigIntAAV", "words"]
+- ["6BigInt0A4UIntV", "Word"]
+- ["6BigInt0A4UIntV", "deinit"]
+- !private ["6BigInt0A4UIntV", "isZero"]
+- ["s13BinaryIntegerP", "Magnitude"]
+- ["s13BinaryIntegerP", "Word"]
+- ["s13BinaryIntegerP", "Words"]
+- ["s13BinaryIntegerP", "_lowWord"]
+- ["s13BinaryIntegerP", "_maskingAdd"]
+- ["s13BinaryIntegerP", "_maskingSubtract"]
+- ["s13BinaryIntegerP", "bitWidth"]
+- ["s13BinaryIntegerP", "hashValue"]
+- ["s13BinaryIntegerP", "init"]
+- ["s13BinaryIntegerP", "isSigned"]
+- !private ["s13BinaryIntegerP", "isZero"]
+- ["s13BinaryIntegerP", "magnitude"]
+- ["s13BinaryIntegerP", "negate"]
+- ["s13BinaryIntegerP", "quotientAndRemainder"]
+- !private ["s13BinaryIntegerP", "sign"]
+- ["s13BinaryIntegerP", "signum"]
+- ["s13BinaryIntegerP", "trailingZeroBitCount"]
+- ["s13BinaryIntegerP", "words"]
+- ["s13BinaryIntegerP", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- ["s10ComparableP", "Magnitude"]
+- ["s10ComparableP", "Word"]
+- ["s10ComparableP", "Words"]
+- ["s10ComparableP", "_lowWord"]
+- ["s10ComparableP", "_maskingAdd"]
+- ["s10ComparableP", "_maskingSubtract"]
+- ["s10ComparableP", "bitWidth"]
+- ["s10ComparableP", "hashValue"]
+- ["s10ComparableP", "init"]
+- ["s10ComparableP", "isSigned"]
+- !private ["s10ComparableP", "isZero"]
+- ["s10ComparableP", "magnitude"]
+- ["s10ComparableP", "negate"]
+- ["s10ComparableP", "quotientAndRemainder"]
+- !private ["s10ComparableP", "sign"]
+- ["s10ComparableP", "signum"]
+- ["s10ComparableP", "trailingZeroBitCount"]
+- ["s10ComparableP", "words"]
+- ["s29CustomPlaygroundQuickLookableP", "Magnitude"]
+- ["s29CustomPlaygroundQuickLookableP", "Word"]
+- ["s29CustomPlaygroundQuickLookableP", "Words"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "_lowWord"]
+- ["s29CustomPlaygroundQuickLookableP", "_maskingAdd"]
+- ["s29CustomPlaygroundQuickLookableP", "_maskingSubtract"]
+- ["s29CustomPlaygroundQuickLookableP", "bitWidth"]
+- ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "isSigned"]
+- !private ["s29CustomPlaygroundQuickLookableP", "isZero"]
+- ["s29CustomPlaygroundQuickLookableP", "magnitude"]
+- ["s29CustomPlaygroundQuickLookableP", "negate"]
+- ["s29CustomPlaygroundQuickLookableP", "quotientAndRemainder"]
+- !private ["s29CustomPlaygroundQuickLookableP", "sign"]
+- ["s29CustomPlaygroundQuickLookableP", "signum"]
+- ["s29CustomPlaygroundQuickLookableP", "trailingZeroBitCount"]
+- ["s29CustomPlaygroundQuickLookableP", "words"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- ["s23CustomStringConvertibleP", "Magnitude"]
+- ["s23CustomStringConvertibleP", "Word"]
+- ["s23CustomStringConvertibleP", "Words"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "_lowWord"]
+- ["s23CustomStringConvertibleP", "_maskingAdd"]
+- ["s23CustomStringConvertibleP", "_maskingSubtract"]
+- ["s23CustomStringConvertibleP", "bitWidth"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "isSigned"]
+- !private ["s23CustomStringConvertibleP", "isZero"]
+- ["s23CustomStringConvertibleP", "magnitude"]
+- ["s23CustomStringConvertibleP", "negate"]
+- ["s23CustomStringConvertibleP", "quotientAndRemainder"]
+- !private ["s23CustomStringConvertibleP", "sign"]
+- ["s23CustomStringConvertibleP", "signum"]
+- ["s23CustomStringConvertibleP", "trailingZeroBitCount"]
+- ["s23CustomStringConvertibleP", "words"]
+- ["s9DecodableP", "Magnitude"]
+- ["s9DecodableP", "Word"]
+- ["s9DecodableP", "Words"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "_lowWord"]
+- ["s9DecodableP", "_maskingAdd"]
+- ["s9DecodableP", "_maskingSubtract"]
+- ["s9DecodableP", "bitWidth"]
+- ["s9DecodableP", "hashValue"]
+- ["s9DecodableP", "init"]
+- ["s9DecodableP", "isSigned"]
+- !private ["s9DecodableP", "isZero"]
+- ["s9DecodableP", "magnitude"]
+- ["s9DecodableP", "negate"]
+- ["s9DecodableP", "quotientAndRemainder"]
+- !private ["s9DecodableP", "sign"]
+- ["s9DecodableP", "signum"]
+- ["s9DecodableP", "trailingZeroBitCount"]
+- ["s9DecodableP", "words"]
+- ["s9EncodableP", "Magnitude"]
+- ["s9EncodableP", "Word"]
+- ["s9EncodableP", "Words"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "_lowWord"]
+- ["s9EncodableP", "_maskingAdd"]
+- ["s9EncodableP", "_maskingSubtract"]
+- ["s9EncodableP", "bitWidth"]
+- ["s9EncodableP", "hashValue"]
+- ["s9EncodableP", "init"]
+- ["s9EncodableP", "isSigned"]
+- !private ["s9EncodableP", "isZero"]
+- ["s9EncodableP", "magnitude"]
+- ["s9EncodableP", "negate"]
+- ["s9EncodableP", "quotientAndRemainder"]
+- !private ["s9EncodableP", "sign"]
+- ["s9EncodableP", "signum"]
+- ["s9EncodableP", "trailingZeroBitCount"]
+- ["s9EncodableP", "words"]
+- ["s9EquatableP", "Magnitude"]
+- ["s9EquatableP", "Word"]
+- ["s9EquatableP", "Words"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "_lowWord"]
+- ["s9EquatableP", "_maskingAdd"]
+- ["s9EquatableP", "_maskingSubtract"]
+- ["s9EquatableP", "bitWidth"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "isSigned"]
+- !private ["s9EquatableP", "isZero"]
+- ["s9EquatableP", "magnitude"]
+- ["s9EquatableP", "minus"]
+- ["s9EquatableP", "negate"]
+- ["s9EquatableP", "plus"]
+- ["s9EquatableP", "quotientAndRemainder"]
+- !private ["s9EquatableP", "sign"]
+- ["s9EquatableP", "signum"]
+- ["s9EquatableP", "trailingZeroBitCount"]
+- ["s9EquatableP", "words"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Magnitude"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Word"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Words"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_lowWord"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_maskingAdd"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_maskingSubtract"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "bitWidth"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isSigned"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isZero"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "magnitude"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "negate"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "quotientAndRemainder"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sign"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "signum"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "trailingZeroBitCount"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "words"]
+- ["s27ExpressibleByIntegerLiteralP", "Magnitude"]
+- ["s27ExpressibleByIntegerLiteralP", "Word"]
+- ["s27ExpressibleByIntegerLiteralP", "Words"]
+- ["s27ExpressibleByIntegerLiteralP", "_lowWord"]
+- ["s27ExpressibleByIntegerLiteralP", "_maskingAdd"]
+- ["s27ExpressibleByIntegerLiteralP", "_maskingSubtract"]
+- ["s27ExpressibleByIntegerLiteralP", "bitWidth"]
+- ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s27ExpressibleByIntegerLiteralP", "isSigned"]
+- !private ["s27ExpressibleByIntegerLiteralP", "isZero"]
+- ["s27ExpressibleByIntegerLiteralP", "magnitude"]
+- ["s27ExpressibleByIntegerLiteralP", "negate"]
+- ["s27ExpressibleByIntegerLiteralP", "quotientAndRemainder"]
+- !private ["s27ExpressibleByIntegerLiteralP", "sign"]
+- ["s27ExpressibleByIntegerLiteralP", "signum"]
+- ["s27ExpressibleByIntegerLiteralP", "trailingZeroBitCount"]
+- ["s27ExpressibleByIntegerLiteralP", "words"]
+- ["s26ExpressibleByStringLiteralP", "Magnitude"]
+- ["s26ExpressibleByStringLiteralP", "Word"]
+- ["s26ExpressibleByStringLiteralP", "Words"]
+- ["s26ExpressibleByStringLiteralP", "_lowWord"]
+- ["s26ExpressibleByStringLiteralP", "_maskingAdd"]
+- ["s26ExpressibleByStringLiteralP", "_maskingSubtract"]
+- ["s26ExpressibleByStringLiteralP", "bitWidth"]
+- ["s26ExpressibleByStringLiteralP", "hashValue"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "isSigned"]
+- !private ["s26ExpressibleByStringLiteralP", "isZero"]
+- ["s26ExpressibleByStringLiteralP", "magnitude"]
+- ["s26ExpressibleByStringLiteralP", "negate"]
+- ["s26ExpressibleByStringLiteralP", "quotientAndRemainder"]
+- !private ["s26ExpressibleByStringLiteralP", "sign"]
+- ["s26ExpressibleByStringLiteralP", "signum"]
+- ["s26ExpressibleByStringLiteralP", "trailingZeroBitCount"]
+- ["s26ExpressibleByStringLiteralP", "words"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Magnitude"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Word"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Words"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_lowWord"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_maskingAdd"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_maskingSubtract"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "bitWidth"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "isSigned"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isZero"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "magnitude"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "negate"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "quotientAndRemainder"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sign"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "signum"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "trailingZeroBitCount"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "words"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", "Magnitude"]
+- ["s8HashableP", "Word"]
+- ["s8HashableP", "Words"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "_lowWord"]
+- ["s8HashableP", "_maskingAdd"]
+- ["s8HashableP", "_maskingSubtract"]
+- ["s8HashableP", "bitWidth"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "isSigned"]
+- !private ["s8HashableP", "isZero"]
+- ["s8HashableP", "magnitude"]
+- ["s8HashableP", "minus"]
+- ["s8HashableP", "negate"]
+- ["s8HashableP", "plus"]
+- ["s8HashableP", "quotientAndRemainder"]
+- !private ["s8HashableP", "sign"]
+- ["s8HashableP", "signum"]
+- ["s8HashableP", "trailingZeroBitCount"]
+- ["s8HashableP", "words"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s7NumericP", "Magnitude"]
+- ["s7NumericP", "Word"]
+- ["s7NumericP", "Words"]
+- ["s7NumericP", "_lowWord"]
+- ["s7NumericP", "_maskingAdd"]
+- ["s7NumericP", "_maskingSubtract"]
+- ["s7NumericP", "bitWidth"]
+- ["s7NumericP", "hashValue"]
+- ["s7NumericP", "init"]
+- ["s7NumericP", "isSigned"]
+- !private ["s7NumericP", "isZero"]
+- ["s7NumericP", "magnitude"]
+- ["s7NumericP", "negate"]
+- ["s7NumericP", "quotientAndRemainder"]
+- !private ["s7NumericP", "sign"]
+- ["s7NumericP", "signum"]
+- ["s7NumericP", "trailingZeroBitCount"]
+- ["s7NumericP", "words"]
+- ["s7NumericP", ""]
+- ["6BigIntAAV4SignO", "__derived_enum_equals"]
+- ["6BigIntAAV4SignO", "deinit"]
+- ["6BigIntAAV4SignO", "hashValue"]
+- ["6BigIntAAV4SignO", "minus"]
+- ["6BigIntAAV4SignO", "plus"]
+- ["s13SignedIntegerP", "Magnitude"]
+- ["s13SignedIntegerP", "Words"]
+- ["s13SignedIntegerP", "_lowWord"]
+- ["s13SignedIntegerP", "_maskingAdd"]
+- ["s13SignedIntegerP", "_maskingSubtract"]
+- ["s13SignedIntegerP", "bitWidth"]
+- ["s13SignedIntegerP", "hashValue"]
+- ["s13SignedIntegerP", "init"]
+- ["s13SignedIntegerP", "isSigned"]
+- !private ["s13SignedIntegerP", "isZero"]
+- ["s13SignedIntegerP", "magnitude"]
+- ["s13SignedIntegerP", "negate"]
+- ["s13SignedIntegerP", "quotientAndRemainder"]
+- !private ["s13SignedIntegerP", "sign"]
+- ["s13SignedIntegerP", "signum"]
+- ["s13SignedIntegerP", "trailingZeroBitCount"]
+- ["s13SignedIntegerP", "words"]
+- ["s13SignedIntegerP", ""]
+- ["s13SignedNumericP", "Magnitude"]
+- ["s13SignedNumericP", "Words"]
+- ["s13SignedNumericP", "_lowWord"]
+- ["s13SignedNumericP", "_maskingAdd"]
+- ["s13SignedNumericP", "_maskingSubtract"]
+- ["s13SignedNumericP", "bitWidth"]
+- ["s13SignedNumericP", "hashValue"]
+- ["s13SignedNumericP", "init"]
+- ["s13SignedNumericP", "isSigned"]
+- !private ["s13SignedNumericP", "isZero"]
+- ["s13SignedNumericP", "magnitude"]
+- ["s13SignedNumericP", "negate"]
+- ["s13SignedNumericP", "quotientAndRemainder"]
+- !private ["s13SignedNumericP", "sign"]
+- ["s13SignedNumericP", "signum"]
+- ["s13SignedNumericP", "trailingZeroBitCount"]
+- ["s13SignedNumericP", "words"]
+- ["s13SignedNumericP", ""]
+- ["7SipHash0A8HashableP", "Magnitude"]
+- ["7SipHash0A8HashableP", "Word"]
+- ["7SipHash0A8HashableP", "Words"]
+- ["7SipHash0A8HashableP", "_lowWord"]
+- ["7SipHash0A8HashableP", "_maskingAdd"]
+- ["7SipHash0A8HashableP", "_maskingSubtract"]
+- ["7SipHash0A8HashableP", "bitWidth"]
+- ["7SipHash0A8HashableP", "hashValue"]
+- ["7SipHash0A8HashableP", "init"]
+- ["7SipHash0A8HashableP", "isSigned"]
+- !private ["7SipHash0A8HashableP", "isZero"]
+- ["7SipHash0A8HashableP", "magnitude"]
+- ["7SipHash0A8HashableP", "negate"]
+- ["7SipHash0A8HashableP", "quotientAndRemainder"]
+- !private ["7SipHash0A8HashableP", "sign"]
+- ["7SipHash0A8HashableP", "signum"]
+- ["7SipHash0A8HashableP", "trailingZeroBitCount"]
+- ["7SipHash0A8HashableP", "words"]
+- ["s10StrideableP", "Magnitude"]
+- ["s10StrideableP", "Word"]
+- ["s10StrideableP", "Words"]
+- ["s10StrideableP", "_lowWord"]
+- ["s10StrideableP", "_maskingAdd"]
+- ["s10StrideableP", "_maskingSubtract"]
+- ["s10StrideableP", "bitWidth"]
+- ["s10StrideableP", "hashValue"]
+- ["s10StrideableP", "init"]
+- ["s10StrideableP", "isSigned"]
+- !private ["s10StrideableP", "isZero"]
+- ["s10StrideableP", "magnitude"]
+- ["s10StrideableP", "negate"]
+- ["s10StrideableP", "quotientAndRemainder"]
+- !private ["s10StrideableP", "sign"]
+- ["s10StrideableP", "signum"]
+- ["s10StrideableP", "trailingZeroBitCount"]
+- ["s10StrideableP", "words"]
+- ["s15UnsignedIntegerP", "Word"]
+- !private ["s15UnsignedIntegerP", "isZero"]
+- ["6BigIntAAV5WordsV", "deinit"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- ["s11_StrideableP", "Magnitude"]
+- ["s11_StrideableP", "Word"]
+- ["s11_StrideableP", "Words"]
+- ["s11_StrideableP", "_lowWord"]
+- ["s11_StrideableP", "_maskingAdd"]
+- ["s11_StrideableP", "_maskingSubtract"]
+- ["s11_StrideableP", "bitWidth"]
+- ["s11_StrideableP", "hashValue"]
+- ["s11_StrideableP", "init"]
+- ["s11_StrideableP", "isSigned"]
+- !private ["s11_StrideableP", "isZero"]
+- ["s11_StrideableP", "magnitude"]
+- ["s11_StrideableP", "negate"]
+- ["s11_StrideableP", "quotientAndRemainder"]
+- !private ["s11_StrideableP", "sign"]
+- ["s11_StrideableP", "signum"]
+- ["s11_StrideableP", "trailingZeroBitCount"]
+- ["s11_StrideableP", "words"]
+depends-nominal:
+- "6BigIntAAV"
+- "6BigInt0A4UIntV"
+- "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "s10ComparableP"
+- "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "s7NumericP"
+- "6BigIntAAV4SignO"
+- "s13SignedIntegerP"
+- "s13SignedNumericP"
+- "7SipHash0A8HashableP"
+- "s10StrideableP"
+- "s15UnsignedIntegerP"
+- "6BigIntAAV5WordsV"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+- "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/SipHash.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "f2b853a3fdaddc630fc8e056d8bd5f6f"

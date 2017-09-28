@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "4ba3944ef9ff786a79bf55d1f0955c46"
+build_time: [1506537109, 506282000]
+inputs:
+  "/Users/valdi/Developer/BioSwift/Sources/Extensions.swift": [1506514364, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+Bio.swift": [1506531461, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+Foundation.swift": [1506514727, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+SimpleEncodable.swift": [1506530973, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Genome.swift": [1506520815, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift": [1506514856, 0]
+  "/Users/valdi/Developer/BioSwift/Sources/Utils.swift": [1506531060, 0]

@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/master.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Extensions.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Extensions.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Extensions.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Extensions.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+Bio.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Bio.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Bio.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Bio~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Bio.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+Foundation.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Foundation.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Foundation.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Foundation~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+Foundation.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Genome+SimpleEncodable.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+SimpleEncodable.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+SimpleEncodable.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+SimpleEncodable~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome+SimpleEncodable.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Genome.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Genome.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Nucleotide.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Nucleotide.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Nucleotide.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Nucleotide~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Nucleotide.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/Sources/Utils.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Utils.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Utils.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Utils~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BioSwift.build/Utils.swiftdeps"
+  }
+}

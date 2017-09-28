@@ -1,0 +1,389 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "-"
+- "-="
+- "-"
+- "-="
+provides-nominal:
+provides-member:
+- ["6BigInt0A4UIntV", ""]
+- ["6BigIntAAV", ""]
+- ["6BigInt0A4UIntV", "subtractWordReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractingWordReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractWord"]
+- ["6BigInt0A4UIntV", "subtractingWord"]
+- ["6BigInt0A4UIntV", "subtractReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractingReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractingReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtract"]
+- ["6BigInt0A4UIntV", "subtracting"]
+- ["6BigInt0A4UIntV", "decrement"]
+- ["6BigInt0A4UIntV", "-"]
+- ["6BigInt0A4UIntV", "-="]
+- ["6BigIntAAV", "negate"]
+- ["6BigIntAAV", "-"]
+- ["6BigIntAAV", "-="]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "&&"
+- !private "+"
+- !private "+="
+- "-"
+- "-="
+- !private "<"
+- !private "=="
+- !private ">"
+- !private ">="
+- "AssignmentPrecedence"
+- "BigInt"
+- "BigUInt"
+- "Bool"
+- !private "BooleanLiteralType"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- !private "precondition"
+- !private "||"
+depends-member:
+- ["6BigIntAAV", "-"]
+- ["6BigIntAAV", "-="]
+- ["6BigIntAAV", "BigInt"]
+- !private ["6BigIntAAV", "deinit"]
+- !private ["6BigIntAAV", "magnitude"]
+- ["6BigIntAAV", "negate"]
+- !private ["6BigIntAAV", "sign"]
+- ["6BigInt0A4UIntV", "-"]
+- ["6BigInt0A4UIntV", "-="]
+- ["6BigInt0A4UIntV", "BigUInt"]
+- ["6BigInt0A4UIntV", "Bool"]
+- ["6BigInt0A4UIntV", "Int"]
+- ["6BigInt0A4UIntV", "Word"]
+- !private ["6BigInt0A4UIntV", "count"]
+- ["6BigInt0A4UIntV", "decrement"]
+- !private ["6BigInt0A4UIntV", "deinit"]
+- !private ["6BigInt0A4UIntV", "isZero"]
+- !private ["6BigInt0A4UIntV", "precondition"]
+- !private ["6BigInt0A4UIntV", "subscript"]
+- ["6BigInt0A4UIntV", "subtract"]
+- ["6BigInt0A4UIntV", "subtractReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractWord"]
+- ["6BigInt0A4UIntV", "subtractWordReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtracting"]
+- ["6BigInt0A4UIntV", "subtractingReportingOverflow"]
+- ["6BigInt0A4UIntV", "subtractingWord"]
+- ["6BigInt0A4UIntV", "subtractingWordReportingOverflow"]
+- !private ["s13BinaryIntegerP", "count"]
+- !private ["s13BinaryIntegerP", "isZero"]
+- !private ["s13BinaryIntegerP", "magnitude"]
+- !private ["s13BinaryIntegerP", "precondition"]
+- !private ["s13BinaryIntegerP", "sign"]
+- !private ["s13BinaryIntegerP", "subscript"]
+- !private ["s13BinaryIntegerP", "subtract"]
+- !private ["s13BinaryIntegerP", "subtractReportingOverflow"]
+- !private ["s13BinaryIntegerP", "subtractWord"]
+- !private ["s13BinaryIntegerP", "subtractWordReportingOverflow"]
+- !private ["s13BinaryIntegerP", "subtracting"]
+- !private ["s13BinaryIntegerP", "subtractingReportingOverflow"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "subtractingReportingOverflow"]
+- !private ["s10ComparableP", "count"]
+- !private ["s10ComparableP", "isZero"]
+- !private ["s10ComparableP", "magnitude"]
+- !private ["s10ComparableP", "precondition"]
+- !private ["s10ComparableP", "sign"]
+- !private ["s10ComparableP", "subscript"]
+- !private ["s10ComparableP", "subtract"]
+- !private ["s10ComparableP", "subtractReportingOverflow"]
+- !private ["s10ComparableP", "subtractWord"]
+- !private ["s10ComparableP", "subtractWordReportingOverflow"]
+- !private ["s10ComparableP", "subtracting"]
+- !private ["s10ComparableP", "subtractingReportingOverflow"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "plus"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "count"]
+- !private ["s29CustomPlaygroundQuickLookableP", "isZero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "magnitude"]
+- !private ["s29CustomPlaygroundQuickLookableP", "precondition"]
+- !private ["s29CustomPlaygroundQuickLookableP", "sign"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtract"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtractReportingOverflow"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtractWord"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtractWordReportingOverflow"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtracting"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subtractingReportingOverflow"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "plus"]
+- !private ["s17CustomReflectableP", "subtractingReportingOverflow"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isZero"]
+- !private ["s23CustomStringConvertibleP", "magnitude"]
+- !private ["s23CustomStringConvertibleP", "precondition"]
+- !private ["s23CustomStringConvertibleP", "sign"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subtract"]
+- !private ["s23CustomStringConvertibleP", "subtractReportingOverflow"]
+- !private ["s23CustomStringConvertibleP", "subtractWord"]
+- !private ["s23CustomStringConvertibleP", "subtractWordReportingOverflow"]
+- !private ["s23CustomStringConvertibleP", "subtracting"]
+- !private ["s23CustomStringConvertibleP", "subtractingReportingOverflow"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "isZero"]
+- !private ["s9DecodableP", "magnitude"]
+- !private ["s9DecodableP", "plus"]
+- !private ["s9DecodableP", "precondition"]
+- !private ["s9DecodableP", "sign"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "subtract"]
+- !private ["s9DecodableP", "subtractReportingOverflow"]
+- !private ["s9DecodableP", "subtractWord"]
+- !private ["s9DecodableP", "subtractWordReportingOverflow"]
+- !private ["s9DecodableP", "subtracting"]
+- !private ["s9DecodableP", "subtractingReportingOverflow"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "isZero"]
+- !private ["s9EncodableP", "magnitude"]
+- !private ["s9EncodableP", "plus"]
+- !private ["s9EncodableP", "precondition"]
+- !private ["s9EncodableP", "sign"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "subtract"]
+- !private ["s9EncodableP", "subtractReportingOverflow"]
+- !private ["s9EncodableP", "subtractWord"]
+- !private ["s9EncodableP", "subtractWordReportingOverflow"]
+- !private ["s9EncodableP", "subtracting"]
+- !private ["s9EncodableP", "subtractingReportingOverflow"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "isZero"]
+- !private ["s9EquatableP", "magnitude"]
+- !private ["s9EquatableP", "minus"]
+- !private ["s9EquatableP", "plus"]
+- !private ["s9EquatableP", "precondition"]
+- !private ["s9EquatableP", "sign"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "subtract"]
+- !private ["s9EquatableP", "subtractReportingOverflow"]
+- !private ["s9EquatableP", "subtractWord"]
+- !private ["s9EquatableP", "subtractWordReportingOverflow"]
+- !private ["s9EquatableP", "subtracting"]
+- !private ["s9EquatableP", "subtractingReportingOverflow"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isZero"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "magnitude"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "precondition"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sign"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtract"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtractReportingOverflow"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtractWord"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtractWordReportingOverflow"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtracting"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subtractingReportingOverflow"]
+- !private ["s27ExpressibleByIntegerLiteralP", "count"]
+- !private ["s27ExpressibleByIntegerLiteralP", "isZero"]
+- !private ["s27ExpressibleByIntegerLiteralP", "magnitude"]
+- !private ["s27ExpressibleByIntegerLiteralP", "precondition"]
+- !private ["s27ExpressibleByIntegerLiteralP", "sign"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtract"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtractReportingOverflow"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtractWord"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtractWordReportingOverflow"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtracting"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subtractingReportingOverflow"]
+- !private ["s23ExpressibleByNilLiteralP", "plus"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "isZero"]
+- !private ["s26ExpressibleByStringLiteralP", "magnitude"]
+- !private ["s26ExpressibleByStringLiteralP", "precondition"]
+- !private ["s26ExpressibleByStringLiteralP", "sign"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
+- !private ["s26ExpressibleByStringLiteralP", "subtract"]
+- !private ["s26ExpressibleByStringLiteralP", "subtractReportingOverflow"]
+- !private ["s26ExpressibleByStringLiteralP", "subtractWord"]
+- !private ["s26ExpressibleByStringLiteralP", "subtractWordReportingOverflow"]
+- !private ["s26ExpressibleByStringLiteralP", "subtracting"]
+- !private ["s26ExpressibleByStringLiteralP", "subtractingReportingOverflow"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isZero"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "magnitude"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "precondition"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sign"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtract"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtractReportingOverflow"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtractWord"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtractWordReportingOverflow"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtracting"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subtractingReportingOverflow"]
+- !private ["s17FixedWidthIntegerP", "subtractingReportingOverflow"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "isZero"]
+- !private ["s8HashableP", "magnitude"]
+- !private ["s8HashableP", "minus"]
+- !private ["s8HashableP", "plus"]
+- !private ["s8HashableP", "precondition"]
+- !private ["s8HashableP", "sign"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "subtract"]
+- !private ["s8HashableP", "subtractReportingOverflow"]
+- !private ["s8HashableP", "subtractWord"]
+- !private ["s8HashableP", "subtractWordReportingOverflow"]
+- !private ["s8HashableP", "subtracting"]
+- !private ["s8HashableP", "subtractingReportingOverflow"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "subtractingReportingOverflow"]
+- !private ["s7NumericP", "count"]
+- !private ["s7NumericP", "isZero"]
+- !private ["s7NumericP", "magnitude"]
+- !private ["s7NumericP", "precondition"]
+- !private ["s7NumericP", "sign"]
+- !private ["s7NumericP", "subscript"]
+- !private ["s7NumericP", "subtract"]
+- !private ["s7NumericP", "subtractReportingOverflow"]
+- !private ["s7NumericP", "subtractWord"]
+- !private ["s7NumericP", "subtractWordReportingOverflow"]
+- !private ["s7NumericP", "subtracting"]
+- !private ["s7NumericP", "subtractingReportingOverflow"]
+- !private ["Sq", "plus"]
+- !private ["6BigIntAAV4SignO", "deinit"]
+- !private ["6BigIntAAV4SignO", "minus"]
+- !private ["6BigIntAAV4SignO", "plus"]
+- !private ["s13SignedIntegerP", "magnitude"]
+- !private ["s13SignedIntegerP", "sign"]
+- !private ["s13SignedNumericP", "magnitude"]
+- !private ["s13SignedNumericP", "sign"]
+- !private ["7SipHash0A8HashableP", "count"]
+- !private ["7SipHash0A8HashableP", "isZero"]
+- !private ["7SipHash0A8HashableP", "magnitude"]
+- !private ["7SipHash0A8HashableP", "precondition"]
+- !private ["7SipHash0A8HashableP", "sign"]
+- !private ["7SipHash0A8HashableP", "subscript"]
+- !private ["7SipHash0A8HashableP", "subtract"]
+- !private ["7SipHash0A8HashableP", "subtractReportingOverflow"]
+- !private ["7SipHash0A8HashableP", "subtractWord"]
+- !private ["7SipHash0A8HashableP", "subtractWordReportingOverflow"]
+- !private ["7SipHash0A8HashableP", "subtracting"]
+- !private ["7SipHash0A8HashableP", "subtractingReportingOverflow"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "count"]
+- !private ["s10StrideableP", "isZero"]
+- !private ["s10StrideableP", "magnitude"]
+- !private ["s10StrideableP", "precondition"]
+- !private ["s10StrideableP", "sign"]
+- !private ["s10StrideableP", "subscript"]
+- !private ["s10StrideableP", "subtract"]
+- !private ["s10StrideableP", "subtractReportingOverflow"]
+- !private ["s10StrideableP", "subtractWord"]
+- !private ["s10StrideableP", "subtractWordReportingOverflow"]
+- !private ["s10StrideableP", "subtracting"]
+- !private ["s10StrideableP", "subtractingReportingOverflow"]
+- !private ["Su", "subtractingReportingOverflow"]
+- !private ["s15UnsignedIntegerP", "count"]
+- !private ["s15UnsignedIntegerP", "isZero"]
+- !private ["s15UnsignedIntegerP", "precondition"]
+- !private ["s15UnsignedIntegerP", "subscript"]
+- !private ["s15UnsignedIntegerP", "subtract"]
+- !private ["s15UnsignedIntegerP", "subtractReportingOverflow"]
+- !private ["s15UnsignedIntegerP", "subtractWord"]
+- !private ["s15UnsignedIntegerP", "subtractWordReportingOverflow"]
+- !private ["s15UnsignedIntegerP", "subtracting"]
+- !private ["s15UnsignedIntegerP", "subtractingReportingOverflow"]
+- !private ["s18_BitwiseOperationsP", "subtractingReportingOverflow"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "subtractingReportingOverflow"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "plus"]
+- !private ["s21_ObjectiveCBridgeableP", "subtractingReportingOverflow"]
+- !private ["s26_OptionalNilComparisonTypeV", "plus"]
+- !private ["s11_StrideableP", "count"]
+- !private ["s11_StrideableP", "isZero"]
+- !private ["s11_StrideableP", "magnitude"]
+- !private ["s11_StrideableP", "precondition"]
+- !private ["s11_StrideableP", "sign"]
+- !private ["s11_StrideableP", "subscript"]
+- !private ["s11_StrideableP", "subtract"]
+- !private ["s11_StrideableP", "subtractReportingOverflow"]
+- !private ["s11_StrideableP", "subtractWord"]
+- !private ["s11_StrideableP", "subtractWordReportingOverflow"]
+- !private ["s11_StrideableP", "subtracting"]
+- !private ["s11_StrideableP", "subtractingReportingOverflow"]
+depends-nominal:
+- "6BigIntAAV"
+- "6BigInt0A4UIntV"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s7NumericP"
+- !private "Sq"
+- !private "6BigIntAAV4SignO"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "7SipHash0A8HashableP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "Su"
+- !private "s15UnsignedIntegerP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_OptionalNilComparisonTypeV"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/SipHash.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "f41dd9df329efa719ac62ac3dd134907"

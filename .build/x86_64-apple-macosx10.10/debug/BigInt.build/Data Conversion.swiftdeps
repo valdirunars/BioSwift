@@ -1,0 +1,399 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["6BigInt0A4UIntV", ""]
+- ["6BigInt0A4UIntV", "init"]
+- ["6BigInt0A4UIntV", "init"]
+- ["6BigInt0A4UIntV", "serialize"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "%"
+- !private "&"
+- !private "&&"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "..<"
+- !private "/"
+- !private "<<="
+- !private "=="
+- !private ">"
+- !private ">>="
+- "AssignmentPrecedence"
+- "BigUInt"
+- "Data"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
+- !private "UInt8"
+- !private "UnsafeMutablePointer"
+- "UnsafeRawBufferPointer"
+- !private "Void"
+- !private "assert"
+- !private "precondition"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "enumerateBytes"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "withUnsafeMutableBytes"]
+- ["6BigInt0A4UIntV", "Data"]
+- !private ["6BigInt0A4UIntV", "UInt8"]
+- !private ["6BigInt0A4UIntV", "UnsafeMutablePointer"]
+- ["6BigInt0A4UIntV", "UnsafeRawBufferPointer"]
+- !private ["6BigInt0A4UIntV", "Void"]
+- !private ["6BigInt0A4UIntV", "Word"]
+- !private ["6BigInt0A4UIntV", "assert"]
+- !private ["6BigInt0A4UIntV", "bitWidth"]
+- !private ["6BigInt0A4UIntV", "deinit"]
+- ["6BigInt0A4UIntV", "init"]
+- !private ["6BigInt0A4UIntV", "precondition"]
+- ["6BigInt0A4UIntV", "serialize"]
+- !private ["6BigInt0A4UIntV", "subscript"]
+- !private ["6BigInt0A4UIntV", "words"]
+- !private ["s13BinaryIntegerP", "Data"]
+- !private ["s13BinaryIntegerP", "UInt8"]
+- !private ["s13BinaryIntegerP", "Word"]
+- !private ["s13BinaryIntegerP", "assert"]
+- !private ["s13BinaryIntegerP", "bitWidth"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "precondition"]
+- !private ["s13BinaryIntegerP", "subscript"]
+- !private ["s13BinaryIntegerP", "words"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "bitWidth"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "enumerateBytes"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "withUnsafeMutableBytes"]
+- !private ["s10ComparableP", "Data"]
+- !private ["s10ComparableP", "UInt8"]
+- !private ["s10ComparableP", "Word"]
+- !private ["s10ComparableP", "assert"]
+- !private ["s10ComparableP", "bitWidth"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "precondition"]
+- !private ["s10ComparableP", "subscript"]
+- !private ["s10ComparableP", "words"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerateBytes"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "withUnsafeMutableBytes"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Data"]
+- !private ["s29CustomPlaygroundQuickLookableP", "UInt8"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Word"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "assert"]
+- !private ["s29CustomPlaygroundQuickLookableP", "bitWidth"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "precondition"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "words"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "bitWidth"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "enumerateBytes"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "withUnsafeMutableBytes"]
+- !private ["s23CustomStringConvertibleP", "Data"]
+- !private ["s23CustomStringConvertibleP", "UInt8"]
+- !private ["s23CustomStringConvertibleP", "Word"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "assert"]
+- !private ["s23CustomStringConvertibleP", "bitWidth"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "enumerateBytes"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "precondition"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "withUnsafeMutableBytes"]
+- !private ["s23CustomStringConvertibleP", "words"]
+- !private ["10Foundation4DataV", "count"]
+- !private ["10Foundation4DataV", "enumerateBytes"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["10Foundation4DataV", "withUnsafeMutableBytes"]
+- !private ["s9DecodableP", "Data"]
+- !private ["s9DecodableP", "UInt8"]
+- !private ["s9DecodableP", "Word"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "assert"]
+- !private ["s9DecodableP", "bitWidth"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "enumerateBytes"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "precondition"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "withUnsafeMutableBytes"]
+- !private ["s9DecodableP", "words"]
+- !private ["s9EncodableP", "Data"]
+- !private ["s9EncodableP", "UInt8"]
+- !private ["s9EncodableP", "Word"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "assert"]
+- !private ["s9EncodableP", "bitWidth"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "enumerateBytes"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "precondition"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "withUnsafeMutableBytes"]
+- !private ["s9EncodableP", "words"]
+- !private ["s9EquatableP", "Data"]
+- !private ["s9EquatableP", "UInt8"]
+- !private ["s9EquatableP", "Word"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "assert"]
+- !private ["s9EquatableP", "bitWidth"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "enumerateBytes"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "precondition"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "withUnsafeMutableBytes"]
+- !private ["s9EquatableP", "words"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Data"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "UInt8"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Word"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "assert"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "bitWidth"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "precondition"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "words"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Data"]
+- !private ["s27ExpressibleByIntegerLiteralP", "UInt8"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Word"]
+- !private ["s27ExpressibleByIntegerLiteralP", "assert"]
+- !private ["s27ExpressibleByIntegerLiteralP", "bitWidth"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "precondition"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "words"]
+- !private ["s26ExpressibleByStringLiteralP", "Data"]
+- !private ["s26ExpressibleByStringLiteralP", "UInt8"]
+- !private ["s26ExpressibleByStringLiteralP", "Word"]
+- !private ["s26ExpressibleByStringLiteralP", "assert"]
+- !private ["s26ExpressibleByStringLiteralP", "bitWidth"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "precondition"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
+- !private ["s26ExpressibleByStringLiteralP", "words"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "UInt8"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Word"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "assert"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "bitWidth"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "precondition"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "words"]
+- !private ["s17FixedWidthIntegerP", "bitWidth"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "Data"]
+- !private ["s8HashableP", "UInt8"]
+- !private ["s8HashableP", "Word"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "assert"]
+- !private ["s8HashableP", "bitWidth"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "enumerateBytes"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "precondition"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "withUnsafeMutableBytes"]
+- !private ["s8HashableP", "words"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "bitWidth"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "enumerateBytes"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "withUnsafeMutableBytes"]
+- !private ["s7NumericP", "Data"]
+- !private ["s7NumericP", "UInt8"]
+- !private ["s7NumericP", "Word"]
+- !private ["s7NumericP", "assert"]
+- !private ["s7NumericP", "bitWidth"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "precondition"]
+- !private ["s7NumericP", "subscript"]
+- !private ["s7NumericP", "words"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "enumerateBytes"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "withUnsafeMutableBytes"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "enumerateBytes"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "withUnsafeMutableBytes"]
+- !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["10Foundation20ReferenceConvertibleP", "enumerateBytes"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "withUnsafeMutableBytes"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "enumerateBytes"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "withUnsafeMutableBytes"]
+- !private ["7SipHash0A8HashableP", "Data"]
+- !private ["7SipHash0A8HashableP", "UInt8"]
+- !private ["7SipHash0A8HashableP", "Word"]
+- !private ["7SipHash0A8HashableP", "assert"]
+- !private ["7SipHash0A8HashableP", "bitWidth"]
+- !private ["7SipHash0A8HashableP", "init"]
+- !private ["7SipHash0A8HashableP", "precondition"]
+- !private ["7SipHash0A8HashableP", "subscript"]
+- !private ["7SipHash0A8HashableP", "words"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "Data"]
+- !private ["s10StrideableP", "UInt8"]
+- !private ["s10StrideableP", "Word"]
+- !private ["s10StrideableP", "assert"]
+- !private ["s10StrideableP", "bitWidth"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "precondition"]
+- !private ["s10StrideableP", "subscript"]
+- !private ["s10StrideableP", "words"]
+- !private ["Su", "bitWidth"]
+- !private ["Su", "init"]
+- !private ["s5UInt8V", "init"]
+- !private ["Sp", "subscript"]
+- !private ["s22UnsafeRawBufferPointerV", "count"]
+- !private ["s15UnsignedIntegerP", "Data"]
+- !private ["s15UnsignedIntegerP", "UInt8"]
+- !private ["s15UnsignedIntegerP", "Word"]
+- !private ["s15UnsignedIntegerP", "assert"]
+- !private ["s15UnsignedIntegerP", "bitWidth"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s15UnsignedIntegerP", "precondition"]
+- !private ["s15UnsignedIntegerP", "subscript"]
+- !private ["s15UnsignedIntegerP", "words"]
+- !private ["6BigInt0A4UIntV5WordsV", "deinit"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "enumerateBytes"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "withUnsafeMutableBytes"]
+- !private ["s18_BitwiseOperationsP", "bitWidth"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "bitWidth"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "enumerateBytes"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "withUnsafeMutableBytes"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "enumerateBytes"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "withUnsafeMutableBytes"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "enumerateBytes"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "withUnsafeMutableBytes"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "bitWidth"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerateBytes"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "withUnsafeMutableBytes"]
+- !private ["s8_PointerP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "enumerateBytes"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "withUnsafeMutableBytes"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "enumerateBytes"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "withUnsafeMutableBytes"]
+- !private ["s11_StrideableP", "Data"]
+- !private ["s11_StrideableP", "UInt8"]
+- !private ["s11_StrideableP", "Word"]
+- !private ["s11_StrideableP", "assert"]
+- !private ["s11_StrideableP", "bitWidth"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "precondition"]
+- !private ["s11_StrideableP", "subscript"]
+- !private ["s11_StrideableP", "words"]
+- !private ["s14_StringElementP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "6BigInt0A4UIntV"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s17MutableCollectionP"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "7SipHash0A8HashableP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "Su"
+- !private "s5UInt8V"
+- !private "Sp"
+- !private "s22UnsafeRawBufferPointerV"
+- !private "s15UnsignedIntegerP"
+- !private "6BigInt0A4UIntV5WordsV"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s14_StringElementP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/SipHash.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "7b6fb36a9d784408b2986f3653d6c99a"

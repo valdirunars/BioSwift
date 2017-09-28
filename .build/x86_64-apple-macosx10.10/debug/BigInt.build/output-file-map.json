@@ -1,0 +1,137 @@
+{
+  "": {
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/master.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Addition.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Addition.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Addition.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Addition~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Addition.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/BigInt.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigInt.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigInt.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigInt~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigInt.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/BigUInt.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigUInt.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigUInt.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigUInt~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/BigUInt.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Bitwise Ops.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Bitwise Ops.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Bitwise Ops.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Bitwise Ops~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Bitwise Ops.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Codable.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Codable.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Codable.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Codable~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Codable.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Comparable.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Comparable.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Comparable.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Comparable~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Comparable.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Data Conversion.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Data Conversion.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Data Conversion.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Data Conversion~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Data Conversion.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Division.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Division.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Division.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Division~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Division.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Exponentiation.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Exponentiation.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Exponentiation.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Exponentiation~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Exponentiation.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Floating Point Conversion.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Floating Point Conversion.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Floating Point Conversion.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Floating Point Conversion~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Floating Point Conversion.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/GCD.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/GCD.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/GCD.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/GCD~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/GCD.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Hashable.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Hashable.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Hashable.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Hashable~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Hashable.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Integer Conversion.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Integer Conversion.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Integer Conversion.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Integer Conversion~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Integer Conversion.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Multiplication.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Multiplication.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Multiplication.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Multiplication~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Multiplication.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Prime Test.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Prime Test.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Prime Test.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Prime Test~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Prime Test.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Random.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Random.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Random.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Random~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Random.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Shifts.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Shifts.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Shifts.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Shifts~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Shifts.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Square Root.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Square Root.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Square Root.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Square Root~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Square Root.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Strideable.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Strideable.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Strideable.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Strideable~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Strideable.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/String Conversion.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/String Conversion.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/String Conversion.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/String Conversion~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/String Conversion.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Subtraction.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Subtraction.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Subtraction.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Subtraction~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Subtraction.swiftdeps"
+  },
+  "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/sources/Words and Bits.swift": {
+    "dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Words and Bits.d",
+    "object": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Words and Bits.swift.o",
+    "swiftmodule": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Words and Bits~partial.swiftmodule",
+    "swift-dependencies": "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.build/Words and Bits.swiftdeps"
+  }
+}
