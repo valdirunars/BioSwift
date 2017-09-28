@@ -15,7 +15,7 @@ extension Genome {
         self.complementBit = !self.complementBit
     }
     
-    public func indices(for pattern: Genome, maxDistance: Int = 0) -> [Index] {
+    public func indices(for pattern: Genome, maxDistance: UInt = 0) -> [Index] {
         guard self.count > pattern.count else { return [] }
         
         var indices: [Index] = []
@@ -67,6 +67,37 @@ extension Genome {
         return Genome(sequence: self[startIndexOfMostFrequent..<self.index(startIndexOfMostFrequent, offsetBy: length)])
     }
     
+    public func mostFrequentPatterns(length: Int, maxDistance: UInt = 0) -> [Genome] {
+        var frequentPatterns: [Genome] = []
+        var neighborhoods: [Genome] = []
+        
+        for i in 0..<self.count-length {
+            neighborhoods += Genome(sequence: self[i..<i+length]).neighbors(maxDistance: maxDistance)
+        }
+        
+        var index: [BigInt] = []
+        var counts: [Int] = []
+        for i in 0..<neighborhoods.count {
+            let pattern = neighborhoods[i]
+            index.append(pattern.asInteger())
+            counts.append(1)
+        }
+        
+        index.sort()
+        
+        for i in 0..<neighborhoods.count-1 where index[i] == index[i+1] {
+            counts[i + 1] = counts[i] + 1
+        }
+        let maxCount = counts.max() ?? 0
+        
+        for i in 0..<neighborhoods.count where counts[i] == maxCount {
+            let pattern = Genome(bigInt: index[i], length: length)
+            frequentPatterns.append(pattern)
+        }
+        
+        return frequentPatterns
+    }
+    
     public func indicesOfMinimalSkew(increment: Nucleotide, decrement: Nucleotide) -> [Index] {
         
         var skew = 0
@@ -95,15 +126,9 @@ extension Genome {
         return skewIndices
     }
     
-    internal func neighbors(maxDistance: UInt) -> [Genome] {
-        guard maxDistance != 0 else { return [ self ] }
-        guard maxDistance != 1 else {
-            return [ .single(.a), .single(.g), .single(.c), .single(.t) ]
-        }
-        fatalError("Not implemented")
+    public func neighbors(maxDistance: UInt) -> [Genome] {
+        return Utils.neighbors(pattern: self[self.startIndex..<self.endIndex], maxDistance: maxDistance)
     }
     
-    internal func asInteger() -> Int {
-        return Utils.patternToInteger(pattern: self[self.startIndex..<self.count])
-    }
+    
 }

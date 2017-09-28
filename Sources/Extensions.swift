@@ -12,9 +12,8 @@ internal extension Collection {
 
         assert(self.count <= collection.count, "The collection provided has a count that exceeds self.count.\n\nReverse this statement to say collection.iterate(obj) instead of obj.iterate(collection)")
 
-        for (index, element) in self.enumerated() {
-            let comparing = collection[index as! C.Index]
-            iterationBlock(element, comparing)
+        for tuple in zip(self, collection) {
+            iterationBlock(tuple.0, tuple.1)
         }
     }
 }
