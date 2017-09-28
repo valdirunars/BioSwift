@@ -22,8 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		OBJ_100 /* Genome+Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Genome+Bio.swift */; };
-		OBJ_101 /* Genome+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Genome+Foundation.swift */; };
-		OBJ_102 /* Genome+SimpleEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Genome+SimpleEncodable.swift */; };
+		OBJ_101 /* Genome+Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Genome+Codec.swift */; };
+		OBJ_102 /* Genome+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Genome+Foundation.swift */; };
 		OBJ_103 /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Genome.swift */; };
 		OBJ_104 /* Nucleotide.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Nucleotide.swift */; };
 		OBJ_105 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Utils.swift */; };
@@ -70,49 +70,49 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38EBF6461F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF64D1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BigInt::BigInt";
 			remoteInfo = BigInt;
 		};
-		38EBF6471F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF64E1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF6481F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF64F1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF6491F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF6501F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BioSwift::BioSwift";
 			remoteInfo = BioSwift;
 		};
-		38EBF64A1F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF6511F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BigInt::BigInt";
 			remoteInfo = BigInt;
 		};
-		38EBF64B1F7C8FA900239C45 /* PBXContainerItemProxy */ = {
+		38EBF6521F7D41FB00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF64C1F7C8FAA00239C45 /* PBXContainerItemProxy */ = {
+		38EBF6531F7D41FC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -127,8 +127,8 @@
 		"BioSwift::BioSwiftTests::Product" /* BioSwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BioSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Genome+BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+BigInt.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* Genome+Bio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Bio.swift"; sourceTree = "<group>"; };
-		OBJ_12 /* Genome+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Foundation.swift"; sourceTree = "<group>"; };
-		OBJ_13 /* Genome+SimpleEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+SimpleEncodable.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* Genome+Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Codec.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* Genome+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Foundation.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* Genome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
 		OBJ_15 /* Nucleotide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nucleotide.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -315,8 +315,8 @@
 				OBJ_9 /* Genome+Algebra.swift */,
 				OBJ_10 /* Genome+BigInt.swift */,
 				OBJ_11 /* Genome+Bio.swift */,
-				OBJ_12 /* Genome+Foundation.swift */,
-				OBJ_13 /* Genome+SimpleEncodable.swift */,
+				OBJ_12 /* Genome+Codec.swift */,
+				OBJ_13 /* Genome+Foundation.swift */,
 				OBJ_14 /* Genome.swift */,
 				OBJ_15 /* Nucleotide.swift */,
 				OBJ_16 /* Utils.swift */,
@@ -553,8 +553,8 @@
 				OBJ_98 /* Genome+Algebra.swift in Sources */,
 				OBJ_99 /* Genome+BigInt.swift in Sources */,
 				OBJ_100 /* Genome+Bio.swift in Sources */,
-				OBJ_101 /* Genome+Foundation.swift in Sources */,
-				OBJ_102 /* Genome+SimpleEncodable.swift in Sources */,
+				OBJ_101 /* Genome+Codec.swift in Sources */,
+				OBJ_102 /* Genome+Foundation.swift in Sources */,
 				OBJ_103 /* Genome.swift in Sources */,
 				OBJ_104 /* Nucleotide.swift in Sources */,
 				OBJ_105 /* Utils.swift in Sources */,
@@ -567,37 +567,37 @@
 		OBJ_109 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BigInt::BigInt" /* BigInt */;
-			targetProxy = 38EBF6461F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF64D1F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_110 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF6481F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF64F1F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF6471F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF64E1F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BioSwift::BioSwiftTests" /* BioSwiftTests */;
-			targetProxy = 38EBF64C1F7C8FAA00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6531F7D41FC00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BioSwift::BioSwift" /* BioSwift */;
-			targetProxy = 38EBF6491F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6501F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BigInt::BigInt" /* BigInt */;
-			targetProxy = 38EBF64A1F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6511F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF64B1F7C8FA900239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6521F7D41FB00239C45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
