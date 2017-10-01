@@ -10,5 +10,5 @@ import BigInt
 
 protocol BigIntConvertible {
     init(bigInt: BigInt, length: Int)
-    func asInteger() -> BigInt
+    var bigIntValue: BigInt { get }
 }
