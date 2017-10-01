@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import BigInt
+
+public typealias Protein = String
 
 public extension Slice where Base == Genome {
     var description: String {
@@ -26,9 +29,11 @@ public extension Slice where Base == Genome {
     }
 }
 
-public struct Genome {
+public struct Genome: BigIntConvertible {
 
     public internal(set) var nucleotides: [Nucleotide]
+    public internal(set) var  bigIntValue: BigInt
+
     internal var complementBit = false
 
     public var startIndex: Index {
@@ -49,10 +54,19 @@ public struct Genome {
     
     public init<S: Sequence>(sequence: S) where S.Element: CharConvertible {
         self.nucleotides = []
+        var finalIntValue: BigInt = 0
         for element in sequence {
             guard let nuc = Nucleotide(unit: element) else { continue }
             self.nucleotides.append(nuc)
+            
+            let nucIntValue = BigInt(integerLiteral: Int64(nuc.rawValue))
+            finalIntValue = Nucleotide.componentCount * finalIntValue + nucIntValue
         }
+        self.bigIntValue = finalIntValue
+    }
+    
+    init(bigInt: BigInt, length: Int) {
+        self = bigInt.pattern(length: length)
     }
     
     public func hammingDistance<C: Collection>(_ collection: C) -> Int where C.Element == Nucleotide, C.Index == Index {
