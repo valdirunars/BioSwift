@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BigInt
 
 extension Genome {
     public static func + (left: Genome, right: Nucleotide) -> Genome {
@@ -24,13 +25,14 @@ extension Genome {
         return tmp
     }
     
-    public static func += (left: inout Genome, right: Nucleotide) {
-        left.nucleotides.append(right)
-    }
-    
     public static func += (left: inout Genome, right: Genome) {
         for nuc in right {
-            left.nucleotides.append(nuc)
+            left += nuc
         }
+    }
+    
+    public static func += (left: inout Genome, right: Nucleotide) {
+        left.nucleotides.append(right)
+        left.bigIntValue = Nucleotide.componentCount * left.bigIntValue + right.bigIntValue
     }
 }

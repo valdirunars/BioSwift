@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"BioSwift::BioSwiftPackageTests::ProductTarget" /* BioSwiftPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_150 /* Build configuration list for PBXAggregateTarget "BioSwiftPackageTests" */;
+			buildConfigurationList = OBJ_154 /* Build configuration list for PBXAggregateTarget "BioSwiftPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_153 /* PBXTargetDependency */,
+				OBJ_157 /* PBXTargetDependency */,
 			);
 			name = BioSwiftPackageTests;
 			productName = BioSwiftPackageTests;
@@ -21,98 +21,99 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_100 /* Genome+Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Genome+Bio.swift */; };
-		OBJ_101 /* Genome+Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Genome+Codec.swift */; };
-		OBJ_102 /* Genome+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Genome+Foundation.swift */; };
-		OBJ_103 /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Genome.swift */; };
-		OBJ_104 /* Nucleotide.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Nucleotide.swift */; };
-		OBJ_105 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Utils.swift */; };
-		OBJ_107 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BigInt::BigInt::Product" /* BigInt.framework */; };
-		OBJ_108 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
-		OBJ_115 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Addition.swift */; };
-		OBJ_116 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* BigInt.swift */; };
-		OBJ_117 /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* BigUInt.swift */; };
-		OBJ_118 /* Bitwise Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Bitwise Ops.swift */; };
-		OBJ_119 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Codable.swift */; };
-		OBJ_120 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Comparable.swift */; };
-		OBJ_121 /* Data Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Data Conversion.swift */; };
-		OBJ_122 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Division.swift */; };
-		OBJ_123 /* Exponentiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Exponentiation.swift */; };
-		OBJ_124 /* Floating Point Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Floating Point Conversion.swift */; };
-		OBJ_125 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* GCD.swift */; };
-		OBJ_126 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Hashable.swift */; };
-		OBJ_127 /* Integer Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Integer Conversion.swift */; };
-		OBJ_128 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Multiplication.swift */; };
-		OBJ_129 /* Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Prime Test.swift */; };
-		OBJ_130 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Random.swift */; };
-		OBJ_131 /* Shifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Shifts.swift */; };
-		OBJ_132 /* Square Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Square Root.swift */; };
-		OBJ_133 /* Strideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Strideable.swift */; };
-		OBJ_134 /* String Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* String Conversion.swift */; };
-		OBJ_135 /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Subtraction.swift */; };
-		OBJ_136 /* Words and Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Words and Bits.swift */; };
-		OBJ_138 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
-		OBJ_144 /* Primitive Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Primitive Types.swift */; };
-		OBJ_145 /* RandomUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* RandomUInt64.swift */; };
-		OBJ_146 /* SipHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* SipHashable.swift */; };
-		OBJ_147 /* SipHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* SipHasher.swift */; };
-		OBJ_63 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_69 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Package.swift */; };
-		OBJ_75 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Package.swift */; };
-		OBJ_81 /* bio_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* bio_swiftTests.swift */; };
-		OBJ_82 /* extensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* extensionTests.swift */; };
-		OBJ_84 /* BioSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BioSwift::BioSwift::Product" /* BioSwift.framework */; };
-		OBJ_85 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BigInt::BigInt::Product" /* BigInt.framework */; };
-		OBJ_86 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
-		OBJ_97 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Extensions.swift */; };
-		OBJ_98 /* Genome+Algebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Genome+Algebra.swift */; };
-		OBJ_99 /* Genome+BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Genome+BigInt.swift */; };
+		OBJ_100 /* BigIntConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BigIntConvertible.swift */; };
+		OBJ_101 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Extensions.swift */; };
+		OBJ_102 /* Genome+Algebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Genome+Algebra.swift */; };
+		OBJ_103 /* Genome+Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Genome+Bio.swift */; };
+		OBJ_104 /* Genome+Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Genome+Codec.swift */; };
+		OBJ_105 /* Genome+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Genome+Foundation.swift */; };
+		OBJ_106 /* Genome+StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Genome+StringLiteral.swift */; };
+		OBJ_107 /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Genome.swift */; };
+		OBJ_108 /* Nucleotide.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Nucleotide.swift */; };
+		OBJ_109 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Utils.swift */; };
+		OBJ_111 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BigInt::BigInt::Product" /* BigInt.framework */; };
+		OBJ_112 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
+		OBJ_119 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Addition.swift */; };
+		OBJ_120 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* BigInt.swift */; };
+		OBJ_121 /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* BigUInt.swift */; };
+		OBJ_122 /* Bitwise Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Bitwise Ops.swift */; };
+		OBJ_123 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Codable.swift */; };
+		OBJ_124 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Comparable.swift */; };
+		OBJ_125 /* Data Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Data Conversion.swift */; };
+		OBJ_126 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Division.swift */; };
+		OBJ_127 /* Exponentiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Exponentiation.swift */; };
+		OBJ_128 /* Floating Point Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Floating Point Conversion.swift */; };
+		OBJ_129 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* GCD.swift */; };
+		OBJ_130 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Hashable.swift */; };
+		OBJ_131 /* Integer Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Integer Conversion.swift */; };
+		OBJ_132 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Multiplication.swift */; };
+		OBJ_133 /* Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Prime Test.swift */; };
+		OBJ_134 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Random.swift */; };
+		OBJ_135 /* Shifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Shifts.swift */; };
+		OBJ_136 /* Square Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Square Root.swift */; };
+		OBJ_137 /* Strideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Strideable.swift */; };
+		OBJ_138 /* String Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* String Conversion.swift */; };
+		OBJ_139 /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Subtraction.swift */; };
+		OBJ_140 /* Words and Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Words and Bits.swift */; };
+		OBJ_142 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
+		OBJ_148 /* Primitive Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Primitive Types.swift */; };
+		OBJ_149 /* RandomUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* RandomUInt64.swift */; };
+		OBJ_150 /* SipHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SipHashable.swift */; };
+		OBJ_151 /* SipHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SipHasher.swift */; };
+		OBJ_65 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_71 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Package.swift */; };
+		OBJ_77 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Package.swift */; };
+		OBJ_83 /* bio_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* bio_swiftTests.swift */; };
+		OBJ_84 /* extensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* extensionTests.swift */; };
+		OBJ_86 /* BioSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BioSwift::BioSwift::Product" /* BioSwift.framework */; };
+		OBJ_87 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BigInt::BigInt::Product" /* BigInt.framework */; };
+		OBJ_88 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SipHash::SipHash::Product" /* SipHash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38EBF64D1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF65B1F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BigInt::BigInt";
 			remoteInfo = BigInt;
 		};
-		38EBF64E1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF65C1F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF64F1F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF65D1F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF6501F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF65E1F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BioSwift::BioSwift";
 			remoteInfo = BioSwift;
 		};
-		38EBF6511F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF65F1F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "BigInt::BigInt";
 			remoteInfo = BigInt;
 		};
-		38EBF6521F7D41FB00239C45 /* PBXContainerItemProxy */ = {
+		38EBF6601F81B0AC00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SipHash::SipHash";
 			remoteInfo = SipHash;
 		};
-		38EBF6531F7D41FC00239C45 /* PBXContainerItemProxy */ = {
+		38EBF6611F81B0AE00239C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -125,161 +126,162 @@
 		"BigInt::BigInt::Product" /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"BioSwift::BioSwift::Product" /* BioSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BioSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"BioSwift::BioSwiftTests::Product" /* BioSwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BioSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* Genome+BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+BigInt.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* Genome+Bio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Bio.swift"; sourceTree = "<group>"; };
-		OBJ_12 /* Genome+Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Codec.swift"; sourceTree = "<group>"; };
-		OBJ_13 /* Genome+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Foundation.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* Genome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Nucleotide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nucleotide.swift; sourceTree = "<group>"; };
-		OBJ_16 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		OBJ_19 /* bio_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bio_swiftTests.swift; sourceTree = "<group>"; };
-		OBJ_20 /* extensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionTests.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/Package.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
-		OBJ_25 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
-		OBJ_26 /* BigUInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigUInt.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Bitwise Ops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bitwise Ops.swift"; sourceTree = "<group>"; };
-		OBJ_28 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Data Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Conversion.swift"; sourceTree = "<group>"; };
-		OBJ_31 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
-		OBJ_32 /* Exponentiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exponentiation.swift; sourceTree = "<group>"; };
-		OBJ_33 /* Floating Point Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Floating Point Conversion.swift"; sourceTree = "<group>"; };
-		OBJ_34 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
-		OBJ_35 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Integer Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Integer Conversion.swift"; sourceTree = "<group>"; };
-		OBJ_37 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
-		OBJ_38 /* Prime Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prime Test.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Shifts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shifts.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Square Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square Root.swift"; sourceTree = "<group>"; };
-		OBJ_42 /* Strideable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strideable.swift; sourceTree = "<group>"; };
-		OBJ_43 /* String Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Conversion.swift"; sourceTree = "<group>"; };
-		OBJ_44 /* Subtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
-		OBJ_45 /* Words and Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Words and Bits.swift"; sourceTree = "<group>"; };
-		OBJ_48 /* Primitive Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Primitive Types.swift"; sourceTree = "<group>"; };
-		OBJ_49 /* RandomUInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUInt64.swift; sourceTree = "<group>"; };
-		OBJ_50 /* SipHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipHashable.swift; sourceTree = "<group>"; };
-		OBJ_51 /* SipHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipHasher.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/Package.swift"; sourceTree = "<group>"; };
+		OBJ_10 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Genome+Algebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Algebra.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* Genome+Bio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Bio.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* Genome+Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Codec.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* Genome+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* Genome+StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+StringLiteral.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* Genome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Nucleotide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nucleotide.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		OBJ_21 /* bio_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bio_swiftTests.swift; sourceTree = "<group>"; };
+		OBJ_22 /* extensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionTests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/valdi/Developer/BioSwift/.build/checkouts/BigInt.git--846726461342754841/Package.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
+		OBJ_27 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		OBJ_28 /* BigUInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigUInt.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Bitwise Ops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bitwise Ops.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Data Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Conversion.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Exponentiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exponentiation.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Floating Point Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Floating Point Conversion.swift"; sourceTree = "<group>"; };
+		OBJ_36 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Integer Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Integer Conversion.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Prime Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prime Test.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Shifts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shifts.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Square Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square Root.swift"; sourceTree = "<group>"; };
+		OBJ_44 /* Strideable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strideable.swift; sourceTree = "<group>"; };
+		OBJ_45 /* String Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Conversion.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Subtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Words and Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Words and Bits.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* Primitive Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Primitive Types.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* RandomUInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUInt64.swift; sourceTree = "<group>"; };
+		OBJ_52 /* SipHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipHashable.swift; sourceTree = "<group>"; };
+		OBJ_53 /* SipHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipHasher.swift; sourceTree = "<group>"; };
+		OBJ_54 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/valdi/Developer/BioSwift/.build/checkouts/SipHash--340540534556366043/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Genome+Algebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genome+Algebra.swift"; sourceTree = "<group>"; };
+		OBJ_9 /* BigIntConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigIntConvertible.swift; sourceTree = "<group>"; };
 		"SipHash::SipHash::Product" /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_106 /* Frameworks */ = {
+		OBJ_110 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_107 /* BigInt.framework in Frameworks */,
-				OBJ_108 /* SipHash.framework in Frameworks */,
+				OBJ_111 /* BigInt.framework in Frameworks */,
+				OBJ_112 /* SipHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_137 /* Frameworks */ = {
+		OBJ_141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_138 /* SipHash.framework in Frameworks */,
+				OBJ_142 /* SipHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_148 /* Frameworks */ = {
+		OBJ_152 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_83 /* Frameworks */ = {
+		OBJ_85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_84 /* BioSwift.framework in Frameworks */,
-				OBJ_85 /* BigInt.framework in Frameworks */,
-				OBJ_86 /* SipHash.framework in Frameworks */,
+				OBJ_86 /* BioSwift.framework in Frameworks */,
+				OBJ_87 /* BigInt.framework in Frameworks */,
+				OBJ_88 /* SipHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_17 /* Tests */ = {
+		OBJ_19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* BioSwiftTests */,
+				OBJ_20 /* BioSwiftTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* BioSwiftTests */ = {
+		OBJ_20 /* BioSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* bio_swiftTests.swift */,
-				OBJ_20 /* extensionTests.swift */,
+				OBJ_21 /* bio_swiftTests.swift */,
+				OBJ_22 /* extensionTests.swift */,
 			);
 			name = BioSwiftTests;
 			path = Tests/BioSwiftTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_21 /* Dependencies */ = {
+		OBJ_23 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* BigInt 3.0.0 */,
-				OBJ_46 /* SipHash 1.2.0 */,
+				OBJ_24 /* BigInt 3.0.0 */,
+				OBJ_48 /* SipHash 1.2.0 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_22 /* BigInt 3.0.0 */ = {
+		OBJ_24 /* BigInt 3.0.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Package.swift */,
-				OBJ_24 /* Addition.swift */,
-				OBJ_25 /* BigInt.swift */,
-				OBJ_26 /* BigUInt.swift */,
-				OBJ_27 /* Bitwise Ops.swift */,
-				OBJ_28 /* Codable.swift */,
-				OBJ_29 /* Comparable.swift */,
-				OBJ_30 /* Data Conversion.swift */,
-				OBJ_31 /* Division.swift */,
-				OBJ_32 /* Exponentiation.swift */,
-				OBJ_33 /* Floating Point Conversion.swift */,
-				OBJ_34 /* GCD.swift */,
-				OBJ_35 /* Hashable.swift */,
-				OBJ_36 /* Integer Conversion.swift */,
-				OBJ_37 /* Multiplication.swift */,
-				OBJ_38 /* Prime Test.swift */,
-				OBJ_39 /* Random.swift */,
-				OBJ_40 /* Shifts.swift */,
-				OBJ_41 /* Square Root.swift */,
-				OBJ_42 /* Strideable.swift */,
-				OBJ_43 /* String Conversion.swift */,
-				OBJ_44 /* Subtraction.swift */,
-				OBJ_45 /* Words and Bits.swift */,
+				OBJ_25 /* Package.swift */,
+				OBJ_26 /* Addition.swift */,
+				OBJ_27 /* BigInt.swift */,
+				OBJ_28 /* BigUInt.swift */,
+				OBJ_29 /* Bitwise Ops.swift */,
+				OBJ_30 /* Codable.swift */,
+				OBJ_31 /* Comparable.swift */,
+				OBJ_32 /* Data Conversion.swift */,
+				OBJ_33 /* Division.swift */,
+				OBJ_34 /* Exponentiation.swift */,
+				OBJ_35 /* Floating Point Conversion.swift */,
+				OBJ_36 /* GCD.swift */,
+				OBJ_37 /* Hashable.swift */,
+				OBJ_38 /* Integer Conversion.swift */,
+				OBJ_39 /* Multiplication.swift */,
+				OBJ_40 /* Prime Test.swift */,
+				OBJ_41 /* Random.swift */,
+				OBJ_42 /* Shifts.swift */,
+				OBJ_43 /* Square Root.swift */,
+				OBJ_44 /* Strideable.swift */,
+				OBJ_45 /* String Conversion.swift */,
+				OBJ_46 /* Subtraction.swift */,
+				OBJ_47 /* Words and Bits.swift */,
 			);
 			name = "BigInt 3.0.0";
 			path = ".build/checkouts/BigInt.git--846726461342754841/sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_46 /* SipHash 1.2.0 */ = {
+		OBJ_48 /* SipHash 1.2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_47 /* SipHash */,
-				OBJ_52 /* Package.swift */,
+				OBJ_49 /* SipHash */,
+				OBJ_54 /* Package.swift */,
 			);
 			name = "SipHash 1.2.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_47 /* SipHash */ = {
+		OBJ_49 /* SipHash */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_48 /* Primitive Types.swift */,
-				OBJ_49 /* RandomUInt64.swift */,
-				OBJ_50 /* SipHashable.swift */,
-				OBJ_51 /* SipHasher.swift */,
+				OBJ_50 /* Primitive Types.swift */,
+				OBJ_51 /* RandomUInt64.swift */,
+				OBJ_52 /* SipHashable.swift */,
+				OBJ_53 /* SipHasher.swift */,
 			);
 			name = SipHash;
 			path = ".build/checkouts/SipHash--340540534556366043/SipHash";
@@ -290,14 +292,14 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_17 /* Tests */,
-				OBJ_21 /* Dependencies */,
-				OBJ_53 /* Products */,
+				OBJ_19 /* Tests */,
+				OBJ_23 /* Dependencies */,
+				OBJ_55 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_53 /* Products */ = {
+		OBJ_55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"BioSwift::BioSwiftTests::Product" /* BioSwiftTests.xctest */,
@@ -311,15 +313,16 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Extensions.swift */,
-				OBJ_9 /* Genome+Algebra.swift */,
-				OBJ_10 /* Genome+BigInt.swift */,
-				OBJ_11 /* Genome+Bio.swift */,
-				OBJ_12 /* Genome+Codec.swift */,
-				OBJ_13 /* Genome+Foundation.swift */,
-				OBJ_14 /* Genome.swift */,
-				OBJ_15 /* Nucleotide.swift */,
-				OBJ_16 /* Utils.swift */,
+				OBJ_9 /* BigIntConvertible.swift */,
+				OBJ_10 /* Extensions.swift */,
+				OBJ_11 /* Genome+Algebra.swift */,
+				OBJ_12 /* Genome+Bio.swift */,
+				OBJ_13 /* Genome+Codec.swift */,
+				OBJ_14 /* Genome+Foundation.swift */,
+				OBJ_15 /* Genome+StringLiteral.swift */,
+				OBJ_16 /* Genome.swift */,
+				OBJ_17 /* Nucleotide.swift */,
+				OBJ_18 /* Utils.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -329,15 +332,15 @@
 /* Begin PBXNativeTarget section */
 		"BigInt::BigInt" /* BigInt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_111 /* Build configuration list for PBXNativeTarget "BigInt" */;
+			buildConfigurationList = OBJ_115 /* Build configuration list for PBXNativeTarget "BigInt" */;
 			buildPhases = (
-				OBJ_114 /* Sources */,
-				OBJ_137 /* Frameworks */,
+				OBJ_118 /* Sources */,
+				OBJ_141 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_139 /* PBXTargetDependency */,
+				OBJ_143 /* PBXTargetDependency */,
 			);
 			name = BigInt;
 			productName = BigInt;
@@ -346,9 +349,9 @@
 		};
 		"BigInt::SwiftPMPackageDescription" /* BigIntPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "BigIntPackageDescription" */;
+			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "BigIntPackageDescription" */;
 			buildPhases = (
-				OBJ_68 /* Sources */,
+				OBJ_70 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -360,16 +363,16 @@
 		};
 		"BioSwift::BioSwift" /* BioSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "BioSwift" */;
+			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "BioSwift" */;
 			buildPhases = (
-				OBJ_96 /* Sources */,
-				OBJ_106 /* Frameworks */,
+				OBJ_98 /* Sources */,
+				OBJ_110 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_109 /* PBXTargetDependency */,
-				OBJ_110 /* PBXTargetDependency */,
+				OBJ_113 /* PBXTargetDependency */,
+				OBJ_114 /* PBXTargetDependency */,
 			);
 			name = BioSwift;
 			productName = BioSwift;
@@ -378,17 +381,17 @@
 		};
 		"BioSwift::BioSwiftTests" /* BioSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "BioSwiftTests" */;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "BioSwiftTests" */;
 			buildPhases = (
-				OBJ_80 /* Sources */,
-				OBJ_83 /* Frameworks */,
+				OBJ_82 /* Sources */,
+				OBJ_85 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_87 /* PBXTargetDependency */,
 				OBJ_89 /* PBXTargetDependency */,
 				OBJ_91 /* PBXTargetDependency */,
+				OBJ_93 /* PBXTargetDependency */,
 			);
 			name = BioSwiftTests;
 			productName = BioSwiftTests;
@@ -397,9 +400,9 @@
 		};
 		"BioSwift::SwiftPMPackageDescription" /* BioSwiftPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "BioSwiftPackageDescription" */;
+			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "BioSwiftPackageDescription" */;
 			buildPhases = (
-				OBJ_62 /* Sources */,
+				OBJ_64 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -411,10 +414,10 @@
 		};
 		"SipHash::SipHash" /* SipHash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_140 /* Build configuration list for PBXNativeTarget "SipHash" */;
+			buildConfigurationList = OBJ_144 /* Build configuration list for PBXNativeTarget "SipHash" */;
 			buildPhases = (
-				OBJ_143 /* Sources */,
-				OBJ_148 /* Frameworks */,
+				OBJ_147 /* Sources */,
+				OBJ_152 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,9 +430,9 @@
 		};
 		"SipHash::SwiftPMPackageDescription" /* SipHashPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_71 /* Build configuration list for PBXNativeTarget "SipHashPackageDescription" */;
+			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "SipHashPackageDescription" */;
 			buildPhases = (
-				OBJ_74 /* Sources */,
+				OBJ_76 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -455,7 +458,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_53 /* Products */;
+			productRefGroup = OBJ_55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -472,137 +475,138 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_114 /* Sources */ = {
+		OBJ_118 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_115 /* Addition.swift in Sources */,
-				OBJ_116 /* BigInt.swift in Sources */,
-				OBJ_117 /* BigUInt.swift in Sources */,
-				OBJ_118 /* Bitwise Ops.swift in Sources */,
-				OBJ_119 /* Codable.swift in Sources */,
-				OBJ_120 /* Comparable.swift in Sources */,
-				OBJ_121 /* Data Conversion.swift in Sources */,
-				OBJ_122 /* Division.swift in Sources */,
-				OBJ_123 /* Exponentiation.swift in Sources */,
-				OBJ_124 /* Floating Point Conversion.swift in Sources */,
-				OBJ_125 /* GCD.swift in Sources */,
-				OBJ_126 /* Hashable.swift in Sources */,
-				OBJ_127 /* Integer Conversion.swift in Sources */,
-				OBJ_128 /* Multiplication.swift in Sources */,
-				OBJ_129 /* Prime Test.swift in Sources */,
-				OBJ_130 /* Random.swift in Sources */,
-				OBJ_131 /* Shifts.swift in Sources */,
-				OBJ_132 /* Square Root.swift in Sources */,
-				OBJ_133 /* Strideable.swift in Sources */,
-				OBJ_134 /* String Conversion.swift in Sources */,
-				OBJ_135 /* Subtraction.swift in Sources */,
-				OBJ_136 /* Words and Bits.swift in Sources */,
+				OBJ_119 /* Addition.swift in Sources */,
+				OBJ_120 /* BigInt.swift in Sources */,
+				OBJ_121 /* BigUInt.swift in Sources */,
+				OBJ_122 /* Bitwise Ops.swift in Sources */,
+				OBJ_123 /* Codable.swift in Sources */,
+				OBJ_124 /* Comparable.swift in Sources */,
+				OBJ_125 /* Data Conversion.swift in Sources */,
+				OBJ_126 /* Division.swift in Sources */,
+				OBJ_127 /* Exponentiation.swift in Sources */,
+				OBJ_128 /* Floating Point Conversion.swift in Sources */,
+				OBJ_129 /* GCD.swift in Sources */,
+				OBJ_130 /* Hashable.swift in Sources */,
+				OBJ_131 /* Integer Conversion.swift in Sources */,
+				OBJ_132 /* Multiplication.swift in Sources */,
+				OBJ_133 /* Prime Test.swift in Sources */,
+				OBJ_134 /* Random.swift in Sources */,
+				OBJ_135 /* Shifts.swift in Sources */,
+				OBJ_136 /* Square Root.swift in Sources */,
+				OBJ_137 /* Strideable.swift in Sources */,
+				OBJ_138 /* String Conversion.swift in Sources */,
+				OBJ_139 /* Subtraction.swift in Sources */,
+				OBJ_140 /* Words and Bits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_143 /* Sources */ = {
+		OBJ_147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_144 /* Primitive Types.swift in Sources */,
-				OBJ_145 /* RandomUInt64.swift in Sources */,
-				OBJ_146 /* SipHashable.swift in Sources */,
-				OBJ_147 /* SipHasher.swift in Sources */,
+				OBJ_148 /* Primitive Types.swift in Sources */,
+				OBJ_149 /* RandomUInt64.swift in Sources */,
+				OBJ_150 /* SipHashable.swift in Sources */,
+				OBJ_151 /* SipHasher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_62 /* Sources */ = {
+		OBJ_64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_63 /* Package.swift in Sources */,
+				OBJ_65 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_68 /* Sources */ = {
+		OBJ_70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_69 /* Package.swift in Sources */,
+				OBJ_71 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_74 /* Sources */ = {
+		OBJ_76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_75 /* Package.swift in Sources */,
+				OBJ_77 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_80 /* Sources */ = {
+		OBJ_82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_81 /* bio_swiftTests.swift in Sources */,
-				OBJ_82 /* extensionTests.swift in Sources */,
+				OBJ_83 /* bio_swiftTests.swift in Sources */,
+				OBJ_84 /* extensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_96 /* Sources */ = {
+		OBJ_98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_97 /* Extensions.swift in Sources */,
-				OBJ_98 /* Genome+Algebra.swift in Sources */,
-				OBJ_99 /* Genome+BigInt.swift in Sources */,
-				OBJ_100 /* Genome+Bio.swift in Sources */,
-				OBJ_101 /* Genome+Codec.swift in Sources */,
-				OBJ_102 /* Genome+Foundation.swift in Sources */,
-				OBJ_103 /* Genome.swift in Sources */,
-				OBJ_104 /* Nucleotide.swift in Sources */,
-				OBJ_105 /* Utils.swift in Sources */,
+				OBJ_100 /* BigIntConvertible.swift in Sources */,
+				OBJ_101 /* Extensions.swift in Sources */,
+				OBJ_102 /* Genome+Algebra.swift in Sources */,
+				OBJ_103 /* Genome+Bio.swift in Sources */,
+				OBJ_104 /* Genome+Codec.swift in Sources */,
+				OBJ_105 /* Genome+Foundation.swift in Sources */,
+				OBJ_106 /* Genome+StringLiteral.swift in Sources */,
+				OBJ_107 /* Genome.swift in Sources */,
+				OBJ_108 /* Nucleotide.swift in Sources */,
+				OBJ_109 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_109 /* PBXTargetDependency */ = {
+		OBJ_113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BigInt::BigInt" /* BigInt */;
-			targetProxy = 38EBF64D1F7D41FB00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF65B1F81B0AC00239C45 /* PBXContainerItemProxy */;
 		};
-		OBJ_110 /* PBXTargetDependency */ = {
+		OBJ_114 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF64F1F7D41FB00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF65D1F81B0AC00239C45 /* PBXContainerItemProxy */;
 		};
-		OBJ_139 /* PBXTargetDependency */ = {
+		OBJ_143 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF64E1F7D41FB00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF65C1F81B0AC00239C45 /* PBXContainerItemProxy */;
 		};
-		OBJ_153 /* PBXTargetDependency */ = {
+		OBJ_157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BioSwift::BioSwiftTests" /* BioSwiftTests */;
-			targetProxy = 38EBF6531F7D41FC00239C45 /* PBXContainerItemProxy */;
-		};
-		OBJ_87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "BioSwift::BioSwift" /* BioSwift */;
-			targetProxy = 38EBF6501F7D41FB00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6611F81B0AE00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "BigInt::BigInt" /* BigInt */;
-			targetProxy = 38EBF6511F7D41FB00239C45 /* PBXContainerItemProxy */;
+			target = "BioSwift::BioSwift" /* BioSwift */;
+			targetProxy = 38EBF65E1F81B0AC00239C45 /* PBXContainerItemProxy */;
 		};
 		OBJ_91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			target = "BigInt::BigInt" /* BigInt */;
+			targetProxy = 38EBF65F1F81B0AC00239C45 /* PBXContainerItemProxy */;
+		};
+		OBJ_93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			target = "SipHash::SipHash" /* SipHash */;
-			targetProxy = 38EBF6521F7D41FB00239C45 /* PBXContainerItemProxy */;
+			targetProxy = 38EBF6601F81B0AC00239C45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_112 /* Debug */ = {
+		OBJ_116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -624,7 +628,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_113 /* Release */ = {
+		OBJ_117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -646,7 +650,7 @@
 			};
 			name = Release;
 		};
-		OBJ_141 /* Debug */ = {
+		OBJ_145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -668,7 +672,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_142 /* Release */ = {
+		OBJ_146 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -690,13 +694,13 @@
 			};
 			name = Release;
 		};
-		OBJ_151 /* Debug */ = {
+		OBJ_155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_152 /* Release */ = {
+		OBJ_156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -744,7 +748,7 @@
 			};
 			name = Release;
 		};
-		OBJ_60 /* Debug */ = {
+		OBJ_62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -753,7 +757,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_61 /* Release */ = {
+		OBJ_63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -762,7 +766,7 @@
 			};
 			name = Release;
 		};
-		OBJ_66 /* Debug */ = {
+		OBJ_68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -771,7 +775,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_67 /* Release */ = {
+		OBJ_69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -780,7 +784,7 @@
 			};
 			name = Release;
 		};
-		OBJ_72 /* Debug */ = {
+		OBJ_74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -789,7 +793,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_73 /* Release */ = {
+		OBJ_75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -798,7 +802,7 @@
 			};
 			name = Release;
 		};
-		OBJ_78 /* Debug */ = {
+		OBJ_80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -816,7 +820,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_79 /* Release */ = {
+		OBJ_81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -834,7 +838,7 @@
 			};
 			name = Release;
 		};
-		OBJ_94 /* Debug */ = {
+		OBJ_96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -856,7 +860,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_95 /* Release */ = {
+		OBJ_97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -881,29 +885,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_111 /* Build configuration list for PBXNativeTarget "BigInt" */ = {
+		OBJ_115 /* Build configuration list for PBXNativeTarget "BigInt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_112 /* Debug */,
-				OBJ_113 /* Release */,
+				OBJ_116 /* Debug */,
+				OBJ_117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_140 /* Build configuration list for PBXNativeTarget "SipHash" */ = {
+		OBJ_144 /* Build configuration list for PBXNativeTarget "SipHash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_141 /* Debug */,
-				OBJ_142 /* Release */,
+				OBJ_145 /* Debug */,
+				OBJ_146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_150 /* Build configuration list for PBXAggregateTarget "BioSwiftPackageTests" */ = {
+		OBJ_154 /* Build configuration list for PBXAggregateTarget "BioSwiftPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_151 /* Debug */,
-				OBJ_152 /* Release */,
+				OBJ_155 /* Debug */,
+				OBJ_156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -917,47 +921,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_59 /* Build configuration list for PBXNativeTarget "BioSwiftPackageDescription" */ = {
+		OBJ_61 /* Build configuration list for PBXNativeTarget "BioSwiftPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_60 /* Debug */,
-				OBJ_61 /* Release */,
+				OBJ_62 /* Debug */,
+				OBJ_63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_65 /* Build configuration list for PBXNativeTarget "BigIntPackageDescription" */ = {
+		OBJ_67 /* Build configuration list for PBXNativeTarget "BigIntPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_66 /* Debug */,
-				OBJ_67 /* Release */,
+				OBJ_68 /* Debug */,
+				OBJ_69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_71 /* Build configuration list for PBXNativeTarget "SipHashPackageDescription" */ = {
+		OBJ_73 /* Build configuration list for PBXNativeTarget "SipHashPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_72 /* Debug */,
-				OBJ_73 /* Release */,
+				OBJ_74 /* Debug */,
+				OBJ_75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_77 /* Build configuration list for PBXNativeTarget "BioSwiftTests" */ = {
+		OBJ_79 /* Build configuration list for PBXNativeTarget "BioSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_78 /* Debug */,
-				OBJ_79 /* Release */,
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_93 /* Build configuration list for PBXNativeTarget "BioSwift" */ = {
+		OBJ_95 /* Build configuration list for PBXNativeTarget "BioSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_94 /* Debug */,
-				OBJ_95 /* Release */,
+				OBJ_96 /* Debug */,
+				OBJ_97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

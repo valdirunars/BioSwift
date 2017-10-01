@@ -19,7 +19,7 @@ protocol SimpleDecodable {
 extension Genome: SimpleEncodable, SimpleDecodable {
     func encode() -> Data? {
         guard self.isEmpty == false else { return nil }
-        return "\(self.count)-\(self.asInteger().description)".data(using: .ascii)!
+        return "\(self.count)-\(self.bigIntValue.description)".data(using: .ascii)!
     }
     
     static func decode(data: Data) -> Genome? {

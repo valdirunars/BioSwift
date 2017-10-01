@@ -9,10 +9,55 @@ import Foundation
 import BigInt
 
 extension Genome {
-
+    
     public mutating func reverseComplement() {
         self.nucleotides = self.nucleotides.reversed()
         self.complementBit = !self.complementBit
+    }
+    
+    public func translate() -> Protein? {
+        let codingStartMarker: Genome = "ATG"
+        let codingEndMarker: Genome = "AAT"
+
+        guard let start = self.index(of: codingStartMarker) else { return nil }
+        guard let indexOfCodingEndMarker = self.index(of: codingEndMarker) else { return nil }
+
+        let end = self.index(indexOfCodingEndMarker, offsetBy: 3)
+        let codingSequence = self[start..<end]
+        
+        var protein = ""
+        
+        for i in 0...codingSequence.count-3 where i % 3 == 0 {
+            let start = codingSequence.index(codingSequence.startIndex, offsetBy: i)
+            let end = codingSequence.index(start, offsetBy: 3)
+            
+            let key = Genome(sequence: codingSequence[start..<end])
+            if let proteinUnit = Utils.codonTable[key] {
+                protein += proteinUnit
+            }
+        }
+
+        return protein
+    }
+    
+    public func index(of pattern: Genome, maxDistance: UInt = 0) -> Index? {
+        guard self.count > pattern.count else { return nil }
+    
+        var index: Index?
+
+        let len = pattern.count
+        for i in 0...self.count {
+            let workingIndex = self.index(self.startIndex, offsetBy: i)
+    
+            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
+    
+            if slice.hammingDistance(pattern) <= maxDistance {
+                index = workingIndex
+                break
+            }
+        }
+    
+        return index
     }
     
     public func indices(for pattern: Genome, maxDistance: UInt = 0) -> [Index] {
@@ -20,7 +65,7 @@ extension Genome {
         
         var indices: [Index] = []
         let len = pattern.count
-        for i in 0..<(self.count-len) {
+        for i in 0...(self.count - len) {
             let workingIndex = self.index(self.startIndex, offsetBy: i)
             
             let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
@@ -37,7 +82,7 @@ extension Genome {
         assert(self.count >= length, "No pattern found for the given length")
         
         var workingIndex = self.startIndex
-        let endIndex = self.index(self.startIndex, offsetBy: self.count-length)
+        let endIndex = self.index(self.startIndex, offsetBy: self.count-length+1)
         
         var mostFrequent = 1
         var startIndexOfMostFrequent = self.startIndex
@@ -71,7 +116,7 @@ extension Genome {
         var frequentPatterns: [Genome] = []
         var neighborhoods: [Genome] = []
         
-        for i in 0..<self.count-length {
+        for i in 0...self.count-length {
             neighborhoods += Genome(sequence: self[i..<i+length]).neighbors(maxDistance: maxDistance)
         }
         
@@ -79,7 +124,7 @@ extension Genome {
         var counts: [Int] = []
         for i in 0..<neighborhoods.count {
             let pattern = neighborhoods[i]
-            index.append(pattern.asInteger())
+            index.append(pattern.bigIntValue)
             counts.append(1)
         }
         
@@ -90,7 +135,7 @@ extension Genome {
         }
         let maxCount = counts.max() ?? 0
         
-        for i in 0..<neighborhoods.count where counts[i] == maxCount {
+        for i in 0..<neighborhoods.count-1 where counts[i] == maxCount {
             let pattern = Genome(bigInt: index[i], length: length)
             frequentPatterns.append(pattern)
         }
@@ -130,5 +175,17 @@ extension Genome {
         return Utils.neighbors(pattern: self[self.startIndex..<self.endIndex], maxDistance: maxDistance)
     }
     
+    internal func allSubgenomes(length: Int) -> [Genome] {
+        var subs: [Genome] = []
+        for i in 0...count-length {
+            subs.append(Genome(sequence: self[i..<i+length]))
+        }
+        return subs
+    }
     
+    public static prefix func ! (genome: Genome) -> Genome {
+        var tmp = genome
+        tmp.complementBit = !tmp.complementBit
+        return tmp
+    }
 }

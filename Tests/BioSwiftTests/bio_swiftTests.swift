@@ -10,7 +10,9 @@ import BigInt
 @testable import BioSwift
 
 class bio_swiftTests: XCTestCase {
-    let stringToTest = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
+
+    let genomeToTest: Genome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
+
     func testNucleotide() {
         
         let nucs: [(Nucleotide, Character, Character)] = [
@@ -31,30 +33,29 @@ class bio_swiftTests: XCTestCase {
         }
     }
 
-    func testReverseCompliment() {
+    func testReverseComplement() {
         let reverseComplement = "CGATCATTGCGCCAAAGCAGCTCGATCATTGCGCCAAAGCAGCTCGATCATTGCGCCAAAGCAGCTCGATCATTGCGCCAAAGCAGCT"
-        let genome = Genome(sequence: self.stringToTest)
 
         measure {
-            var rev = genome
+            var rev = self.genomeToTest
             rev.reverseComplement()
             XCTAssert(reverseComplement == rev.description)
             rev.reverseComplement()
-            XCTAssert(rev == genome)
+            XCTAssert(rev == self.genomeToTest)
         }
     }
     
     func testMostFrequentPattern() {
         measure {
-            let mostFreq = Genome(sequence: self.stringToTest).mostFrequentPattern(length: 2)
+            let mostFreq = self.genomeToTest.mostFrequentPattern(length: 2)
             XCTAssert(mostFreq == Genome(sequence: "GC"))
         }
     }
     
     func testIndicesForPattern() {
-        let genome = Genome(sequence: "CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC")
+        let genome: Genome = "CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC"
         measure {
-            let subgenome = Genome(sequence: "ATTCTGGA")
+            let subgenome: Genome = "ATTCTGGA"
             let indices = genome.indices(for: subgenome, maxDistance: 3)
             
             let exp = [ 6, 7, 26, 27, 78 ]
@@ -65,10 +66,15 @@ class bio_swiftTests: XCTestCase {
             
             XCTAssert(indices == expected)
         }
+        
+        let genome2: Genome = "TGCCTTA"
+        
+        let indices = genome2.indices(for: "ATA", maxDistance: 1)
+        XCTAssert(indices.count == 1 && indices.first! == genome2.count - 3)
     }
     
     func testMinimalSkew() {
-        let minimal = Genome(sequence: self.stringToTest).indicesOfMinimalSkew(increment: .a, decrement: .t)
+        let minimal = self.genomeToTest.indicesOfMinimalSkew(increment: .a, decrement: .t)
         let exp = [
             74,
             75,
@@ -81,28 +87,27 @@ class bio_swiftTests: XCTestCase {
     }
     
     func testFrequentPatternsWithDistance() {
-        let genome = Genome(sequence: "ACGTTGCATGTCGCATGATGCATGAGAGCT")
+        let genome: Genome = "ACGTTGCATGTCGCATGATGCATGAGAGCT"
         let frequent = genome.mostFrequentPatterns(length: 4, maxDistance: 1)
             .sorted { (left, right) -> Bool in
-                left.asInteger() < right.asInteger()
+                left.bigIntValue < right.bigIntValue
             }
         
-        let expected = [ "GATG", "ATGC", "ATGT" ]
-            .map(Genome.init(sequence:))
+        let expected: [Genome] = [ "GATG", "ATGC", "ATGT" ]
             .sorted { (left, right) -> Bool in
-                left.asInteger() < right.asInteger()
+                left.bigIntValue < right.bigIntValue
             }
         XCTAssert(frequent == expected)
     }
     
     func testNeighbors() {
-        let genome = Genome(sequence: "AGT")
+        let genome: Genome = "AGT"
         let neighbors = genome.neighbors(maxDistance: 1)
             .sorted { (left, right) -> Bool in
-                left.asInteger() < right.asInteger()
+                left.bigIntValue < right.bigIntValue
             }
         
-        let expected = [
+        let expected: [Genome] = [
             "AGT",
             "CGT",
             "TGT",
@@ -114,26 +119,85 @@ class bio_swiftTests: XCTestCase {
             "AGC",
             "AGG"
         ]
-        .map(Genome.init(sequence:))
         .sorted { (left, right) -> Bool in
-            left.asInteger() < right.asInteger()
+            left.bigIntValue < right.bigIntValue
         }
         
         XCTAssert(neighbors == expected)
     }
     
     func testIntConversion() {
-        let genome = Genome(sequence: "AGT")
-        let expInt = BigInt(integerLiteral: 11)
+        let genome: Genome = "AGT"
+        let expInt: BigInt = 11
         let expected = Genome(bigInt: expInt, length: 3)
-        XCTAssert(genome == expected)
-        XCTAssert(genome.asInteger() == expInt)
         
+        XCTAssert(genome == expected)
+        XCTAssert(genome.bigIntValue == expInt)
+
+        let genomes: [Genome] = [
+            "CTTTTAGTGGTATTAAGGGTGCCCA",
+            "ATTCTAGCCCTATAAGCAATCACTC",
+            "GAATGAATATACTCTGACAATATCA",
+            "GCTTGCCGGGATTCACACACTATGA",
+        ]
+
+        var set: Dictionary<String, String> = [:]
+        for genome in genomes {
+            set[genome.bigIntValue.description] = genome.description
+        }
+        
+        XCTAssert(set.count == genomes.count)
+        for (key, value) in set {
+            let integer = BigInt(key, radix: 10)
+            let genome = Genome(bigInt: integer!, length: 25)
+            XCTAssert(genome == Genome(sequence: value))
+        }
+    }
+    
+    func testMotifs() {
+        let genomes: [Genome] = [
+            "CTTTTAGTGGTATTAAGGGTGCCCA",
+            "ATTCTAGCCCTATAAGCAATCACTC",
+            "GAATGAATATACTCTGACAATATCA",
+            "GCTTGCCGGGATTCACACACTATGA",
+            "CTGTGTATTAGACGAACTTAAGTCC",
+            "CAATATGAGCGTTAGGGAGCTATAA",
+            "CGTAGTATGAAAGCGCTCCCTTCCT",
+            "ACATTTATAAGGAGTATGGCAGTAG",
+            "ATGAGACTCGCACTCTATGATGGCC",
+            "ATGGATGCAATATTAGCGGCTAAAT"
+        ]
+        
+        let motifs = genomes.motifs(length: 5, maxDistance: 1)
+            .sorted { (left, right) -> Bool in
+                return left.bigIntValue < right.bigIntValue
+            }
+        
+        let expected: [Genome] = [ "ATTAT", "TATAA", "TATCA", "TATGA", "TATTA" ]
+            .sorted { (left, right) -> Bool in
+                return left.bigIntValue < right.bigIntValue
+            }
+        
+        XCTAssert(motifs == expected)
+    }
+    
+    func testTranslation() {
+        let genome: Genome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+        
+        let protein = "MGPNFHKPEQ"
+        XCTAssert(genome.translate() == protein)
     }
 
     static var allTests = [
         ("testNucleotide", testNucleotide),
-        ("testGenome", testReverseCompliment),
-        ("testMinimalSkew", testMinimalSkew)
+        ("testReverseComplement", testReverseComplement),
+        ("testMostFrequentPattern", testMostFrequentPattern),
+        ("testIndicesForPattern", testIndicesForPattern),
+        ("testMinimalSkew", testMinimalSkew),
+        ("testFrequentPatternsWithDistance", testFrequentPatternsWithDistance),
+        ("testNeighbors", testNeighbors),
+        ("testIntConversion", testIntConversion),
+        ("testMotifs", testMotifs),
+        ("testTranslation", testTranslation)
     ]
 }

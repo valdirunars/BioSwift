@@ -2,14 +2,25 @@ import Foundation
 import BigInt
 
 struct Utils {
-    static func patternToInteger(pattern: Slice<Genome>) -> BigInt {
-        guard pattern.isEmpty == false else { return 0 }
-
-        let prefix = pattern[pattern.startIndex..<(pattern.endIndex-1)]
-        let lastIndex = pattern.index(pattern.startIndex, offsetBy: pattern.count - 1)
-        
-        return (BigInt(integerLiteral: 4) * patternToInteger(pattern: prefix)) + BigInt(integerLiteral: Int64(pattern[lastIndex].rawValue))
-    }
+    
+    internal static var codonTable: [Genome: String] = [
+        "ATA":"I", "ATC":"I", "ATT":"I", "ATG":"M",
+        "ACA":"T", "ACC":"T", "ACG":"T", "ACT":"T",
+        "AAC":"N", "AAT":"N", "AAA":"K", "AAG":"K",
+        "AGC":"S", "AGT":"S", "AGA":"R", "AGG":"R",
+        "CTA":"L", "CTC":"L", "CTG":"L", "CTT":"L",
+        "CCA":"P", "CCC":"P", "CCG":"P", "CCT":"P",
+        "CAC":"H", "CAT":"H", "CAA":"Q", "CAG":"Q",
+        "CGA":"R", "CGC":"R", "CGG":"R", "CGT":"R",
+        "GTA":"V", "GTC":"V", "GTG":"V", "GTT":"V",
+        "GCA":"A", "GCC":"A", "GCG":"A", "GCT":"A",
+        "GAC":"D", "GAT":"D", "GAA":"E", "GAG":"E",
+        "GGA":"G", "GGC":"G", "GGG":"G", "GGT":"G",
+        "TCA":"S", "TCC":"S", "TCG":"S", "TCT":"S",
+        "TTC":"F", "TTT":"F", "TTA":"L", "TTG":"L",
+        "TAC":"Y", "TAT":"Y", "TAA":"_", "TAG":"_",
+        "TGC":"C", "TGT":"C", "TGA":"_", "TGG":"W",
+    ]
     
     static func integerToPattern(integer: BigInt, length: Int) -> Genome {
 
@@ -22,10 +33,9 @@ struct Utils {
                 fatalError("Something went wrong")
             }
         }
-        let four = BigInt(integerLiteral: 4)
 
-        let prefixInt = integer / four
-        let remainder = integer % four
+        let prefixInt = integer / Nucleotide.componentCount
+        let remainder = integer % Nucleotide.componentCount
         
         guard let decimal = remainder.description.first,
             let byte = UInt8("\(decimal)"),
@@ -38,7 +48,7 @@ struct Utils {
         return prefix + symbol
     }
 
-    static func neighbors(pattern: Slice<Genome>, maxDistance: UInt) -> [Genome] {
+    internal static func neighbors(pattern: Slice<Genome>, maxDistance: UInt) -> [Genome] {
         guard maxDistance > 0 else { return [ Genome(sequence: pattern) ] }
         guard pattern.count > 1 else {
             return [ .single(.a), .single(.g), .single(.c), .single(.t) ]
