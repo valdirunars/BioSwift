@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BigInt
 
 public typealias Byte = UInt8
 
@@ -24,10 +25,10 @@ extension Character: CharConvertible {
 }
 
 public enum Nucleotide: Byte, CharConvertible, Equatable {
-    case a = 0
-    case c = 1
-    case g = 2
-    case t = 3
+    case a = 0 // adenine
+    case c = 1 // cytosine
+    case g = 2 // guanine
+    case t = 3 // thymine
     
     public var charValue: Character {
         switch self {
@@ -40,6 +41,20 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         case .t:
             return "T"
         }
+    }
+
+    var bigIntValue: BigInt {
+        return BigInt(integerLiteral: Int64(self.rawValue))
+    }
+    
+    public static let componentCount: BigInt = 4
+    
+    internal static var all: [Nucleotide] {
+        return [ .a, .c, .g, .t ]
+    }
+    
+    public static var random: Nucleotide {
+        return Nucleotide.all[Int(arc4random()) % Int(componentCount)]
     }
 
     public init?(unit: CharConvertible) {
@@ -60,15 +75,7 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         return nil
     }
 
-    internal static var all: [Nucleotide] {
-        return [ .a, .c, .g, .t ]
-    }
-
-    public static var random: Nucleotide {
-        return Nucleotide.all[Int(arc4random() % 4)]
-    }
-
-    public static prefix func !(nucleotide: Nucleotide) -> Nucleotide {
+    public static prefix func ! (nucleotide: Nucleotide) -> Nucleotide {
         switch nucleotide {
         case .a:
             return .t
