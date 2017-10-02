@@ -182,10 +182,4 @@ extension Genome {
         }
         return subs
     }
-    
-    public static prefix func ! (genome: Genome) -> Genome {
-        var tmp = genome
-        tmp.complementBit = !tmp.complementBit
-        return tmp
-    }
 }

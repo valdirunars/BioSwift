@@ -35,4 +35,10 @@ extension Genome {
         left.nucleotides.append(right)
         left.bigIntValue = Nucleotide.componentCount * left.bigIntValue + right.bigIntValue
     }
+    
+    public static prefix func ! (genome: Genome) -> Genome {
+        var tmp = genome
+        tmp.complementBit = !tmp.complementBit
+        return tmp
+    }
 }
