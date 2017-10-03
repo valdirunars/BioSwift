@@ -56,6 +56,12 @@ genomes.motifs(length: 5, maxDistance: 1)
 // [ "ATTAT", "TATAA", "TATCA", "TATGA", "TATTA" ]
 
 genome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+
+genome.transcribe()
+// "AGCAUGGGCCCAAACUUUCAUAAGCCGGAGCAAUGCC"
+genome.transcribe()
+// "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+
 let protein = genome.translate()
 // "MGPNFHKPEQ"
 protein.translate()
