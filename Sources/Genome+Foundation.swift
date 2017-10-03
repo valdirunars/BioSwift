@@ -9,7 +9,7 @@ import Foundation
 
 extension Genome: Hashable {
     public var hashValue: Int {
-        return self.bigIntValue.description.hashValue
+        return self.bigIntValue.hashValue
     }
 }
 

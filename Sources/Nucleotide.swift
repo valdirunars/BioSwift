@@ -29,7 +29,18 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
     case c = 1 // cytosine
     case g = 2 // guanine
     case t = 3 // thymine
+    case u = 4 // uracil
     
+    public static let componentCount: BigInt = 5
+    
+    internal static var all: [Nucleotide] {
+        return [ .a, .c, .g, .t ]
+    }
+    
+    public static var random: Nucleotide {
+        return Nucleotide.all[Int(arc4random()) % Int(componentCount)]
+    }
+
     public var charValue: Character {
         switch self {
         case .a:
@@ -40,21 +51,13 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
             return "G"
         case .t:
             return "T"
+        case .u:
+            return "U"
         }
     }
 
     var bigIntValue: BigInt {
         return BigInt(integerLiteral: Int64(self.rawValue))
-    }
-    
-    public static let componentCount: BigInt = 4
-    
-    internal static var all: [Nucleotide] {
-        return [ .a, .c, .g, .t ]
-    }
-    
-    public static var random: Nucleotide {
-        return Nucleotide.all[Int(arc4random()) % Int(componentCount)]
     }
 
     public init?(unit: CharConvertible) {
@@ -71,6 +74,8 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         } else if val == "T" {
             self = .t
             return
+        } else if val == "U" {
+            self = .u
         }
         return nil
     }
@@ -84,6 +89,8 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         case .g:
             return .c
         case .t:
+            return .a
+        case .u:
             return .a
         }
     }

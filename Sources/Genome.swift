@@ -8,8 +8,6 @@
 import Foundation
 import BigInt
 
-public typealias Protein = String
-
 public extension Slice where Base == Genome {
     var description: String {
         return String(self.map {
@@ -31,8 +29,19 @@ public extension Slice where Base == Genome {
 
 public struct Genome: BigIntConvertible {
 
+    var codingStartMarker: Genome {
+        return Genome(sequence: "A\(self.type == .dna ? "T" : "U")G")
+    }
+
+    var codingEndMarker: Genome {
+        return Genome(sequence: "AA\(self.type == .dna ? "T" : "U")")
+    }
+    
     public internal(set) var nucleotides: [Nucleotide]
     public internal(set) var  bigIntValue: BigInt
+    public var type: GenomeType {
+        return self.contains(.t) ? .dna : .rna
+    }
 
     internal var complementBit = false
 
@@ -71,5 +80,12 @@ public struct Genome: BigIntConvertible {
     
     public func hammingDistance<C: Collection>(_ collection: C) -> Int where C.Element == Nucleotide, C.Index == Index {
         return self[0..<self.count].hammingDistance(collection)
+    }
+    
+    mutating internal func swap(a: Nucleotide, with b: Nucleotide) {
+        self.nucleotides = self.nucleotides.map { nuc in
+            guard nuc != a else { return b }
+            return nuc
+        }
     }
 }

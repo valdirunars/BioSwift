@@ -128,7 +128,7 @@ class bio_swiftTests: XCTestCase {
     
     func testIntConversion() {
         let genome: Genome = "AGT"
-        let expInt: BigInt = 11
+        let expInt: BigInt = 13
         let expected = Genome(bigInt: expInt, length: 3)
         
         XCTAssert(genome == expected)

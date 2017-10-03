@@ -16,170 +16,20 @@ extension Genome {
     }
     
     public func translate() -> Protein? {
-        let codingStartMarker: Genome = "ATG"
-        let codingEndMarker: Genome = "AAT"
-
-        guard let start = self.index(of: codingStartMarker) else { return nil }
-        guard let indexOfCodingEndMarker = self.index(of: codingEndMarker) else { return nil }
-
-        let end = self.index(indexOfCodingEndMarker, offsetBy: 3)
-        let codingSequence = self[start..<end]
-        
-        var protein = ""
-        
-        for i in 0...codingSequence.count-3 where i % 3 == 0 {
-            let start = codingSequence.index(codingSequence.startIndex, offsetBy: i)
-            let end = codingSequence.index(start, offsetBy: 3)
-            
-            let key = Genome(sequence: codingSequence[start..<end])
-            if let proteinUnit = Utils.codonTable[key] {
-                protein += proteinUnit
-            }
-        }
-
-        return protein
+        return Protein(genome: self)
     }
     
-    public func index(of pattern: Genome, maxDistance: UInt = 0) -> Index? {
-        guard self.count > pattern.count else { return nil }
-    
-        var index: Index?
-
-        let len = pattern.count
-        for i in 0...self.count {
-            let workingIndex = self.index(self.startIndex, offsetBy: i)
-    
-            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
-    
-            if slice.hammingDistance(pattern) <= maxDistance {
-                index = workingIndex
-                break
-            }
+    public mutating func transcribe() {
+        if self.contains(.u) {
+            self.swap(a: .u, with: .t)
+        } else {
+            self.swap(a: .t, with: .u)
         }
-    
-        return index
     }
     
-    public func indices(for pattern: Genome, maxDistance: UInt = 0) -> [Index] {
-        guard self.count > pattern.count else { return [] }
-        
-        var indices: [Index] = []
-        let len = pattern.count
-        for i in 0...(self.count - len) {
-            let workingIndex = self.index(self.startIndex, offsetBy: i)
-            
-            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
-
-            if slice.hammingDistance(pattern) <= maxDistance {
-                indices.append(workingIndex)
-            }
-        }
-        
-        return indices
-    }
-    
-    public func mostFrequentPattern(length: Int) -> Genome {
-        assert(self.count >= length, "No pattern found for the given length")
-        
-        var workingIndex = self.startIndex
-        let endIndex = self.index(self.startIndex, offsetBy: self.count-length+1)
-        
-        var mostFrequent = 1
-        var startIndexOfMostFrequent = self.startIndex
-        var counts: [String: Int] = [:]
-        
-        while workingIndex != endIndex {
-            
-            let end = self.index(workingIndex, offsetBy: length)
-            
-            let slice = self[workingIndex..<end]
-            
-            if let count = counts[slice.description]{
-                let next = count + 1
-                counts[slice.description] = next
-                if next > mostFrequent {
-                    mostFrequent = next
-                    startIndexOfMostFrequent = workingIndex
-                }
-            } else {
-                counts[slice.description] = 1
-            }
-            
-            workingIndex = self.index(after: workingIndex)
-            
-        }
-        
-        return Genome(sequence: self[startIndexOfMostFrequent..<self.index(startIndexOfMostFrequent, offsetBy: length)])
-    }
-    
-    public func mostFrequentPatterns(length: Int, maxDistance: UInt = 0) -> [Genome] {
-        var frequentPatterns: [Genome] = []
-        var neighborhoods: [Genome] = []
-        
-        for i in 0...self.count-length {
-            neighborhoods += Genome(sequence: self[i..<i+length]).neighbors(maxDistance: maxDistance)
-        }
-        
-        var index: [BigInt] = []
-        var counts: [Int] = []
-        for i in 0..<neighborhoods.count {
-            let pattern = neighborhoods[i]
-            index.append(pattern.bigIntValue)
-            counts.append(1)
-        }
-        
-        index.sort()
-        
-        for i in 0..<neighborhoods.count-1 where index[i] == index[i+1] {
-            counts[i + 1] = counts[i] + 1
-        }
-        let maxCount = counts.max() ?? 0
-        
-        for i in 0..<neighborhoods.count-1 where counts[i] == maxCount {
-            let pattern = Genome(bigInt: index[i], length: length)
-            frequentPatterns.append(pattern)
-        }
-        
-        return frequentPatterns
-    }
-    
-    public func indicesOfMinimalSkew(increment: Nucleotide, decrement: Nucleotide) -> [Index] {
-        
-        var skew = 0
-        var currentMinimumSkew = self.count
-        var skewIndices: [Index] = []
-        
-        for i in 0..<self.count {
-            let nuc = self[i]
-            
-            var addition = 0
-            if nuc == increment {
-                addition = 1
-            } else if nuc == decrement {
-                addition = -1
-            }
-            
-            skew = skew + addition
-            if skew < currentMinimumSkew {
-                skewIndices = [ i ]
-                currentMinimumSkew = skew
-            } else if skew == currentMinimumSkew {
-                skewIndices.append(i)
-            }
-        }
-        
-        return skewIndices
-    }
-    
-    public func neighbors(maxDistance: UInt) -> [Genome] {
-        return Utils.neighbors(pattern: self[self.startIndex..<self.endIndex], maxDistance: maxDistance)
-    }
-    
-    internal func allSubgenomes(length: Int) -> [Genome] {
-        var subs: [Genome] = []
-        for i in 0...count-length {
-            subs.append(Genome(sequence: self[i..<i+length]))
-        }
-        return subs
+    public func transcribed() -> Genome {
+        var tmp = self
+        tmp.transcribe()
+        return tmp
     }
 }
