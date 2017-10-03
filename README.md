@@ -29,6 +29,9 @@ genome.reverseComplement()
 genome.indicesOfMinimalSkew(increment: .a, decrement: .t)
 // [ 74, 75, 76, 77, 78, 79 ]
 
+genome.mostFrequentPattern(length: 2)
+// "GC"
+
 genome = "ACGTTGCATGTCGCATGATGCATGAGAGCT"
 genome.mostFrequentPatterns(length: 4, maxDistance: 1)
 // [ "GATG", "ATGC", "ATGT" ]
