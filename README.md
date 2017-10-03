@@ -15,7 +15,7 @@ An attempt to start a Bioinformatics library written purely in Swift
     - [ ] EMBL
 
 ## How To Use
-This library is brand new with a lot of features missing, but it's not completely useless
+This library is brand new with a lot of features missing, but it's not entirely useless
 
 
 ```swift
