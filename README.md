@@ -20,6 +20,12 @@ An attempt to start a Bioinformatics library written purely in Swift
 ## How To Use
 This library is brand new with a lot of features missing, but it's not entirely useless
 
+### Swift Package Manager
+
+```swift
+.Package(url: "https://github.com/valdirunars/BioSwift.git", majorVersion: 0)
+```
+
 ### Sequencing
 
 ```swift
@@ -71,14 +77,23 @@ let protein = genome.translate()
 
 ```
 
-### IO
+### Init sequences from FASTA file
 
-```
-var fastaFileData = Data(contentsOf: URL(string: "../genome.fasta"))
+```swift
+let fastaURL = URL(string: "../genome.fasta")!
+var fastaFileData = Data(contentsOf: fastaURL)
 
 let genomes: [Genome]? = Genome.decode(fastaFileData)
 
-fastaFileData = Data(contentsOf: URL(string: "../protein.fasta"))
+let proteinFastaURL = URL(string: "../protein.fasta")!
+fastaFileData = Data(contentsOf: proteinFastaURL)
 
 let proteins: [Protein]? = Protein.decode(fastaFileData)
+```
+
+### Encode sequences to FASTA
+
+```swift
+let genome: Genome = "ACGT"
+let data: Data? = genome.encode(.fasta)
 ```

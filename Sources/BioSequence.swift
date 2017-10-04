@@ -19,7 +19,7 @@ protocol BioSequenceAlgebra: BigIntConvertible, BigIntInitializable, Equatable {
     
 }
 
-protocol BioSequence: BioSequenceAlgebra, Collection {
+protocol BioSequence: BioSequenceAlgebra, Collection, SimpleEncodable {
     var tag: String? { get set }
     var units: [Unit] { get set }
     

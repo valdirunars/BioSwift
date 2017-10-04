@@ -1,5 +1,5 @@
 //
-//  Genome+SimpleEncodable.swift
+//  BioSequence+Codec.swift
 //  BioSwift
 //
 //  Created by Þorvaldur Rúnarsson on 27/09/2017.
@@ -8,40 +8,30 @@
 import Foundation
 import BigInt
 
-enum Codec {
+public enum Codec {
     case fasta
 }
 
-protocol SimpleEncodable {
+public protocol SimpleEncodable {
     var parsingSeperator: String { get }
     func parse(_ type: Codec) -> String?
     func encode(_ type: Codec) -> Data?
 }
 
-protocol SimpleDecodable {
+public protocol SimpleDecodable {
     func decode(data: Data, type: Codec)
 }
 
 extension SimpleEncodable {
-    func encode(_ type: Codec) -> Data? {
+    public func encode(_ type: Codec) -> Data? {
         return self.parse(type)?.data(using: .ascii)!
     }
 }
 
-extension Genome {
+extension BioSequence {
+    public var parsingSeperator: String { return "\n" }
     
-    static func decode(data: Data, type: Codec) -> [Genome]? {
-        switch type {
-        case .fasta:
-            return Utils.decode(fasta: data)
-        }
-    }
-}
-
-extension Genome: SimpleEncodable {
-    var parsingSeperator: String { return "\n" }
-    
-    func parse(_ type: Codec) -> String? {
+    public func parse(_ type: Codec) -> String? {
         guard self.isEmpty == false else { return nil }
         
         switch type {
@@ -49,10 +39,17 @@ extension Genome: SimpleEncodable {
             return "> \(self.tag ?? "")\n\(self.description)"
         }
     }
+
+    public static func decode(data: Data, type: Codec) -> [Self]? {
+        switch type {
+        case .fasta:
+            return Utils.decode(fasta: data)
+        }
+    }
 }
 
 extension Sequence where Element: SimpleEncodable {
-    func encode(_ type: Codec) -> Data? {
+    public func encode(_ type: Codec) -> Data? {
         switch type {
         case .fasta:
             var parsedString = ""
