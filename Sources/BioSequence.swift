@@ -29,6 +29,14 @@ protocol BioSequence: BioSequenceAlgebra, Collection {
     init<S: Sequence>(sequence: S) where S.Element: CharConvertible
 }
 
+// Pattern
+
+extension BioSequence {
+    func hammingDistance<C: Collection>(_ collection: C) -> Int {
+        return self.units[self.startIndex..<self.endIndex].hammingDistance(collection)
+    }
+}
+
 // MARK: BigIntConvertible
 
 extension BioSequence {

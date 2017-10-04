@@ -38,10 +38,6 @@ public struct Genome: BigIntConvertible, CustomStringConvertible {
     public var count: Int {
         return self.units.count
     }
-
-    public func hammingDistance<C: Collection>(_ collection: C) -> Int where C.Element == Nucleotide, C.Index == Index {
-        return self[0..<self.count].hammingDistance(collection)
-    }
     
     mutating internal func swap(a: Nucleotide, with b: Nucleotide) {
         self.units = self.units.map { nuc in

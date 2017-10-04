@@ -18,7 +18,7 @@ extension Genome {
         for i in 0...self.count {
             let workingIndex = self.index(self.startIndex, offsetBy: i)
             
-            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
+            let slice = self.units[workingIndex..<self.index(workingIndex, offsetBy: len)]
             
             if slice.hammingDistance(pattern) <= maxDistance {
                 index = workingIndex
@@ -37,7 +37,7 @@ extension Genome {
         for i in 0...(self.count - len) {
             let workingIndex = self.index(self.startIndex, offsetBy: i)
             
-            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
+            let slice = self.units[workingIndex..<self.index(workingIndex, offsetBy: len)]
             
             if slice.hammingDistance(pattern) <= maxDistance {
                 indices.append(workingIndex)

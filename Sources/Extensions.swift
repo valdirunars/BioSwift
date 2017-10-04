@@ -64,7 +64,7 @@ extension Slice where Base.Element: CharConvertible {
     }
 }
 
-extension Slice where Element: Equatable {
+extension ArraySlice where Element: Equatable {
     
     func hammingDistance<C: Collection>(_ collection: C) -> Int {
         assert(self.count == collection.count, "Attempting to compute hamming distance of two strings that differ in length")

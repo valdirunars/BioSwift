@@ -7,8 +7,11 @@ An attempt to start a Bioinformatics library written purely in Swift
 
 - DNA & RNA Sequencing
     - [X] Pattern matching algorithms
+    - [X] Reverse Compliment
     - [X] Transcription
     - [X] Translation (into `Protein`)
+- Protein
+    - [ ] Pattern matching algorithms
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
     - [X] FASTA
     - [ ] FASTQ
@@ -17,6 +20,7 @@ An attempt to start a Bioinformatics library written purely in Swift
 ## How To Use
 This library is brand new with a lot of features missing, but it's not entirely useless
 
+### Sequencing
 
 ```swift
 var genome: Genome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
@@ -64,6 +68,17 @@ genome.transcribe()
 
 let protein = genome.translate()
 // "MGPNFHKPEQ"
-protein.translate()
-// "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+
+```
+
+### IO
+
+```
+var fastaFileData = Data(contentsOf: URL(string: "../genome.fasta"))
+
+let genomes: [Genome]? = Genome.decode(fastaFileData)
+
+fastaFileData = Data(contentsOf: URL(string: "../protein.fasta"))
+
+let proteins: [Protein]? = Protein.decode(fastaFileData)
 ```
