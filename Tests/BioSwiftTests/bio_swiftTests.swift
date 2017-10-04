@@ -185,7 +185,7 @@ class bio_swiftTests: XCTestCase {
         let genome: Genome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
         
         let protein = "MGPNFHKPEQ"
-        XCTAssert(genome.translate() == protein)
+        XCTAssert(genome.translate()?.description == protein)
     }
 
     static var allTests = [

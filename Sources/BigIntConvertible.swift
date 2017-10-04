@@ -8,7 +8,14 @@
 import Foundation
 import BigInt
 
-protocol BigIntConvertible {
-    init(bigInt: BigInt, length: Int)
+protocol BigIntReadable {
     var bigIntValue: BigInt { get }
+}
+
+protocol BigIntConvertible: BigIntReadable {
+    var bigIntValue: BigInt { get set }
+}
+
+protocol BigIntInitializable {
+    init(bigInt: BigInt, length: Int)
 }

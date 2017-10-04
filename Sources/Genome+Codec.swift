@@ -8,28 +8,61 @@
 import Foundation
 import BigInt
 
+enum Codec {
+    case fasta
+}
+
 protocol SimpleEncodable {
-    func encode() -> Data?
+    var parsingSeperator: String { get }
+    func parse(_ type: Codec) -> String?
+    func encode(_ type: Codec) -> Data?
 }
 
 protocol SimpleDecodable {
-    static func decode(data: Data) -> Self?
+    func decode(data: Data, type: Codec)
 }
 
-extension Genome: SimpleEncodable, SimpleDecodable {
-    func encode() -> Data? {
-        guard self.isEmpty == false else { return nil }
-        return "\(self.count)-\(self.bigIntValue.description)".data(using: .ascii)!
+extension SimpleEncodable {
+    func encode(_ type: Codec) -> Data? {
+        return self.parse(type)?.data(using: .ascii)!
     }
+}
+
+extension Genome {
     
-    static func decode(data: Data) -> Genome? {
-        guard let string = String(data: data, encoding: .ascii) else { return nil }
-        let array = string.split(separator: "-")
+    static func decode(data: Data, type: Codec) -> [Genome]? {
+        switch type {
+        case .fasta:
+            return Utils.decode(fasta: data)
+        }
+    }
+}
 
-        guard array.count == 2,
-            let count = Int(array[0]) else { return nil }
+extension Genome: SimpleEncodable {
+    var parsingSeperator: String { return "\n" }
+    
+    func parse(_ type: Codec) -> String? {
+        guard self.isEmpty == false else { return nil }
+        
+        switch type {
+        case .fasta:
+            return "> \(self.tag ?? "")\n\(self.description)"
+        }
+    }
+}
 
-        let integer = BigInt(stringLiteral: String(array[1]))
-        return Genome.init(bigInt: integer, length: count)
+extension Sequence where Element: SimpleEncodable {
+    func encode(_ type: Codec) -> Data? {
+        switch type {
+        case .fasta:
+            var parsedString = ""
+            for component in self {
+                guard let parsedComponent = component.parse(type) else {
+                    return nil
+                }
+                parsedString += "\(parsedComponent)\(component.parsingSeperator)"
+            }
+            return parsedString.data(using: .ascii)
+        }
     }
 }

@@ -22,13 +22,13 @@ struct Utils {
         "TGC":"C", "TGT":"C", "TGA":"_", "TGG":"W",
     ]
     
-    static func integerToPattern(integer: BigInt, length: Int) -> Genome {
+    static func integerToPattern<T: BioSequence>(integer: BigInt, length: Int) -> T {
 
         guard length != 1 else {
             if let byteChar = integer.description.first,
-                let byte = UInt8("\(byteChar)"),
-                let nuc = Nucleotide(rawValue: byte) {
-                return .single(nuc)
+                let byte = Byte("\(byteChar)"),
+                let nuc = T.Unit(rawValue: byte) {
+                return T.single(nuc)
             } else {
                 fatalError("Something went wrong")
             }
@@ -38,12 +38,12 @@ struct Utils {
         let remainder = integer % Nucleotide.componentCount
         
         guard let decimal = remainder.description.first,
-            let byte = UInt8("\(decimal)"),
-            let symbol = Nucleotide(rawValue: byte) else {
+            let byte = Byte("\(decimal)"),
+            let symbol = T.Unit(rawValue: byte) else {
                 fatalError("Failed to symbol from integer")
         }
-        
-        let prefix = integerToPattern(integer: prefixInt, length: length - 1)
+        let nextLength: Int = length - 1
+        let prefix: T = integerToPattern(integer: prefixInt, length: nextLength)
         
         return prefix + symbol
     }
@@ -71,5 +71,40 @@ struct Utils {
         }
         
         return neighborhood
+    }
+    
+    internal static func decode<T: BioSequence>(fasta: Data) -> [T]? {
+        guard let string = String(data: fasta, encoding: .ascii) else { return nil }
+        let components = string.components(separatedBy: "\n")
+        
+        var tags: [String] = []
+        var sequences: [String] = []
+        
+        var nextTag = true
+        for component in components {
+            if nextTag {
+                let tag = component.stringByRemovingWhitespaceInFront()
+                tags.append(tag)
+            } else {
+                sequences.append(component.trimmingCharacters(in: .whitespaces))
+            }
+            nextTag = !nextTag
+        }
+        guard tags.count == sequences.count else {
+            assertionFailure("Invalid FASTA file")
+            return nil
+        }
+        
+        return zip(tags, sequences)
+            .map { tuple -> T in
+                var bioSeq = T(sequence: tuple.1)
+                bioSeq.tag = tuple.0
+                return bioSeq
+            }
+            .reduce([]) { result, bioSeq -> [T]? in
+                var tmp = result
+                tmp?.append(bioSeq)
+                return tmp
+        }
     }
 }

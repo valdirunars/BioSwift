@@ -7,10 +7,10 @@ An attempt to start a Bioinformatics library written purely in Swift
 
 - DNA & RNA Sequencing
     - [X] Pattern matching algorithms
-    - [ ] Transcription
-    - [ ] Translation (into `Protein`)
+    - [X] Transcription
+    - [X] Translation (into `Protein`)
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
-    - [ ] FASTA
+    - [X] FASTA
     - [ ] FASTQ
     - [ ] EMBL
 

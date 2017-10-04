@@ -11,12 +11,30 @@ import BigInt
 extension Genome {
     
     public mutating func reverseComplement() {
-        self.nucleotides = self.nucleotides.reversed()
+        self.units = self.units.reversed()
         self.complementBit = !self.complementBit
     }
     
     public func translate() -> Protein? {
-        return Protein(genome: self)
+        guard let start = self.index(of: self.codingStartMarker) else { return nil }
+        guard let indexOfCodingEndMarker = self.index(of: self.codingEndMarker) else { return nil }
+        
+        let end = self.index(indexOfCodingEndMarker, offsetBy: 3)
+        let codingSequence = self[start..<end]
+        
+        var protein = ""
+        
+        for i in 0...codingSequence.count-3 where i % 3 == 0 {
+            let start = codingSequence.index(codingSequence.startIndex, offsetBy: i)
+            let end = codingSequence.index(start, offsetBy: 3)
+            
+            let key = Genome(sequence: codingSequence[start..<end])
+            if let proteinUnit = Utils.codonTable[key] {
+                protein += proteinUnit
+            }
+        }
+        
+        return Protein(sequence: protein)
     }
     
     public mutating func transcribe() {

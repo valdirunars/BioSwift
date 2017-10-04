@@ -8,30 +8,13 @@
 import Foundation
 import BigInt
 
-public typealias Byte = UInt8
-
-public protocol CharConvertible {
-    init?(unit: CharConvertible)
-    var charValue: Character { get }
-}
-
-extension Character: CharConvertible {
-
-    public init?(unit: CharConvertible) {
-        self = unit.charValue
-    }
-
-    public var charValue: Character { return self }
-}
-
-public enum Nucleotide: Byte, CharConvertible, Equatable {
+public enum Nucleotide: Byte, ByteRepresentable, Equatable {
+    
     case a = 0 // adenine
     case c = 1 // cytosine
     case g = 2 // guanine
     case t = 3 // thymine
     case u = 4 // uracil
-    
-    public static let componentCount: BigInt = 5
     
     internal static var all: [Nucleotide] {
         return [ .a, .c, .g, .t ]
@@ -39,45 +22,6 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
     
     public static var random: Nucleotide {
         return Nucleotide.all[Int(arc4random()) % Int(componentCount)]
-    }
-
-    public var charValue: Character {
-        switch self {
-        case .a:
-            return "A"
-        case .c:
-            return "C"
-        case .g:
-            return "G"
-        case .t:
-            return "T"
-        case .u:
-            return "U"
-        }
-    }
-
-    var bigIntValue: BigInt {
-        return BigInt(integerLiteral: Int64(self.rawValue))
-    }
-
-    public init?(unit: CharConvertible) {
-        let val = unit.charValue
-        if val == "A" {
-            self = .a
-            return
-        } else if val == "C" {
-            self = .c
-            return
-        } else if val == "G" {
-            self = .g
-            return
-        } else if val == "T" {
-            self = .t
-            return
-        } else if val == "U" {
-            self = .u
-        }
-        return nil
     }
 
     public static prefix func ! (nucleotide: Nucleotide) -> Nucleotide {
@@ -93,9 +37,5 @@ public enum Nucleotide: Byte, CharConvertible, Equatable {
         case .u:
             return .a
         }
-    }
-
-    public static func == (left: Nucleotide, right: Nucleotide) -> Bool {
-        return left.rawValue == right.rawValue
     }
 }
