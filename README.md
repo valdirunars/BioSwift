@@ -85,14 +85,14 @@ let protein: Protein = genome.translate()
 
 ```swift
 let fastaURL = URL(string: "../genome.fasta")!
-var fastaFileData = Data(contentsOf: fastaURL)
+var fastaFileData: Data! = Data(contentsOf: fastaURL)
 
-let genomes: [DNAGenome]? = Genome.decode(fastaFileData)
+let genomes: [DNAGenome]? = try! DNAGenome.decode(fastaFileData, type: .fasta)
 
 let proteinFastaURL = URL(string: "../protein.fasta")!
-fastaFileData = Data(contentsOf: proteinFastaURL)
+fastaFileData = Data(contentsOf: proteinFastaURL, type: .fasta)
 
-let proteins: [Protein]? = Protein.decode(fastaFileData)
+let proteins: [Protein]? = try! Protein.decode(fastaFileData)
 ```
 
 ### Encode sequences to FASTA

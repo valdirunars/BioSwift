@@ -17,24 +17,24 @@ struct FASTAParser<T: BioSequence>: Parser {
     
     let components: [String]
     
-    init(contentsOfURL url: URL) throws {
+    public init(contentsOfURL url: URL) throws {
         let string = try String(contentsOf: url)
         self.init(string: string)
     }
     
-    init(string: String) {
+    public init(string: String) {
         self.components = string.split(separator: FASTAParser<T>.componentSeperator)
             .map(String.init)
     }
     
-    init?(data: Data) {
+    public init?(data: Data) {
         guard let string = String(data: data, encoding: .ascii) else {
             return nil
         }
         self.init(string: string)
     }
     
-    func parse() throws -> [T] {
+    public func parse() throws -> [T] {
         let initial: [[Any]] = [ [], [] ]
         let final = components.map(Token.parse)
             .reduce(initial) { (result, token) -> [[Any]] in
@@ -64,7 +64,7 @@ struct FASTAParser<T: BioSequence>: Parser {
                 fatalError("Tags are supposed to be Strings")
             }
             
-            guard var sequence = tuple.0 as? T else {
+            guard var sequence = tuple.1 as? T else {
                 fatalError("Sequences are supposed to be \(T.self)s")
             }
             

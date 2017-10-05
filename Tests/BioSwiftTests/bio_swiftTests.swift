@@ -187,6 +187,27 @@ class bio_swiftTests: XCTestCase {
         let protein: Protein = "MGPNFHKPEQ"
         XCTAssert(genome.translate() == protein)
     }
+    
+    func testFASTAParsing() {
+        let fastaString = """
+; This is a comment
+>Sequence1
+CTTTTAGTGGTATTAAGGGTGCCCA
+>Sequence2
+ATTCTAGCCCTATAAGCAATCACTC
+>Sequence3
+GAATGAATATACTCTGACAATATCA
+"""
+        let fastaData = fastaString.data(using: .ascii)!
+
+        let expected: [DNAGenome] = [
+            "CTTTTAGTGGTATTAAGGGTGCCCA",
+            "ATTCTAGCCCTATAAGCAATCACTC",
+            "GAATGAATATACTCTGACAATATCA"
+        ]
+        let decoded = try! DNAGenome.decode(data: fastaData, type: .fasta)!
+        XCTAssert(decoded == expected)
+    }
 
     static var allTests = [
         ("testNucleotide", testNucleotide),
@@ -198,6 +219,7 @@ class bio_swiftTests: XCTestCase {
         ("testNeighbors", testNeighbors),
         ("testIntConversion", testIntConversion),
         ("testMotifs", testMotifs),
-        ("testTranslation", testTranslation)
+        ("testTranslation", testTranslation),
+        ("testFASTAParsing", testFASTAParsing)
     ]
 }

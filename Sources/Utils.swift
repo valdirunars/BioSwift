@@ -3,7 +3,7 @@ import BigInt
 
 struct Utils {
 
-    static func integerToPattern<T: BioSequence>(integer: BigInt, length: Int) -> T {
+    internal static func integerToPattern<T: BioSequence>(integer: BigInt, length: Int) -> T {
 
         guard length != 1 else {
             if let byteChar = integer.description.first,
