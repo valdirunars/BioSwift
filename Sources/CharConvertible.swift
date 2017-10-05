@@ -8,17 +8,52 @@
 import Foundation
 import BigInt
 
+public protocol BioAlphabet {
+    associatedtype Base: CharConvertible, ByteRepresentable
+
+    static var alphabet: [Base] { get }
+}
+
+public struct DNAAlphabet: BioAlphabet {
+    public typealias Base = Nucleotide
+    public static var alphabet: [Nucleotide] {
+        return [ .a, .c, .g, .t ]
+    }
+}
+
+public struct RNAAlphabet: BioAlphabet {
+    public typealias Base = Nucleotide
+    public static var alphabet: [Nucleotide] {
+        return [ .a, .c, .g, .u ]
+    }
+}
+
+public struct ProteinAlphabet: BioAlphabet {
+    public typealias Base = AminoAcid
+    public static var alphabet: [AminoAcid] {
+        return [ .a, .c, .d, .e, .f, .g, .h, .i, .k, .l, .m, .n, .p, .q, .r, .s, .t, .v, .w, .y ]
+    }
+}
+
 public protocol CharConvertible {
     static var componentCount: BigInt { get }
+
     var charValue: Character { get }
-    init?(unit: CharConvertible)
+    init?(unit: Character)
 }
 
 extension Character: CharConvertible {
-    public static var componentCount: BigInt { return 128 /*ASCII*/ }
+    private static var supportedASCIICharCount: Int { return 94 }
 
-    public init?(unit: CharConvertible) {
-        self = unit.charValue
+    public static var componentCount: BigInt { return BigInt(integerLiteral: Int64(supportedASCIICharCount)) /*ASCII*/ }
+
+    public static var alphabetString: String {
+        return String((33...126).map {
+            return Character(UnicodeScalar($0)!)
+        })
+    }
+    public init?(unit: Character) {
+        self = unit
     }
     
     public var charValue: Character { return self }
@@ -26,7 +61,9 @@ extension Character: CharConvertible {
 
 extension Nucleotide: CharConvertible {
     public static var componentCount: BigInt { return 5 }
-    
+
+    public static var alphabetString: String { return "ACGTU" }
+
     public var charValue: Character {
         switch self {
         case .a:
@@ -42,8 +79,8 @@ extension Nucleotide: CharConvertible {
         }
     }
     
-    public init?(unit: CharConvertible) {
-        let val = unit.charValue
+    public init?(unit: Character) {
+        let val = unit
         if val == "A" {
             self = .a
             return
@@ -66,6 +103,10 @@ extension Nucleotide: CharConvertible {
 extension AminoAcid: CharConvertible {
     
     public static var componentCount: BigInt { return 20 }
+
+    public static var alphabetString: String {
+        return "ACDEFGHIKLMNPQRSTVWY"
+    }
 
     public var charValue: Character {
         switch self {
@@ -112,66 +153,65 @@ extension AminoAcid: CharConvertible {
         }
     }
     
-    public init?(unit: CharConvertible) {
-        let val = unit.charValue
-        if val == "A" {
+    public init?(unit: Character) {
+        if unit == "A" {
             self = .a
             return
-        } else if val == "C" {
+        } else if unit == "C" {
             self = .c
             return
-        } else if val == "D" {
+        } else if unit == "D" {
             self = .d
             return
-        } else if val == "E" {
+        } else if unit == "E" {
             self = .e
             return
-        } else if val == "F" {
+        } else if unit == "F" {
             self = .f
             return
-        } else if val == "G" {
+        } else if unit == "G" {
             self = .g
             return
-        } else if val == "H" {
+        } else if unit == "H" {
             self = .h
             return
-        } else if val == "I" {
+        } else if unit == "I" {
             self = .i
             return
-        } else if val == "K" {
+        } else if unit == "K" {
             self = .k
             return
-        } else if val == "L" {
+        } else if unit == "L" {
             self = .l
             return
-        } else if val == "M" {
+        } else if unit == "M" {
             self = .m
             return
-        } else if val == "N" {
+        } else if unit == "N" {
             self = .n
             return
-        } else if val == "P" {
+        } else if unit == "P" {
             self = .p
             return
-        } else if val == "Q" {
+        } else if unit == "Q" {
             self = .q
             return
-        } else if val == "R" {
+        } else if unit == "R" {
             self = .r
             return
-        } else if val == "S" {
+        } else if unit == "S" {
             self = .s
             return
-        } else if val == "T" {
+        } else if unit == "T" {
             self = .t
             return
-        } else if val == "V" {
+        } else if unit == "V" {
             self = .v
             return
-        } else if val == "W" {
+        } else if unit == "W" {
             self = .w
             return
-        } else if val == "Y" {
+        } else if unit == "Y" {
             self = .y
             return
         }

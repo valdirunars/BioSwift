@@ -8,7 +8,7 @@
 import Foundation
 import BigInt
 
-public struct Protein {    
+public struct Protein: ExpressibleByStringLiteral {
     public internal(set) var tag: String? = nil
     public internal(set) var units: [AminoAcid]
     public internal(set) var bigIntValue: BigInt

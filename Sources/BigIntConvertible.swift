@@ -8,7 +8,7 @@
 import Foundation
 import BigInt
 
-protocol BigIntReadable {
+public protocol BigIntReadable {
     var bigIntValue: BigInt { get }
 }
 

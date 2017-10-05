@@ -11,9 +11,11 @@ An attempt to start a Bioinformatics library written purely in Swift
     - [X] Transcription
     - [X] Translation (into `Protein`)
     - [ ] Ambiguous alphabet support
+    - [ ] Probability matching
 - Protein
-    - [ ] Pattern matching algorithms
+    - [X] Pattern matching algorithms
     - [ ] Ambiguous alphabet support
+    - [ ] Probability matching
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
     - [X] FASTA
     - [ ] FASTQ
@@ -31,7 +33,7 @@ This library is brand new with a lot of features missing, but it's not entirely 
 ### Sequencing
 
 ```swift
-var genome: Genome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
+var genome: DNAGenome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
 !genome
 // "TCGACGAAACCGCGTTACTAGCTCGACGAAACCGCGTTACTAGCTCGACGAAACCGCGTTACTAGCTCGACGAAACCGCGTTACTAGC"
 
@@ -52,7 +54,7 @@ genome = "AGT"
 genome.neighbors(maxDistance: 1)
 // [ "AGT", "CGT", "TGT", "GGT", "ACT", "AAT", "ATT", "AGA", "AGC", "AGG" ]
 
-let genomes: [Genome] = [
+let genomes: [DNAGenome] = [
     "CTTTTAGTGGTATTAAGGGTGCCCA",
     "ATTCTAGCCCTATAAGCAATCACTC",
     "GAATGAATATACTCTGACAATATCA",
@@ -70,11 +72,11 @@ genomes.motifs(length: 5, maxDistance: 1)
 genome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
 
 genome.transcribe()
-// "AGCAUGGGCCCAAACUUUCAUAAGCCGGAGCAAUGCC"
+// RNAGenome("AGCAUGGGCCCAAACUUUCAUAAGCCGGAGCAAUGCC")
 genome.transcribe()
-// "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+// DNAGenome("AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC")
 
-let protein = genome.translate()
+let protein: Protein = genome.translate()
 // "MGPNFHKPEQ"
 
 ```

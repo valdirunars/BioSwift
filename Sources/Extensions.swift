@@ -64,7 +64,7 @@ extension Slice where Base.Element: CharConvertible {
     }
 }
 
-extension ArraySlice where Element: Equatable {
+extension Slice where Base: BioSequence {
     
     func hammingDistance<C: Collection>(_ collection: C) -> Int {
         assert(self.count == collection.count, "Attempting to compute hamming distance of two strings that differ in length")
@@ -77,5 +77,15 @@ extension ArraySlice where Element: Equatable {
             
             return unit1 == unit2 ? result : result + 1
         }
+    }
+}
+
+extension Character
+{
+    func unicodeScalarCodePoint() -> UInt32 {
+        let characterString = String(self)
+        let scalars = characterString.unicodeScalars
+        
+        return scalars[scalars.startIndex].value
     }
 }

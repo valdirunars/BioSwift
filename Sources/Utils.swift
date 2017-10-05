@@ -2,32 +2,13 @@ import Foundation
 import BigInt
 
 struct Utils {
-    
-    internal static var codonTable: [Genome: String] = [
-        "ATA":"I", "ATC":"I", "ATT":"I", "ATG":"M",
-        "ACA":"T", "ACC":"T", "ACG":"T", "ACT":"T",
-        "AAC":"N", "AAT":"N", "AAA":"K", "AAG":"K",
-        "AGC":"S", "AGT":"S", "AGA":"R", "AGG":"R",
-        "CTA":"L", "CTC":"L", "CTG":"L", "CTT":"L",
-        "CCA":"P", "CCC":"P", "CCG":"P", "CCT":"P",
-        "CAC":"H", "CAT":"H", "CAA":"Q", "CAG":"Q",
-        "CGA":"R", "CGC":"R", "CGG":"R", "CGT":"R",
-        "GTA":"V", "GTC":"V", "GTG":"V", "GTT":"V",
-        "GCA":"A", "GCC":"A", "GCG":"A", "GCT":"A",
-        "GAC":"D", "GAT":"D", "GAA":"E", "GAG":"E",
-        "GGA":"G", "GGC":"G", "GGG":"G", "GGT":"G",
-        "TCA":"S", "TCC":"S", "TCG":"S", "TCT":"S",
-        "TTC":"F", "TTT":"F", "TTA":"L", "TTG":"L",
-        "TAC":"Y", "TAT":"Y", "TAA":"_", "TAG":"_",
-        "TGC":"C", "TGT":"C", "TGA":"_", "TGG":"W",
-    ]
-    
+
     static func integerToPattern<T: BioSequence>(integer: BigInt, length: Int) -> T {
 
         guard length != 1 else {
             if let byteChar = integer.description.first,
                 let byte = Byte("\(byteChar)"),
-                let nuc = T.Unit(rawValue: byte) {
+                let nuc = T.Element(rawValue: byte) {
                 return T.single(nuc)
             } else {
                 fatalError("Something went wrong")
@@ -39,7 +20,7 @@ struct Utils {
         
         guard let decimal = remainder.description.first,
             let byte = Byte("\(decimal)"),
-            let symbol = T.Unit(rawValue: byte) else {
+            let symbol = T.Element(rawValue: byte) else {
                 fatalError("Failed to symbol from integer")
         }
         let nextLength: Int = length - 1
@@ -48,13 +29,13 @@ struct Utils {
         return prefix + symbol
     }
 
-    internal static func neighbors(pattern: Slice<Genome>, maxDistance: UInt) -> [Genome] {
-        guard maxDistance > 0 else { return [ Genome(sequence: pattern) ] }
+    internal static func neighbors<T: BioSequence>(pattern: Slice<T>, maxDistance: UInt) -> [T] {
+        guard maxDistance > 0 else { return [ T(sequence: pattern) ] }
         guard pattern.count > 1 else {
-            return [ .single(.a), .single(.g), .single(.c), .single(.t) ]
+            return T.Alphabet.alphabet.map(T.single)
         }
         
-        var neighborhood: [Genome] = []
+        var neighborhood: [T] = []
         
         let cdrPattern = pattern[pattern.index(after: pattern.startIndex)..<pattern.endIndex]
         let cdr = neighbors(pattern: cdrPattern, maxDistance: maxDistance)
@@ -62,8 +43,8 @@ struct Utils {
         for gen in cdr {
             let hamming = gen.hammingDistance(cdrPattern)
             if hamming < maxDistance {
-                for nuc in Nucleotide.all {
-                    neighborhood.append(nuc + gen)
+                for element in T.Alphabet.alphabet {
+                    neighborhood.append(element + gen)
                 }
             } else {
                 neighborhood.append(pattern.first! + gen)

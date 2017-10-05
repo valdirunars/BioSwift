@@ -9,44 +9,59 @@ import Foundation
 import BigInt
 
 protocol BioSequenceAlgebra: BigIntConvertible, BigIntInitializable, Equatable {
-    associatedtype Unit: CharConvertible, ByteRepresentable
+    associatedtype Alphabet: BioAlphabet
 
-    static func + (left: Self, right: Unit) -> Self
-    static func + (left: Unit, right: Self) -> Self
+    static func + (left: Self, right: Alphabet.Base) -> Self
+    static func + (left: Alphabet.Base, right: Self) -> Self
     static func + (left: Self, right: Self) -> Self
     static func += (left: inout Self, right: Self)
-    static func += (left: inout Self, right: Unit)
+    static func += (left: inout Self, right: Alphabet.Base)
     
 }
 
-protocol BioSequence: BioSequenceAlgebra, Collection, SimpleEncodable {
+protocol BioSequence: BioSequenceAlgebra, Collection, SimpleEncodable, ExpressibleByStringLiteral, Hashable {
     var tag: String? { get set }
-    var units: [Unit] { get set }
+    var units: [Alphabet.Base] { get set }
     
-    static func single(_ unit: Unit) -> Self
+    static func single(_ unit: Alphabet.Base) -> Self
     
-    init(units: [Unit], bigIntValue: BigInt)
+    init(units: [Alphabet.Base], bigIntValue: BigInt)
     init<S: Sequence>(sequence: S) where S.Element: CharConvertible
+    
+    // reference method from Collection to bypass the fact that protocols don't conform to themselves
+    func index(_ i: Index, offsetBy: Int) -> Index
+}
+
+extension BioSequence {
+    public init(stringLiteral: String) {
+        self.init(sequence: stringLiteral)
+    }
+    
+    public var hashValue: Int {
+        return self.bigIntValue.hashValue
+    }
 }
 
 // Pattern
 
 extension BioSequence {
     func hammingDistance<C: Collection>(_ collection: C) -> Int {
-        return self.units[self.startIndex..<self.endIndex].hammingDistance(collection)
+        return self[self.startIndex..<self.endIndex].hammingDistance(collection)
     }
 }
 
 // MARK: BigIntConvertible
 
 extension BioSequence {
+    typealias Element = Alphabet.Base
+    typealias SubSequence = Slice<Self>
 
     public init<S: Sequence>(sequence: S) where S.Element: CharConvertible {
         self.init(units: [], bigIntValue: 0)
 
-        for element in sequence {
-            guard let nuc = Unit(unit: element) else { continue }
-            self += nuc
+        for char in sequence {
+            guard let element = Element(unit: char.charValue) else { continue }
+            self += element
         }
     }
     
@@ -58,13 +73,13 @@ extension BioSequence {
 // MARK: BioSequenceAlgebra
 
 extension BioSequence {
-    public static func + (left: Self, right: Unit) -> Self {
+    public static func + (left: Self, right: Alphabet.Base) -> Self {
         var tmp = left
         tmp += right
         return tmp
     }
 
-    public static func + (left: Unit, right: Self) -> Self {
+    public static func + (left: Alphabet.Base, right: Self) -> Self {
         return Self.single(left) + right
     }
 
@@ -80,9 +95,9 @@ extension BioSequence {
         }
     }
 
-    public static func += (left: inout Self, right: Unit) {
+    public static func += (left: inout Self, right: Alphabet.Base) {
         left.units.append(right)
-        left.bigIntValue = Unit.componentCount * left.bigIntValue + right.bigIntValue
+        left.bigIntValue = Alphabet.Base.componentCount * left.bigIntValue + right.bigIntValue
     }
     
     public static func == (left: Self, right: Self) -> Bool {
@@ -103,7 +118,6 @@ extension BioSequence {
 
 extension BioSequence {
     public typealias Index = Int
-    public typealias Element = Unit
 
     public var startIndex: Index {
         return self.units.startIndex
@@ -121,7 +135,7 @@ extension BioSequence {
         return self.units.index(after: i)
     }
     
-    public subscript(index: Index) -> Unit {
+    public subscript(index: Index) -> Alphabet.Base {
         return self.units[index]
     }
     

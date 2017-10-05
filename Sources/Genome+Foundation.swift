@@ -7,20 +7,14 @@
 
 import Foundation
 
-extension Genome: Hashable {
-    public var hashValue: Int {
-        return self.bigIntValue.hashValue
-    }
-}
+extension Collection where Element: BioSequence {
+    func _motifs(length: Int, maxDistance: UInt) -> [Element] {
+        var patterns: [Element] = []
 
-extension Collection where Element == Genome {
-    public func motifs(length: Int, maxDistance: UInt) -> [Genome] {
-        var patterns: [Genome] = []
-
-        var allSubs = self.flatMap({ $0.allSubgenomes(length: length) })
+        var allSubs = self.flatMap({ $0.allSubpatterns(length: length) })
         allSubs.uniquify()
-        for genome in allSubs {
-            let neighbors = genome.neighbors(maxDistance: maxDistance)
+        for seq in allSubs {
+            let neighbors = seq.neighbors(maxDistance: maxDistance)
             for neighbor in neighbors {
                 let allElementsContainNeighbor = self.map { element in
                     return element.indices(for: neighbor, maxDistance: maxDistance).isEmpty == false ? 1 : 0
@@ -35,6 +29,18 @@ extension Collection where Element == Genome {
         }
 
         return patterns
+    }
+}
+
+extension Collection where Element == DNAGenome {
+    public func motifs(length: Int, maxDistance: UInt) -> [DNAGenome] {
+        return _motifs(length: length, maxDistance: maxDistance)
+    }
+}
+
+extension Collection where Element == RNAGenome {
+    public func motifs(length: Int, maxDistance: UInt) -> [RNAGenome] {
+        return _motifs(length: length, maxDistance: maxDistance)
     }
 }
 

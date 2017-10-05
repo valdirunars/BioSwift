@@ -11,7 +11,7 @@ import BigInt
 
 class bio_swiftTests: XCTestCase {
 
-    let genomeToTest: Genome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
+    let genomeToTest: DNAGenome = "AGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCGAGCTGCTTTGGCGCAATGATCG"
 
     func testNucleotide() {
         
@@ -48,14 +48,14 @@ class bio_swiftTests: XCTestCase {
     func testMostFrequentPattern() {
         measure {
             let mostFreq = self.genomeToTest.mostFrequentPattern(length: 2)
-            XCTAssert(mostFreq == Genome(sequence: "GC"))
+            XCTAssert(mostFreq == DNAGenome(sequence: "GC"))
         }
     }
     
     func testIndicesForPattern() {
-        let genome: Genome = "CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC"
+        let genome: DNAGenome = "CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAATGCCTAGCGGCTTGTGGTTTCTCCTACGCTCC"
         measure {
-            let subgenome: Genome = "ATTCTGGA"
+            let subgenome: DNAGenome = "ATTCTGGA"
             let indices = genome.indices(for: subgenome, maxDistance: 3)
             
             let exp = [ 6, 7, 26, 27, 78 ]
@@ -67,7 +67,7 @@ class bio_swiftTests: XCTestCase {
             XCTAssert(indices == expected)
         }
         
-        let genome2: Genome = "TGCCTTA"
+        let genome2: DNAGenome = "TGCCTTA"
         
         let indices = genome2.indices(for: "ATA", maxDistance: 1)
         XCTAssert(indices.count == 1 && indices.first! == genome2.count - 3)
@@ -87,13 +87,13 @@ class bio_swiftTests: XCTestCase {
     }
     
     func testFrequentPatternsWithDistance() {
-        let genome: Genome = "ACGTTGCATGTCGCATGATGCATGAGAGCT"
+        let genome: DNAGenome = "ACGTTGCATGTCGCATGATGCATGAGAGCT"
         let frequent = genome.mostFrequentPatterns(length: 4, maxDistance: 1)
             .sorted { (left, right) -> Bool in
                 left.bigIntValue < right.bigIntValue
             }
         
-        let expected: [Genome] = [ "GATG", "ATGC", "ATGT" ]
+        let expected: [DNAGenome] = [ "GATG", "ATGC", "ATGT" ]
             .sorted { (left, right) -> Bool in
                 left.bigIntValue < right.bigIntValue
             }
@@ -101,13 +101,13 @@ class bio_swiftTests: XCTestCase {
     }
     
     func testNeighbors() {
-        let genome: Genome = "AGT"
+        let genome: DNAGenome = "AGT"
         let neighbors = genome.neighbors(maxDistance: 1)
             .sorted { (left, right) -> Bool in
                 left.bigIntValue < right.bigIntValue
             }
         
-        let expected: [Genome] = [
+        let expected: [DNAGenome] = [
             "AGT",
             "CGT",
             "TGT",
@@ -127,14 +127,14 @@ class bio_swiftTests: XCTestCase {
     }
     
     func testIntConversion() {
-        let genome: Genome = "AGT"
+        let genome: DNAGenome = "AGT"
         let expInt: BigInt = 13
-        let expected = Genome(bigInt: expInt, length: 3)
+        let expected = DNAGenome(bigInt: expInt, length: 3)
         
         XCTAssert(genome == expected)
         XCTAssert(genome.bigIntValue == expInt)
 
-        let genomes: [Genome] = [
+        let genomes: [DNAGenome] = [
             "CTTTTAGTGGTATTAAGGGTGCCCA",
             "ATTCTAGCCCTATAAGCAATCACTC",
             "GAATGAATATACTCTGACAATATCA",
@@ -149,13 +149,13 @@ class bio_swiftTests: XCTestCase {
         XCTAssert(set.count == genomes.count)
         for (key, value) in set {
             let integer = BigInt(key, radix: 10)
-            let genome = Genome(bigInt: integer!, length: 25)
-            XCTAssert(genome == Genome(sequence: value))
+            let genome = DNAGenome(bigInt: integer!, length: 25)
+            XCTAssert(genome == DNAGenome(sequence: value))
         }
     }
     
     func testMotifs() {
-        let genomes: [Genome] = [
+        let genomes: [DNAGenome] = [
             "CTTTTAGTGGTATTAAGGGTGCCCA",
             "ATTCTAGCCCTATAAGCAATCACTC",
             "GAATGAATATACTCTGACAATATCA",
@@ -173,7 +173,7 @@ class bio_swiftTests: XCTestCase {
                 return left.bigIntValue < right.bigIntValue
             }
         
-        let expected: [Genome] = [ "ATTAT", "TATAA", "TATCA", "TATGA", "TATTA" ]
+        let expected: [DNAGenome] = [ "ATTAT", "TATAA", "TATCA", "TATGA", "TATTA" ]
             .sorted { (left, right) -> Bool in
                 return left.bigIntValue < right.bigIntValue
             }
@@ -182,10 +182,10 @@ class bio_swiftTests: XCTestCase {
     }
     
     func testTranslation() {
-        let genome: Genome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
+        let genome: DNAGenome = "AGCATGGGCCCAAACTTTCATAAGCCGGAGCAATGCC"
         
-        let protein = "MGPNFHKPEQ"
-        XCTAssert(genome.translate()?.description == protein)
+        let protein: Protein = "MGPNFHKPEQ"
+        XCTAssert(genome.translate() == protein)
     }
 
     static var allTests = [

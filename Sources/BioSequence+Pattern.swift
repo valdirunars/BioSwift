@@ -1,5 +1,5 @@
 //
-//  Genome+Pattern.swift
+//  BioSequence+Pattern.swift
 //  BioSwiftPackageDescription
 //
 //  Created by Þorvaldur Rúnarsson on 03/10/2017.
@@ -8,8 +8,9 @@
 import Foundation
 import BigInt
 
-extension Genome {
-    public func index(of pattern: Genome, maxDistance: UInt = 0) -> Index? {
+extension BioSequence {
+
+    public func index(of pattern: Self, maxDistance: UInt = 0) -> Index? {
         guard self.count > pattern.count else { return nil }
         
         var index: Index?
@@ -18,7 +19,7 @@ extension Genome {
         for i in 0...self.count {
             let workingIndex = self.index(self.startIndex, offsetBy: i)
             
-            let slice = self.units[workingIndex..<self.index(workingIndex, offsetBy: len)]
+            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
             
             if slice.hammingDistance(pattern) <= maxDistance {
                 index = workingIndex
@@ -29,15 +30,16 @@ extension Genome {
         return index
     }
     
-    public func indices(for pattern: Genome, maxDistance: UInt = 0) -> [Index] {
+    public func indices(for pattern: Self, maxDistance: UInt = 0) -> [Index] {
         guard self.count > pattern.count else { return [] }
         
         var indices: [Index] = []
-        let len = pattern.count
-        for i in 0...(self.count - len) {
+        let len: Int = pattern.count
+        let count: Int = self.count
+        for i in 0...(count - len) {
             let workingIndex = self.index(self.startIndex, offsetBy: i)
             
-            let slice = self.units[workingIndex..<self.index(workingIndex, offsetBy: len)]
+            let slice = self[workingIndex..<self.index(workingIndex, offsetBy: len)]
             
             if slice.hammingDistance(pattern) <= maxDistance {
                 indices.append(workingIndex)
@@ -47,7 +49,7 @@ extension Genome {
         return indices
     }
     
-    public func mostFrequentPattern(length: Int) -> Genome {
+    public func mostFrequentPattern(length: Int) -> Self {
         assert(self.count >= length, "No pattern found for the given length")
         
         var workingIndex = self.startIndex
@@ -78,15 +80,15 @@ extension Genome {
             
         }
         
-        return Genome(sequence: self[startIndexOfMostFrequent..<self.index(startIndexOfMostFrequent, offsetBy: length)])
+        return Self(sequence: self[startIndexOfMostFrequent..<self.index(startIndexOfMostFrequent, offsetBy: length)])
     }
     
-    public func mostFrequentPatterns(length: Int, maxDistance: UInt = 0) -> [Genome] {
-        var frequentPatterns: [Genome] = []
-        var neighborhoods: [Genome] = []
+    public func mostFrequentPatterns(length: Int, maxDistance: UInt = 0) -> [Self] {
+        var frequentPatterns: [Self] = []
+        var neighborhoods: [Self] = []
         
         for i in 0...self.count-length {
-            neighborhoods += Genome(sequence: self[i..<i+length]).neighbors(maxDistance: maxDistance)
+            neighborhoods += Self(sequence: self[i..<i+length]).neighbors(maxDistance: maxDistance)
         }
         
         var index: [BigInt] = []
@@ -105,26 +107,26 @@ extension Genome {
         let maxCount = counts.max() ?? 0
         
         for i in 0..<neighborhoods.count-1 where counts[i] == maxCount {
-            let pattern = Genome(bigInt: index[i], length: length)
+            let pattern = Self(bigInt: index[i], length: length)
             frequentPatterns.append(pattern)
         }
         
         return frequentPatterns
     }
     
-    public func indicesOfMinimalSkew(increment: Nucleotide, decrement: Nucleotide) -> [Index] {
+    public func indicesOfMinimalSkew(increment: Self.Element, decrement: Self.Element) -> [Index] {
         
         var skew = 0
-        var currentMinimumSkew = self.count
+        var currentMinimumSkew: Int = self.count
         var skewIndices: [Index] = []
-        
+
         for i in 0..<self.count {
-            let nuc = self[i]
-            
+            let unit = self[i]
+
             var addition = 0
-            if nuc == increment {
+            if unit == increment {
                 addition = 1
-            } else if nuc == decrement {
+            } else if unit == decrement {
                 addition = -1
             }
             
@@ -140,14 +142,14 @@ extension Genome {
         return skewIndices
     }
     
-    public func neighbors(maxDistance: UInt) -> [Genome] {
+    public func neighbors(maxDistance: UInt) -> [Self] {
         return Utils.neighbors(pattern: self[self.startIndex..<self.endIndex], maxDistance: maxDistance)
     }
     
-    internal func allSubgenomes(length: Int) -> [Genome] {
-        var subs: [Genome] = []
+    internal func allSubpatterns(length: Int) -> [Self] {
+        var subs: [Self] = []
         for i in 0...count-length {
-            subs.append(Genome(sequence: self[i..<i+length]))
+            subs.append(Self(sequence: self[i..<i+length]))
         }
         return subs
     }

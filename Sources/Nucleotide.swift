@@ -15,14 +15,6 @@ public enum Nucleotide: Byte, ByteRepresentable, Equatable {
     case g = 2 // guanine
     case t = 3 // thymine
     case u = 4 // uracil
-    
-    internal static var all: [Nucleotide] {
-        return [ .a, .c, .g, .t ]
-    }
-    
-    public static var random: Nucleotide {
-        return Nucleotide.all[Int(arc4random()) % Int(componentCount)]
-    }
 
     public static prefix func ! (nucleotide: Nucleotide) -> Nucleotide {
         switch nucleotide {

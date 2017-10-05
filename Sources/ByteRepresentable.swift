@@ -9,17 +9,27 @@ import Foundation
 import BigInt
 
 public typealias Byte = UInt8
-protocol ByteRepresentable: BigIntReadable, Equatable {
+public protocol ByteRepresentable: BigIntReadable, Equatable {
     var rawValue: Byte { get }
     init?(rawValue: Byte)
 }
 
 extension ByteRepresentable {
-    var bigIntValue: BigInt {
+    public var bigIntValue: BigInt {
         return BigInt(integerLiteral: Int64(self.rawValue))
     }
     
     public static func == (left: Self, right: Self) -> Bool {
         return left.rawValue == right.rawValue
+    }
+}
+
+extension Character: ByteRepresentable {
+    public var rawValue: Byte {
+        return Byte(self.unicodeScalarCodePoint())
+    }
+    
+    public init?(rawValue: Byte) {
+        self.init(UnicodeScalar(rawValue))
     }
 }

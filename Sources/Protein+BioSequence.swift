@@ -9,7 +9,7 @@ import Foundation
 import BigInt
 
 extension Protein: BioSequence {
-    typealias Unit = AminoAcid
+    public typealias Alphabet = ProteinAlphabet
     
     public static func single(_ unit: AminoAcid) -> Protein {
         return Protein(sequence: "\(unit.charValue)")
