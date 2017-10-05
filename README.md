@@ -11,11 +11,11 @@ An attempt to start a Bioinformatics library written purely in Swift
     - [X] Transcription
     - [X] Translation (into `Protein`)
     - [ ] Ambiguous alphabet support
-    - [ ] Probability matching
+    - [ ] Probability matching
 - Protein
     - [X] Pattern matching algorithms
     - [ ] Ambiguous alphabet support
-    - [ ] Probability matching
+    - [ ] Probability matching
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
     - [X] FASTA
     - [ ] FASTQ
