@@ -8,17 +8,6 @@
 import Foundation
 import BigInt
 
-protocol Genome: BioSequence {
-    associatedtype TranscriptionType: BioSequence
-
-    static var codonTable: [Self: String] { get }
-    var codingStartMarker: Self { get }
-    var codingEndMarker: Self { get }
-    var complementBit: Bool { get set }
-    
-    func transcribed() -> TranscriptionType
-}
-
 public struct DNAGenome: Genome, BigIntConvertible, CustomStringConvertible {
     typealias Alphabet = DNAAlphabet
 

@@ -19,7 +19,7 @@ public protocol SimpleEncodable {
 }
 
 public protocol SimpleDecodable {
-    func decode(data: Data, type: Codec)
+    func decode(data: Data, type: Codec) throws -> [Self]?
 }
 
 extension SimpleEncodable {
@@ -36,14 +36,14 @@ extension BioSequence {
         
         switch type {
         case .fasta:
-            return "> \(self.tag ?? "")\n\(self.description)"
+            return ">\(self.tag ?? "")\n\(self.description)"
         }
     }
 
-    public static func decode(data: Data, type: Codec) -> [Self]? {
+    public static func decode(data: Data, type: Codec) throws -> [Self]? {
         switch type {
         case .fasta:
-            return Utils.decode(fasta: data)
+            return try FASTAParser<Self>(data: data)?.parse()
         }
     }
 }

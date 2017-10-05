@@ -17,7 +17,7 @@ An attempt to start a Bioinformatics library written purely in Swift
     - [ ] Ambiguous alphabet support
     - [ ] Probability matching
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
-    - [X] FASTA
+    - [X] FASTA (only unambiguous alphabet)
     - [ ] FASTQ
     - [ ] EMBL
 
