@@ -53,39 +53,4 @@ struct Utils {
         
         return neighborhood
     }
-    
-    internal static func decode<T: BioSequence>(fasta: Data) -> [T]? {
-        guard let string = String(data: fasta, encoding: .ascii) else { return nil }
-        let components = string.components(separatedBy: "\n")
-        
-        var tags: [String] = []
-        var sequences: [String] = []
-        
-        var nextTag = true
-        for component in components {
-            if nextTag {
-                let tag = component.stringByRemovingWhitespaceInFront()
-                tags.append(tag)
-            } else {
-                sequences.append(component.trimmingCharacters(in: .whitespaces))
-            }
-            nextTag = !nextTag
-        }
-        guard tags.count == sequences.count else {
-            assertionFailure("Invalid FASTA file")
-            return nil
-        }
-        
-        return zip(tags, sequences)
-            .map { tuple -> T in
-                var bioSeq = T(sequence: tuple.1)
-                bioSeq.tag = tuple.0
-                return bioSeq
-            }
-            .reduce([]) { result, bioSeq -> [T]? in
-                var tmp = result
-                tmp?.append(bioSeq)
-                return tmp
-        }
-    }
 }
