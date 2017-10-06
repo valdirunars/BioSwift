@@ -1,7 +1,7 @@
 <img src="./BioSwift.svg" width="100%" />
 
 ## Description
-An attempt to start a Bioinformatics library written purely in Swift
+An attempt to create a set of freely available tools for biological computation written in pure Swift
 
 ## Features
 
