@@ -1,272 +1,165 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Byte"
-- "CharConvertible"
 - "Nucleotide"
 - "!"
-- "=="
 provides-nominal:
-- "8BioSwift15CharConvertibleP"
-- "s9CharacterV"
 - "8BioSwift10NucleotideO"
 provides-member:
-- ["8BioSwift15CharConvertibleP", ""]
-- ["s9CharacterV", ""]
 - ["8BioSwift10NucleotideO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "!"
-- !private "%"
 - "=="
-- "AssignmentPrecedence"
-- "Bool"
 - "Byte"
-- "CharConvertible"
-- "Character"
+- "ByteRepresentable"
 - "Equatable"
-- !private "ExtendedGraphemeClusterType"
 - "FloatLiteralType"
-- !private "Int"
 - "IntegerLiteralType"
 - "Nucleotide"
-- !private "StringLiteralType"
-- "UInt8"
-- !private "UnicodeScalarType"
-- !private "arc4random"
 - !private "~="
 depends-member:
-- !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- ["8BioSwift14BigIntReadableP", "RawValue"]
+- ["8BioSwift14BigIntReadableP", "a"]
+- ["8BioSwift14BigIntReadableP", "bigIntValue"]
+- ["8BioSwift14BigIntReadableP", "c"]
+- ["8BioSwift14BigIntReadableP", "g"]
+- ["8BioSwift14BigIntReadableP", "hashValue"]
+- ["8BioSwift14BigIntReadableP", "init"]
+- ["8BioSwift14BigIntReadableP", "rawValue"]
+- ["8BioSwift14BigIntReadableP", "t"]
+- ["8BioSwift14BigIntReadableP", "u"]
+- ["8BioSwift14BigIntReadableP", ""]
 - !private ["s13BinaryIntegerP", "hashValue"]
-- !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- ["8BioSwift17ByteRepresentableP", "RawValue"]
+- ["8BioSwift17ByteRepresentableP", "a"]
+- ["8BioSwift17ByteRepresentableP", "bigIntValue"]
+- ["8BioSwift17ByteRepresentableP", "c"]
+- ["8BioSwift17ByteRepresentableP", "g"]
+- ["8BioSwift17ByteRepresentableP", "hashValue"]
+- ["8BioSwift17ByteRepresentableP", "init"]
+- ["8BioSwift17ByteRepresentableP", "rawValue"]
+- ["8BioSwift17ByteRepresentableP", "t"]
+- ["8BioSwift17ByteRepresentableP", "u"]
+- ["8BioSwift17ByteRepresentableP", ""]
 - !private ["s7CVarArgP", "hashValue"]
-- !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "subscript"]
-- ["8BioSwift15CharConvertibleP", "CharConvertible"]
-- ["8BioSwift15CharConvertibleP", "Character"]
-- !private ["8BioSwift15CharConvertibleP", "Int"]
-- !private ["8BioSwift15CharConvertibleP", "Nucleotide"]
 - ["8BioSwift15CharConvertibleP", "RawValue"]
 - ["8BioSwift15CharConvertibleP", "a"]
-- !private ["8BioSwift15CharConvertibleP", "all"]
-- !private ["8BioSwift15CharConvertibleP", "arc4random"]
+- ["8BioSwift15CharConvertibleP", "bigIntValue"]
 - ["8BioSwift15CharConvertibleP", "c"]
-- ["8BioSwift15CharConvertibleP", "charValue"]
 - ["8BioSwift15CharConvertibleP", "g"]
 - ["8BioSwift15CharConvertibleP", "hashValue"]
 - ["8BioSwift15CharConvertibleP", "init"]
 - ["8BioSwift15CharConvertibleP", "rawValue"]
 - ["8BioSwift15CharConvertibleP", "t"]
-- ["8BioSwift15CharConvertibleP", ""]
-- ["s9CharacterV", "CharConvertible"]
-- ["s9CharacterV", "Character"]
-- ["s9CharacterV", "charValue"]
-- ["s9CharacterV", "deinit"]
-- ["s9CharacterV", "init"]
-- !private ["s10CollectionP", "subscript"]
-- ["s10ComparableP", "charValue"]
+- ["8BioSwift15CharConvertibleP", "u"]
 - !private ["s10ComparableP", "hashValue"]
-- ["s10ComparableP", "init"]
-- ["s28CustomDebugStringConvertibleP", "charValue"]
-- ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- ["s29CustomPlaygroundQuickLookableP", "charValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- ["s17CustomReflectableP", "charValue"]
 - !private ["s17CustomReflectableP", "hashValue"]
-- ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s23CustomStringConvertibleP", "charValue"]
 - !private ["s23CustomStringConvertibleP", "hashValue"]
-- ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "hashValue"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "hashValue"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "Int"]
-- !private ["s9EquatableP", "Nucleotide"]
 - ["s9EquatableP", "RawValue"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "a"]
-- !private ["s9EquatableP", "all"]
-- !private ["s9EquatableP", "arc4random"]
+- ["s9EquatableP", "bigIntValue"]
 - ["s9EquatableP", "c"]
-- ["s9EquatableP", "charValue"]
 - ["s9EquatableP", "g"]
 - ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "rawValue"]
 - ["s9EquatableP", "t"]
+- ["s9EquatableP", "u"]
 - ["s9EquatableP", ""]
-- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "charValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "charValue"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "hashValue"]
-- !private ["s17FixedWidthIntegerP", "init"]
-- !private ["s8HashableP", "Int"]
-- !private ["s8HashableP", "Nucleotide"]
 - ["s8HashableP", "RawValue"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "a"]
-- !private ["s8HashableP", "all"]
-- !private ["s8HashableP", "arc4random"]
+- ["s8HashableP", "bigIntValue"]
 - ["s8HashableP", "c"]
-- ["s8HashableP", "charValue"]
 - ["s8HashableP", "g"]
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", "init"]
 - ["s8HashableP", "rawValue"]
 - ["s8HashableP", "t"]
+- ["s8HashableP", "u"]
 - ["s8HashableP", ""]
 - !private ["Si", "hashValue"]
-- !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s25LosslessStringConvertibleP", "charValue"]
 - !private ["s25LosslessStringConvertibleP", "hashValue"]
-- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "hashValue"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
 - ["8BioSwift10NucleotideO", "!"]
-- ["8BioSwift10NucleotideO", "=="]
-- ["8BioSwift10NucleotideO", "Bool"]
-- ["8BioSwift10NucleotideO", "CharConvertible"]
-- ["8BioSwift10NucleotideO", "Character"]
-- !private ["8BioSwift10NucleotideO", "Int"]
 - ["8BioSwift10NucleotideO", "Nucleotide"]
 - ["8BioSwift10NucleotideO", "RawValue"]
 - ["8BioSwift10NucleotideO", "a"]
-- !private ["8BioSwift10NucleotideO", "all"]
-- !private ["8BioSwift10NucleotideO", "arc4random"]
+- ["8BioSwift10NucleotideO", "bigIntValue"]
 - ["8BioSwift10NucleotideO", "c"]
-- ["8BioSwift10NucleotideO", "charValue"]
 - ["8BioSwift10NucleotideO", "deinit"]
 - ["8BioSwift10NucleotideO", "g"]
 - ["8BioSwift10NucleotideO", "hashValue"]
 - ["8BioSwift10NucleotideO", "init"]
-- ["8BioSwift10NucleotideO", "random"]
 - ["8BioSwift10NucleotideO", "rawValue"]
 - ["8BioSwift10NucleotideO", "t"]
+- ["8BioSwift10NucleotideO", "u"]
 - !private ["s7NumericP", "hashValue"]
-- !private ["s7NumericP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s16RawRepresentableP", "Int"]
-- !private ["s16RawRepresentableP", "Nucleotide"]
 - ["s16RawRepresentableP", "RawValue"]
 - ["s16RawRepresentableP", "a"]
-- !private ["s16RawRepresentableP", "all"]
-- !private ["s16RawRepresentableP", "arc4random"]
+- ["s16RawRepresentableP", "bigIntValue"]
 - ["s16RawRepresentableP", "c"]
-- ["s16RawRepresentableP", "charValue"]
 - ["s16RawRepresentableP", "g"]
 - ["s16RawRepresentableP", "hashValue"]
 - ["s16RawRepresentableP", "init"]
 - ["s16RawRepresentableP", "rawValue"]
 - ["s16RawRepresentableP", "t"]
+- ["s16RawRepresentableP", "u"]
 - ["s16RawRepresentableP", ""]
-- !private ["s8SequenceP", "subscript"]
 - !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedIntegerP", "init"]
 - !private ["s13SignedNumericP", "hashValue"]
-- !private ["s13SignedNumericP", "init"]
 - !private ["s10StrideableP", "hashValue"]
-- !private ["s10StrideableP", "init"]
-- ["s20TextOutputStreamableP", "charValue"]
-- ["s20TextOutputStreamableP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s18_BitwiseOperationsP", "hashValue"]
-- !private ["s18_BitwiseOperationsP", "init"]
-- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "charValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- ["s56_ExpressibleByBuiltinUTF16ExtendedGraphemeClusterLiteralP", "charValue"]
-- ["s56_ExpressibleByBuiltinUTF16ExtendedGraphemeClusterLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "charValue"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "hashValue"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s11_StrideableP", "hashValue"]
-- !private ["s11_StrideableP", "init"]
 depends-nominal:
-- !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- "8BioSwift14BigIntReadableP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
+- "8BioSwift17ByteRepresentableP"
 - !private "s7CVarArgP"
 - "8BioSwift15CharConvertibleP"
-- "s9CharacterV"
-- !private "s10CollectionP"
-- "s10ComparableP"
-- "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
-- "s23CustomStringConvertibleP"
+- !private "s10ComparableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
-- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - !private "Si"
-- "s25LosslessStringConvertibleP"
+- !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
 - "8BioSwift10NucleotideO"
 - !private "s7NumericP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
-- !private "s8SequenceP"
 - !private "s13SignedIntegerP"
 - !private "s13SignedNumericP"
 - !private "s10StrideableP"
-- "s20TextOutputStreamableP"
-- !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
-- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- "s56_ExpressibleByBuiltinUTF16ExtendedGraphemeClusterLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
@@ -282,4 +175,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "1a924efe4d2ef70836dcefb2f108fddb"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "c41b03fd33c08f486b05acd9e32f0ede"

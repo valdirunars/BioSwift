@@ -25,16 +25,13 @@ enum FASTAToken<T: BioSequence>: BioIOToken {
     static func parse(_ component: String) -> FASTAToken<T>? {
         if component.hasPrefix(commentMarker) {
             let start = component.index(component.startIndex, offsetBy: commentMarker.count)
-            guard let value = String(component[start..<component.endIndex]) else {
-                return nil
-            }
+            let value = String(component[start..<component.endIndex])
 
             return .comment(value)
         } else if component.hasPrefix(tagMarker) {
             let start = component.index(component.startIndex, offsetBy: tagMarker.count)
-            guard let value = String(component[start..<component.endIndex]) else {
-                return nil
-            }
+            let value = String(component[start..<component.endIndex])
+
             return .tag(value)
         } else {
             let sequence = T(sequence: component)

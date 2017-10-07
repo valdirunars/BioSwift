@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BigInt",
+        "repositoryURL": "https://github.com/attaswift/BigInt.git",
+        "state": {
+          "branch": null,
+          "revision": "31d0f6fa0aa945c09eff091ad26cb5b44e956f79",
+          "version": "3.0.1"
+        }
+      },
+      {
+        "package": "BigIntCompress",
+        "repositoryURL": "https://github.com/valdirunars/BigIntCompress.git",
+        "state": {
+          "branch": null,
+          "revision": "ae6b84a5e2612d889a6bf3f314885a17e5e688f0",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "SipHash",
+        "repositoryURL": "https://github.com/attaswift/SipHash",
+        "state": {
+          "branch": null,
+          "revision": "7b47e3f23a66770b1eb18e15e20546aad398c9dd",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
