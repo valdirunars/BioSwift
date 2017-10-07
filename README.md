@@ -27,7 +27,7 @@ This library is brand new with a lot of features missing, but it's not entirely 
 ### Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/valdirunars/BioSwift.git", majorVersion: 0)
+.Package(url: "https://github.com/valdirunars/BioSwift.git", from: "0.0.1")
 ```
 
 ### Sequencing
