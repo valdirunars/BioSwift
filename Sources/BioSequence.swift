@@ -32,6 +32,8 @@ protocol BioSequence: BioSequenceAlgebra, Collection, SimpleEncodable, Expressib
     func index(_ i: Index, offsetBy: Int) -> Index
 }
 
+// MARK: Hashable + StringLiteral
+
 extension BioSequence {
     public init(stringLiteral: String) {
         self.init(sequence: stringLiteral)
@@ -42,7 +44,7 @@ extension BioSequence {
     }
 }
 
-// Pattern
+// MARK: Pattern
 
 extension BioSequence {
     func hammingDistance<C: Collection>(_ collection: C) -> Int {
