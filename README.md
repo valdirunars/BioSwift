@@ -107,3 +107,12 @@ let proteins: [Protein]? = try! Protein.decode(fastaFileData)
 let genome: DNAGenome = "ACGT"
 let data: Data? = genome.encode(.fasta)
 ```
+
+### Compression
+
+```swift
+let genome: DNAGenome = "ACGT"
+let compressed: Data! = genome.compress(.bigIntCompress)
+
+let decompressed: DNAGenome = DNAGenome.decompress(data: compressed, type: .bigIntCompress)
+``
