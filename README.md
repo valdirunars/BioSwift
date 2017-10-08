@@ -112,4 +112,4 @@ let genome: DNAGenome = "ACGT"
 let compressed: Data! = genome.compress(.bigIntCompress)
 
 let decompressed: DNAGenome = DNAGenome.decompress(data: compressed, type: .bigIntCompress)
-``
+```
