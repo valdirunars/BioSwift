@@ -188,8 +188,6 @@ extension BioSequence {
     ///
     /// **NOTE:** This algorithm is slow! Do not use unless self.count is low or distance is low
     ///
-    /// Σ(0, n) = 1 + 2 + ... + n
-    /// **Worst case: O( d * (Σ(0, n) * n))**
     /// - Returns: All genomes of at most `maxDistance` hamming distance from self
     public func neighbors(maxDistance: UInt) -> [Self] {
         return Utils.neighbors(pattern: self[self.startIndex..<self.endIndex], maxDistance: maxDistance)

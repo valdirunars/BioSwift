@@ -7,6 +7,12 @@
 
 import Foundation
 import BigInt
+import BigIntCompress
+
+public enum Compressor {
+    /// What's this? see on [github](https://github.com/valdirunars/bigintcompress)
+    case bigIntCompress
+}
 
 public enum Codec {
     case fasta
@@ -63,3 +69,71 @@ extension Sequence where Element: SimpleEncodable {
         }
     }
 }
+
+// MARK: Compressable
+
+extension BigInt: BigIntType {
+    public var hexString: String {
+        return String(self, radix: 16)
+    }
+    
+    public init<T>(_ value: T) where T : Numeric {
+        self.init(value)
+    }
+    
+    public init?(hexString: String) {
+        self.init(hexString, radix: 16)
+    }
+}
+
+extension Genome {
+    
+    public typealias CompressionNumber = BigInt
+
+    public static var possibleComponents: [Nucleotide] {
+        return DNAGenome.Alphabet.alphabet
+    }
+}
+
+extension Protein: Compressable {
+    public typealias CompressionNumber = BigInt
+    
+    public static var possibleComponents: [AminoAcid] {
+        return Protein.Alphabet.alphabet
+    }
+}
+
+// MARK: Convenience methods
+
+extension Protein {
+    public func compress(_ type: Compressor) -> Data? {
+        switch type {
+        case .bigIntCompress:
+            return self.bic.encode()
+        }
+    }
+    
+    public static func decompress(data: Data, type: Compressor) throws -> Protein? {
+        switch type {
+        case .bigIntCompress:
+            return try Protein.bic.decode(data)
+        }
+    }
+}
+
+extension Genome {
+    public func compress(_ type: Compressor) -> Data? {
+        switch type {
+        case .bigIntCompress:
+            return self.bic.encode()
+        }
+    }
+    
+    public static func decompress(data: Data, type: Compressor) throws -> Self? {
+        switch type {
+        case .bigIntCompress:
+            return try Self.bic.decode(data)
+        }
+    }
+}
+

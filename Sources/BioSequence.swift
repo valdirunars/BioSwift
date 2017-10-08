@@ -7,6 +7,7 @@
 
 import Foundation
 import BigInt
+import BigIntCompress
 
 protocol BioSequenceAlgebra: BigIntConvertible, BigIntInitializable, Equatable {
     associatedtype Alphabet: BioAlphabet

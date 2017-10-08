@@ -7,8 +7,9 @@
 
 import Foundation
 import BigInt
+import BigIntCompress
 
-protocol Genome: BioSequence {
+protocol Genome: BioSequence, Compressable {
     associatedtype TranscriptionType: BioSequence
     
     static var codonTable: [Self: String] { get }

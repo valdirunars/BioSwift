@@ -12,10 +12,16 @@ An attempt to create a set of freely available tools for biological computation 
     - [X] Translation (into `Protein`)
     - [ ] Ambiguous alphabet support
     - [ ] Probability matching
+    - Compression
+        - [X] [BigIntCompress](https://github.com/valdirunars/bigintcompress)
+        - [ ] [MFCompress](http://bioinformatics.ua.pt/software/mfcompress/)
 - Protein
     - [X] Pattern matching algorithms
     - [ ] Ambiguous alphabet support
     - [ ] Probability matching
+    - Compression
+        - [X] [BigIntCompress](https://github.com/valdirunars/bigintcompress)
+        - [ ] [MFCompress](http://bioinformatics.ua.pt/software/mfcompress/)
 - IO Support (e.g. support for file formats FASTA, FASTQ, EMBL etc.)
     - [X] FASTA (only unambiguous alphabet)
     - [ ] FASTQ
