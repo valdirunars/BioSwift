@@ -2,8 +2,6 @@ matrix:
   include:
     - os: linux
       language: generic
-      dist: trusty
-      sudo: required
     - os: osx
       language: objective-c
       osx_image: xcode9.1
