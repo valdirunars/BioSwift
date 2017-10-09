@@ -62,6 +62,20 @@
                ReferencedContainer = "container:BioSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BioSwift::BioSwiftTests"
+               BuildableName = "BioSwiftTests.xctest"
+               BlueprintName = "BioSwiftTests"
+               ReferencedContainer = "container:BioSwift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -82,6 +96,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BioSwift::BioSwift"
+            BuildableName = "BioSwift.framework"
+            BlueprintName = "BioSwift"
+            ReferencedContainer = "container:BioSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -114,6 +137,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BioSwift::BioSwift"
+            BuildableName = "BioSwift.framework"
+            BlueprintName = "BioSwift"
+            ReferencedContainer = "container:BioSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
