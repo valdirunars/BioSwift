@@ -2,16 +2,16 @@ client:
   name: swift-build
 tools: {}
 targets:
-  "main": ["<SipHash.module>","<BigInt.module>","<BigIntCompress.module>","<BioSwift.module>","<BigInt.a>","<SipHash.dylib>"]
-  "test": ["<SipHash.module>","<BioSwiftTests.module>","<BigInt.module>","<BigIntCompress.module>","<BioSwift.module>","<BioSwiftPackageTests.test>","<BigInt.a>","<SipHash.dylib>"]
-  "SipHash.module": ["<SipHash.module>"]
+  "main": ["<BigIntCompress.module>","<BigInt.module>","<BioSwift.module>","<SipHash.module>","<SipHash.dylib>","<BigInt.a>"]
+  "test": ["<BigIntCompress.module>","<BioSwiftTests.module>","<BigInt.module>","<BioSwift.module>","<SipHash.module>","<SipHash.dylib>","<BioSwiftPackageTests.test>","<BigInt.a>"]
+  "BigIntCompress.module": ["<BigIntCompress.module>"]
   "BioSwiftTests.module": ["<BioSwiftTests.module>"]
   "BigInt.module": ["<BigInt.module>"]
-  "BigIntCompress.module": ["<BigIntCompress.module>"]
   "BioSwift.module": ["<BioSwift.module>"]
+  "SipHash.module": ["<SipHash.module>"]
+  "SipHash.dylib": ["<SipHash.dylib>"]
   "BioSwiftPackageTests.test": ["<BioSwiftPackageTests.test>"]
   "BigInt.a": ["<BigInt.a>"]
-  "SipHash.dylib": ["<SipHash.dylib>"]
 default: "main"
 commands: 
   "<C.BigInt.a>":

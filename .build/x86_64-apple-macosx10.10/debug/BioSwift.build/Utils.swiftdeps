@@ -51,6 +51,7 @@ depends-member:
 - !private ["8BioSwift14BigIntReadableP", "hammingDistance"]
 - !private ["8BioSwift14BigIntReadableP", "init"]
 - !private ["8BioSwift14BigIntReadableP", "single"]
+- !private ["14BigIntCompress0aB4TypeP", "description"]
 - !private ["s13BinaryIntegerP", "description"]
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["8BioSwift0A8AlphabetP", "alphabet"]
@@ -327,6 +328,7 @@ depends-nominal:
 - !private "8BioSwift17BigIntConvertibleP"
 - !private "8BioSwift19BigIntInitializableP"
 - !private "8BioSwift14BigIntReadableP"
+- !private "14BigIntCompress0aB4TypeP"
 - !private "s13BinaryIntegerP"
 - !private "8BioSwift0A8AlphabetP"
 - !private "8BioSwift0A8SequenceP"
@@ -416,6 +418,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigIntCompress.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.swiftmodule"

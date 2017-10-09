@@ -68,6 +68,7 @@ depends-member:
 - ["6BigIntAAV", "pattern"]
 - !private ["8BioSwift14BigIntReadableP", "String"]
 - !private ["8BioSwift14BigIntReadableP", "unicodeScalars"]
+- !private ["14BigIntCompress0aB4TypeP", "Utils"]
 - !private ["s13BinaryIntegerP", "Utils"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["8BioSwift17ByteRepresentableP", "String"]
@@ -631,6 +632,7 @@ depends-nominal:
 - "s23BidirectionalCollectionP"
 - "6BigIntAAV"
 - !private "8BioSwift14BigIntReadableP"
+- !private "14BigIntCompress0aB4TypeP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "8BioSwift17ByteRepresentableP"
@@ -720,6 +722,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigIntCompress.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Users/valdi/Developer/BioSwift/.build/x86_64-apple-macosx10.10/debug/BigInt.swiftmodule"
