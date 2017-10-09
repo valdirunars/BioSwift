@@ -12,3 +12,4 @@ script:
   - swift test
 notifications:
   email: false
+
