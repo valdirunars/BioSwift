@@ -1,5 +1,5 @@
 <img src="./BioSwift.svg" width="100%" />
-
+<img src="https://travis-ci.org/valdirunars/BioSwift.svg?branch=master"/>
 ## Description
 An attempt to create a set of freely available tools for biological computation written in pure Swift
 
