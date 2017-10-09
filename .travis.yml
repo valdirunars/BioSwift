@@ -1,14 +1,4 @@
-os:
-  - osx
-env:
-  - SWIFT_VERSION=4.0
-language: generic
-sudo: required
-dist: trusty
+language: objective-c
 osx_image: xcode9.1
-install:
-  - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo python -m ensurepip; fi
-  - sudo pip install swim
 script:
-  - swim test
+    - xcodebuild clean test -project BioSwift.xcodeproj -scheme BioSwift -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
