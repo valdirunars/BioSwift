@@ -1,11 +1,13 @@
-matrix:
-  include:
-    - os: osx
-      language: swift
-      osx_image: xcode9.0
-script:
-- swift build
-- swift test
-notifications:
-  email: false
+language: objective-c
 
+branches:
+ only:
+ - master
+
+xcode_project: BioSwift.xcodeproj
+xcode_scheme: BioSwiftTests
+osx_image: xcode9.1
+xcode_sdk: iphonesimulator8.3
+
+script:
+- xcodebuild clean build test -project BioSwift.xcodeproj -scheme BioSwift
