@@ -1,14 +1,14 @@
-language: swift
-swift: 4.0
-os:
-- linux
-- osx
-xcode_project: MyNewProject.xcodeproj
-xcode_scheme: MyNewProjectTests
-osx_image: xcode9.1
-install:
-- curl -sL https://gist.github.com/kylef/5c0475ff02b7c7671d2a/raw/621ef9b29bbb852fdfd2e10ed147b321d792c1e4/swiftenv-install.sh | bash
+matrix:
+  include:
+    - os: linux
+      language: generic
+      dist: trusty
+      sudo: required
+    - os: osx
+      language: objective-c
+      osx_image: xcode9.1
 script:
-- . ~/.swiftenv/init
-- swift build
-- swift test
+  - swift build
+  - swift test
+notifications:
+  email: false
