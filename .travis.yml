@@ -1,4 +1,10 @@
 language: objective-c
 osx_image: xcode9.1
+env:
+  - TOOLCHAINS=swift
 script:
-    - xcodebuild clean test -project BioSwift.xcodeproj -scheme BioSwift-Package -destination "platform=iOS Simulator,name=iPhone 7,OS=11.1" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+  - swift build --fetch
+before_install:
+  - TOOLCHAIN_VERSION=swift-4.0-DEVELOPMENT-SNAPSHOT-2017-10-08-a
+  - curl -O https://swift.org/builds/development/xcode/${TOOLCHAIN_VERSION}/${TOOLCHAIN_VERSION}-osx.pkg
+  - sudo installer -pkg ${TOOLCHAIN_VERSION}-osx.pkg -target /
