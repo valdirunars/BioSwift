@@ -3,16 +3,16 @@
     "pins": [
       {
         "package": "BigInt",
-        "repositoryURL": "https://github.com/attaswift/BigInt.git",
+        "repositoryURL": "http://github.com/attaswift/BigInt.git",
         "state": {
           "branch": null,
-          "revision": "31d0f6fa0aa945c09eff091ad26cb5b44e956f79",
+          "revision": "e3879c569817a844ca2c54a9095c59e1d779cd5d",
           "version": "3.0.1"
         }
       },
       {
         "package": "BigIntCompress",
-        "repositoryURL": "https://github.com/valdirunars/BigIntCompress.git",
+        "repositoryURL": "http://github.com/valdirunars/BigIntCompress.git",
         "state": {
           "branch": null,
           "revision": "8a45f0efff361df262697b9fb4c309fb2dbb39f0",

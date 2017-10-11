@@ -1,5 +1,5 @@
 edc08a7b7409dd84993d294a7d0a7a8e31a6951f	not-for-merge	branch 'gh-pages' of https://github.com/attaswift/BigInt
-31d0f6fa0aa945c09eff091ad26cb5b44e956f79	not-for-merge	branch 'master' of https://github.com/attaswift/BigInt
+e3879c569817a844ca2c54a9095c59e1d779cd5d	not-for-merge	branch 'master' of https://github.com/attaswift/BigInt
 f2a3c28ce44a8e8ed9cc576d779861d4145bae0e	not-for-merge	branch 'swift4' of https://github.com/attaswift/BigInt
 cf829423ec6b0e156bafcfe1e117fe9fecd781e7	not-for-merge	'refs/pull/1/head' of https://github.com/attaswift/BigInt
 7c95390d28caeb993ec4e4d603c2bd3ee4a03d59	not-for-merge	'refs/pull/11/head' of https://github.com/attaswift/BigInt
@@ -10,6 +10,7 @@ cf829423ec6b0e156bafcfe1e117fe9fecd781e7	not-for-merge	'refs/pull/1/head' of htt
 3b4e52954ba8c51a300da6e2edf833689a5e37b2	not-for-merge	'refs/pull/21/head' of https://github.com/attaswift/BigInt
 00c9559642eff59ff3ec83cf46b129f462fe8bcf	not-for-merge	'refs/pull/26/head' of https://github.com/attaswift/BigInt
 5acedc9d6953c9f50e2d45dbc4ed833802556944	not-for-merge	'refs/pull/29/head' of https://github.com/attaswift/BigInt
+6e0dca72a212907719cb1f0db28bbf3924ab2866	not-for-merge	'refs/pull/31/head' of https://github.com/attaswift/BigInt
 238fdd2ff01f6ca12c1f06feb359b848421e241e	not-for-merge	'refs/pull/5/head' of https://github.com/attaswift/BigInt
 1785d3835fbe4e68c00c149b797484e30a47b157	not-for-merge	'refs/pull/7/head' of https://github.com/attaswift/BigInt
 70ddd32eee03e5d28847184e4011ccee4116b9c9	not-for-merge	'refs/pull/8/head' of https://github.com/attaswift/BigInt
@@ -27,4 +28,4 @@ a150521884c3586ab09e444b26724e04ed2ec557	not-for-merge	tag 'v1.2.3' of https://g
 972b37323eb85ab76e41d9ae38b90fa155760f16	not-for-merge	tag 'v2.1.2' of https://github.com/attaswift/BigInt
 65ed1ace6af0ab8bcd16037ccbeefeadb354b6a4	not-for-merge	tag 'v2.2.0' of https://github.com/attaswift/BigInt
 50208597616c8ab08729bbc33edf295bd06da27c	not-for-merge	tag 'v3.0.0' of https://github.com/attaswift/BigInt
-31d0f6fa0aa945c09eff091ad26cb5b44e956f79	not-for-merge	tag 'v3.0.1' of https://github.com/attaswift/BigInt
+e3879c569817a844ca2c54a9095c59e1d779cd5d	not-for-merge	tag 'v3.0.1' of https://github.com/attaswift/BigInt
